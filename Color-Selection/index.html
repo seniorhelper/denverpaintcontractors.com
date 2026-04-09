@@ -722,7 +722,7 @@ const colors = {
     { name: 'Midnight in the Garden', code: '5007-10C', hex: '#3d4f4a', use: 'Rich, moody spaces' },
     { name: 'Vanilla Custard',     code: '2003-8C', hex: '#e8d9b5', use: 'Warm kitchens, dining' },
     { name: 'Aged Leather',        code: '3005-2B', hex: '#9e7b60', use: 'Study, library, den' },
-    { name: 'Breezy',             code: '5005-2A', hex: '#d0dde0', use: 'Light, open living areas' },
+    { name: 'Breezy',              code: '5005-2A', hex: '#d0dde0', use: 'Light, open living areas' },
     { name: 'Black Pepper',        code: '5001-7',  hex: '#2d2d2a', use: 'Trim, accents, drama' },
     { name: 'Ripe Olive',          code: '5005-4',  hex: '#7a8462', use: 'Earthy exteriors, den' },
   ]
@@ -754,19 +754,16 @@ function renderSwatches(brand) {
 }
 
 function selectColor(color, cardEl) {
-  // Deselect all
   document.querySelectorAll('.swatch-card').forEach(c => c.classList.remove('selected'));
   cardEl.classList.add('selected');
   selectedColor = color;
 
-  // Update selected bar
   const bar = document.getElementById('selected-bar');
   bar.style.display = 'flex';
   document.getElementById('selected-dot').style.background = color.hex;
   document.getElementById('selected-name').textContent = color.name;
   document.getElementById('selected-code').textContent = color.code;
 
-  // Update visualizer active color
   updateVizColor(color.hex, color.name, color.code);
 }
 
@@ -787,7 +784,7 @@ function switchBrand(brand) {
 let canvas, ctx, img, points = [], mode = 'draw';
 let currentHex = '#c8b99a';
 let opacity = 0.55;
-let imageData = null; // stored clean image pixels
+let imageData = null;
 
 window.addEventListener('load', () => {
   canvas = document.getElementById('viz-canvas');
@@ -802,7 +799,6 @@ function loadPhoto(event) {
     const image = new Image();
     image.onload = () => {
       img = image;
-      // Size canvas to fit
       const maxW = document.getElementById('canvas-wrap').clientWidth - 4;
       const maxH = 440;
       let w = image.width, h = image.height;
@@ -839,10 +835,6 @@ function getCanvasPos(e) {
   };
 }
 
-canvas && canvas.addEventListener('click', handleCanvasClick);
-canvas && canvas.addEventListener('touchend', e => { e.preventDefault(); handleCanvasClick(e); }, { passive: false });
-
-// Re-attach after load
 document.addEventListener('DOMContentLoaded', () => {
   const c = document.getElementById('viz-canvas');
   c.addEventListener('click', handleCanvasClick);
@@ -853,7 +845,6 @@ function handleCanvasClick(e) {
   if (!img) return;
   const pos = getCanvasPos(e);
 
-  // Check if clicking near first point to close polygon
   if (points.length >= 3) {
     const first = points[0];
     const dist = Math.hypot(pos.x - first.x, pos.y - first.y);
@@ -876,10 +867,8 @@ function handleCanvasClick(e) {
 
 function redrawCanvas() {
   if (!img || !imageData) return;
-  // Restore clean image
   ctx.putImageData(imageData, 0, 0);
 
-  // Draw polygon outline
   if (points.length === 0) return;
   ctx.beginPath();
   ctx.moveTo(points[0].x, points[0].y);
@@ -890,7 +879,6 @@ function redrawCanvas() {
   ctx.stroke();
   ctx.setLineDash([]);
 
-  // Draw points
   points.forEach((p, i) => {
     ctx.beginPath();
     ctx.arc(p.x, p.y, i === 0 ? 8 : 5, 0, Math.PI * 2);
@@ -901,7 +889,6 @@ function redrawCanvas() {
     ctx.stroke();
   });
 
-  // Hint: first point glows to show click-to-close
   if (points.length >= 3) {
     ctx.beginPath();
     ctx.arc(points[0].x, points[0].y, 12, 0, Math.PI * 2);
@@ -914,10 +901,8 @@ function redrawCanvas() {
 function fillRegion() {
   if (!img || points.length < 3 || !imageData) return;
 
-  // Restore image first
   ctx.putImageData(imageData, 0, 0);
 
-  // Fill polygon with color + opacity
   ctx.save();
   ctx.beginPath();
   ctx.moveTo(points[0].x, points[0].y);
@@ -927,7 +912,6 @@ function fillRegion() {
   ctx.fill();
   ctx.restore();
 
-  // Save new state as imageData so next fill starts clean
   imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
   points = [];
   updatePtsCount();
@@ -946,17 +930,6 @@ function hexToRgba(hex, alpha) {
 function clearCanvas() {
   if (!img || !imageData) return;
   points = [];
-  // Restore original image
-  const origImg = new Image();
-  origImg.onload = () => {
-    ctx.drawImage(origImg, 0, 0, canvas.width, canvas.height);
-    imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-    updatePtsCount();
-    document.getElementById('main-fill-btn').disabled = true;
-    document.getElementById('btn-fill').style.display = 'none';
-    updateInstruction();
-  };
-  // Re-use the uploaded image from the img element
   ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
   imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
   updatePtsCount();
@@ -1057,8 +1030,10 @@ document.getElementById('hamburger').addEventListener('click', () => {
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
-}, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 </script>
+
 </body>
 </html>
