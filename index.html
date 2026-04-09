@@ -2156,7 +2156,7 @@ footer {
 <!-- ===== SCRIPTS ===== -->
 <script>
 // ===== HERO FORM (FormSubmit AJAX) =====
-async function submitHeroForm(e) {
+function submitHeroForm(e) {
   e.preventDefault();
   const form = document.getElementById('hero-quote-form');
   const btn = document.getElementById('hero-submit-btn');
@@ -2172,35 +2172,39 @@ async function submitHeroForm(e) {
   const formData = new FormData(form);
   if (areas) formData.set('areas', areas);
 
-  try {
-    const res = await fetch('https://formsubmit.co/ajax/e1c23fbeb94a9888d8d30256d2f109b4', {
-      method: 'POST',
-      headers: { 'Accept': 'application/json' },
-      body: formData
-    });
-    const data = await res.json();
-    if (data.success === 'true' || data.success === true) {
+  fetch('https://formsubmit.co/e1c23fbeb94a9888d8d30256d2f109b4', {
+    method: 'POST',
+    body: formData,
+    headers: { 'Accept': 'application/json' }
+  })
+  .then(res => {
+    if (res.ok) {
       msg.style.display = 'block';
       msg.style.background = '#d1fae5';
       msg.style.color = '#065f46';
       msg.textContent = '✅ Thank you! We\'ll be in touch within the hour. Or call us now: 720-208-5645';
       form.reset();
     } else {
-      throw new Error('Submission failed');
+      msg.style.display = 'block';
+      msg.style.background = '#fee2e2';
+      msg.style.color = '#991b1b';
+      msg.innerHTML = '⚠️ Something went wrong. Please call us directly at <a href="tel:7202085645" style="color:#991b1b; font-weight:700;">720-208-5645</a>';
     }
-  } catch (err) {
+    btn.textContent = '🎨 Get My Free Quote Now';
+    btn.disabled = false;
+  })
+  .catch(() => {
     msg.style.display = 'block';
     msg.style.background = '#fee2e2';
     msg.style.color = '#991b1b';
     msg.innerHTML = '⚠️ Something went wrong. Please call us directly at <a href="tel:7202085645" style="color:#991b1b; font-weight:700;">720-208-5645</a>';
-  }
-
-  btn.textContent = '🎨 Get My Free Quote Now';
-  btn.disabled = false;
+    btn.textContent = '🎨 Get My Free Quote Now';
+    btn.disabled = false;
+  });
 }
 
 // ===== BOTTOM FORM (FormSubmit AJAX) =====
-async function submitQuoteForm(e) {
+function submitQuoteForm(e) {
   e.preventDefault();
   const form = document.getElementById('quote-form');
   const btn = document.getElementById('quote-submit-btn');
@@ -2216,14 +2220,13 @@ async function submitQuoteForm(e) {
   const formData = new FormData(form);
   if (paintAreas) formData.set('paint_areas', paintAreas);
 
-  try {
-    const res = await fetch('https://formsubmit.co/ajax/e1c23fbeb94a9888d8d30256d2f109b4', {
-      method: 'POST',
-      headers: { 'Accept': 'application/json' },
-      body: formData
-    });
-    const data = await res.json();
-    if (data.success === 'true' || data.success === true) {
+  fetch('https://formsubmit.co/e1c23fbeb94a9888d8d30256d2f109b4', {
+    method: 'POST',
+    body: formData,
+    headers: { 'Accept': 'application/json' }
+  })
+  .then(res => {
+    if (res.ok) {
       msg.style.display = 'block';
       msg.style.background = '#d1fae5';
       msg.style.color = '#065f46';
@@ -2232,19 +2235,26 @@ async function submitQuoteForm(e) {
       msg.textContent = '✅ Quote request sent! We\'ll respond within the hour. Need it faster? Call 720-208-5645';
       form.reset();
     } else {
-      throw new Error('Failed');
+      msg.style.display = 'block';
+      msg.style.background = '#fee2e2';
+      msg.style.color = '#991b1b';
+      msg.style.padding = '14px';
+      msg.style.borderRadius = '8px';
+      msg.innerHTML = '⚠️ Submission error. Please call us at <a href="tel:7202085645" style="color:#991b1b; font-weight:700;">720-208-5645</a>';
     }
-  } catch (err) {
+    btn.textContent = '🎨 Send My Free Quote Request';
+    btn.disabled = false;
+  })
+  .catch(() => {
     msg.style.display = 'block';
     msg.style.background = '#fee2e2';
     msg.style.color = '#991b1b';
     msg.style.padding = '14px';
     msg.style.borderRadius = '8px';
     msg.innerHTML = '⚠️ Submission error. Please call us at <a href="tel:7202085645" style="color:#991b1b; font-weight:700;">720-208-5645</a>';
-  }
-
-  btn.textContent = '🎨 Send My Free Quote Request';
-  btn.disabled = false;
+    btn.textContent = '🎨 Send My Free Quote Request';
+    btn.disabled = false;
+  });
 }
 
 // ===== SLIDER =====
