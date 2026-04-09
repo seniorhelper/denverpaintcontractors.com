@@ -1482,9 +1482,8 @@ footer {
       <div class="form-title">🎨 Get Your Free Quote</div>
       <div class="form-subtitle">No pressure. No obligation. Fast response — usually within the hour.</div>
 
-      <form id="hero-quote-form" onsubmit="submitHeroForm(event)" novalidate>
+      <form id="hero-quote-form" onsubmit="submitHeroForm(event)">
         <input type="hidden" name="source_site" value="denverpaintcontractors.com — Hero Form">
-        <input type="hidden" name="_subject" value="New Quote Request — Denver Paint Contractors">
 
         <div class="form-group">
           <label for="h_name">Your Name *</label>
@@ -2009,9 +2008,8 @@ footer {
     </p>
 
     <div class="quote-form-card reveal">
-      <form id="quote-form" onsubmit="submitQuoteForm(event)" novalidate>
+      <form id="quote-form" onsubmit="submitQuoteForm(event)">
         <input type="hidden" name="source_site" value="denverpaintcontractors.com — Bottom Quote Form">
-        <input type="hidden" name="_subject" value="New Project Quote — Denver Paint Contractors">
 
         <div class="quote-form-grid">
           <div class="form-group">
@@ -2153,28 +2151,25 @@ footer {
 
 <!-- ===== SCRIPTS ===== -->
 <script>
-// ===== HERO FORM (FormSubmit AJAX) =====
+// ===== HERO FORM =====
 function submitHeroForm(e) {
   e.preventDefault();
   const form = document.getElementById('hero-quote-form');
   const btn = document.getElementById('hero-submit-btn');
   const msg = document.getElementById('hero-form-msg');
-
-  // Collect checkboxes
-  const areas = [...form.querySelectorAll('input[name="areas"]:checked')].map(cb => cb.value).join(', ');
-
-  btn.textContent = 'Sending...';
+  btn.textContent = 'Sending…';
   btn.disabled = true;
-  msg.style.display = 'none';
 
-  const formData = new FormData(form);
-  if (areas) formData.set('areas', areas);
-  formData.append('_captcha', 'false');
-  formData.append('_template', 'table');
+  const areas = [...form.querySelectorAll('input[name="areas"]:checked')].map(cb => cb.value).join(', ');
+  const data = new FormData(form);
+  if (areas) data.set('areas', areas);
+  data.append('_subject', 'New Quote Request — Denver Paint Contractors');
+  data.append('_captcha', 'false');
+  data.append('_template', 'table');
 
   fetch('https://formsubmit.co/e1c23fbeb94a9888d8d30256d2f109b4', {
     method: 'POST',
-    body: formData,
+    body: data,
     headers: { 'Accept': 'application/json' }
   })
   .then(res => {
@@ -2185,46 +2180,43 @@ function submitHeroForm(e) {
       msg.textContent = '✅ Thank you! We\'ll be in touch within the hour. Or call us now: 720-208-5645';
       form.reset();
     } else {
+      btn.textContent = '🎨 Get My Free Quote Now';
+      btn.disabled = false;
       msg.style.display = 'block';
       msg.style.background = '#fee2e2';
       msg.style.color = '#991b1b';
-      msg.innerHTML = '⚠️ Something went wrong. Please call us directly at <a href="tel:7202085645" style="color:#991b1b; font-weight:700;">720-208-5645</a>';
+      msg.innerHTML = '⚠️ Something went wrong. Please call <a href="tel:7202085645" style="color:#991b1b;font-weight:700;">720-208-5645</a>';
     }
-    btn.textContent = '🎨 Get My Free Quote Now';
-    btn.disabled = false;
   })
   .catch(() => {
+    btn.textContent = '🎨 Get My Free Quote Now';
+    btn.disabled = false;
     msg.style.display = 'block';
     msg.style.background = '#fee2e2';
     msg.style.color = '#991b1b';
-    msg.innerHTML = '⚠️ Something went wrong. Please call us directly at <a href="tel:7202085645" style="color:#991b1b; font-weight:700;">720-208-5645</a>';
-    btn.textContent = '🎨 Get My Free Quote Now';
-    btn.disabled = false;
+    msg.innerHTML = '⚠️ Something went wrong. Please call <a href="tel:7202085645" style="color:#991b1b;font-weight:700;">720-208-5645</a>';
   });
 }
 
-// ===== BOTTOM FORM (FormSubmit AJAX) =====
+// ===== BOTTOM FORM =====
 function submitQuoteForm(e) {
   e.preventDefault();
   const form = document.getElementById('quote-form');
   const btn = document.getElementById('quote-submit-btn');
   const msg = document.getElementById('quote-form-msg');
-
-  // Collect checkboxes
-  const paintAreas = [...form.querySelectorAll('input[name="paint_areas"]:checked')].map(cb => cb.value).join(', ');
-
-  btn.textContent = 'Sending Your Request...';
+  btn.textContent = 'Sending…';
   btn.disabled = true;
-  msg.style.display = 'none';
 
-  const formData = new FormData(form);
-  if (paintAreas) formData.set('paint_areas', paintAreas);
-  formData.append('_captcha', 'false');
-  formData.append('_template', 'table');
+  const paintAreas = [...form.querySelectorAll('input[name="paint_areas"]:checked')].map(cb => cb.value).join(', ');
+  const data = new FormData(form);
+  if (paintAreas) data.set('paint_areas', paintAreas);
+  data.append('_subject', 'New Project Quote — Denver Paint Contractors');
+  data.append('_captcha', 'false');
+  data.append('_template', 'table');
 
   fetch('https://formsubmit.co/e1c23fbeb94a9888d8d30256d2f109b4', {
     method: 'POST',
-    body: formData,
+    body: data,
     headers: { 'Accept': 'application/json' }
   })
   .then(res => {
@@ -2237,25 +2229,25 @@ function submitQuoteForm(e) {
       msg.textContent = '✅ Quote request sent! We\'ll respond within the hour. Need it faster? Call 720-208-5645';
       form.reset();
     } else {
+      btn.textContent = '🎨 Send My Free Quote Request';
+      btn.disabled = false;
       msg.style.display = 'block';
       msg.style.background = '#fee2e2';
       msg.style.color = '#991b1b';
       msg.style.padding = '14px';
       msg.style.borderRadius = '8px';
-      msg.innerHTML = '⚠️ Submission error. Please call us at <a href="tel:7202085645" style="color:#991b1b; font-weight:700;">720-208-5645</a>';
+      msg.innerHTML = '⚠️ Submission error. Please call <a href="tel:7202085645" style="color:#991b1b;font-weight:700;">720-208-5645</a>';
     }
-    btn.textContent = '🎨 Send My Free Quote Request';
-    btn.disabled = false;
   })
   .catch(() => {
+    btn.textContent = '🎨 Send My Free Quote Request';
+    btn.disabled = false;
     msg.style.display = 'block';
     msg.style.background = '#fee2e2';
     msg.style.color = '#991b1b';
     msg.style.padding = '14px';
     msg.style.borderRadius = '8px';
-    msg.innerHTML = '⚠️ Submission error. Please call us at <a href="tel:7202085645" style="color:#991b1b; font-weight:700;">720-208-5645</a>';
-    btn.textContent = '🎨 Send My Free Quote Request';
-    btn.disabled = false;
+    msg.innerHTML = '⚠️ Submission error. Please call <a href="tel:7202085645" style="color:#991b1b;font-weight:700;">720-208-5645</a>';
   });
 }
 
