@@ -480,11 +480,11 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
           <div class="cm-sub">Fastest way to reach us</div>
         </div>
       </a>
-      <a href="mailto:quote@painterhotline.com" class="contact-method email">
+      <a href="/cdn-cgi/l/email-protection#1263677d66775262737b7c6677607a7d667e7b7c773c717d7f" class="contact-method email">
         <div class="cm-icon">✉️</div>
         <div>
           <div class="cm-label">Email Us</div>
-          <div class="cm-value">quote@painterhotline.com</div>
+          <div class="cm-value"><span class="__cf_email__" data-cfemail="3e4f4b514a5b7e4e5f57504a5b4c56514a5257505b105d5153">[email&#160;protected]</span></div>
           <div class="cm-sub">We reply within the hour</div>
         </div>
       </a>
@@ -664,11 +664,11 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
           <div class="dc-value" style="color:var(--red);">720-208-5645</div>
         </div>
       </a>
-      <a href="mailto:quote@painterhotline.com" class="direct-contact-row">
+      <a href="/cdn-cgi/l/email-protection#d7a6a2b8a3b297a7b6beb9a3b2a5bfb8a3bbbeb9b2f9b4b8ba" class="direct-contact-row">
         <div class="dc-icon" style="background:rgba(26,105,133,0.1);">✉️</div>
         <div>
           <div class="dc-label">Email</div>
-          <div class="dc-value" style="color:#1a6985; font-size:0.88rem;">quote@painterhotline.com</div>
+          <div class="dc-value" style="color:#1a6985; font-size:0.88rem;"><span class="__cf_email__" data-cfemail="6110140e1504211100080f150413090e150d080f044f020e0c">[email&#160;protected]</span></div>
         </div>
       </a>
       <div class="direct-contact-row" style="cursor:default;">
@@ -950,7 +950,7 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
         <h4>Contact</h4>
         <ul>
           <li><a href="tel:7202085645">📞 720-208-5645</a></li>
-          <li><a href="mailto:quote@painterhotline.com">✉️ Email Us</a></li>
+          <li><a href="/cdn-cgi/l/email-protection#4f3e3a203b2a0f3f2e26213b2a3d27203b2326212a612c2022">✉️ Email Us</a></li>
           <li><a href="/Contact/">Free Quote Form</a></li>
           <li><a href="/">Denver Metro, CO</a></li>
           <li><a href="/">Front Range, CO</a></li>
@@ -964,7 +964,7 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // ===== CHIP TOGGLE =====
 function toggleChip(el) {
   const cb = el.querySelector('input[type=checkbox]');
@@ -1003,7 +1003,7 @@ async function submitContactForm(e) {
   if (paintAreas) formData.set('paint_areas', paintAreas);
 
   try {
-    const res = await fetch('https://formsubmit.co/ajax/quote@painterhotline.com', {
+    const res = await fetch('https://formsubmit.co/ajax/e1c23fbeb94a9888d8d30256d2f109b4', {
       method: 'POST',
       headers: { 'Accept': 'application/json' },
       body: formData
@@ -1038,15 +1038,4 @@ async function submitContactForm(e) {
 // ===== HAMBURGER =====
 document.getElementById('hamburger').addEventListener('click', () => {
   const nav = document.getElementById('mobile-nav');
-  const open = nav.classList.toggle('open');
-  document.getElementById('hamburger').setAttribute('aria-expanded', open);
-});
-
-// ===== SCROLL REVEAL =====
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
-}, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-</script>
-</body>
-</html>
+  const open = nav.classList.toggle('open')
