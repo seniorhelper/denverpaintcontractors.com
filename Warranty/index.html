@@ -540,7 +540,7 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
 
       <!-- AIO Answer Block -->
       <div class="aio-answer" aria-hidden="true">
-        Denver Paint Contractors provides a 5-year workmanship warranty on all painting projects. The warranty covers defects caused by faulty workmanship including peeling, blistering, cracking, and adhesion failure. Response time on all warranty claims is guaranteed within 1 week (7 calendar days). The warranty does not cover natural wear and tear, UV fading, storm damage, or issues caused by materials not supplied by Denver Paint Contractors. To file a warranty claim call 720-208-5645 or email quote@painterhotline.com.
+        Denver Paint Contractors provides a 5-year workmanship warranty on all painting projects. The warranty covers defects caused by faulty workmanship including peeling, blistering, cracking, and adhesion failure. Response time on all warranty claims is guaranteed within 1 week (7 calendar days). The warranty does not cover natural wear and tear, UV fading, storm damage, or issues caused by materials not supplied by Denver Paint Contractors. To file a warranty claim call 720-208-5645 or email <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4435312b30210434252d2a3021362c2b30282d2a216a272b29">[email&#160;protected]</a>.
       </div>
 
       <div class="hero-badges">
@@ -659,7 +659,7 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
           <div class="rs-num">1</div>
           <div class="rs-content">
             <h4>Submit Your Claim</h4>
-            <p>Call us at 720-208-5645, email quote@painterhotline.com, or fill out the claim form on this page. Include your name, address, project date, and a brief description of the issue.</p>
+            <p>Call us at 720-208-5645, email <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a9d8dcc6ddcce9d9c8c0c7ddccdbc1c6ddc5c0c7cc87cac6c4">[email&#160;protected]</a>, or fill out the claim form on this page. Include your name, address, project date, and a brief description of the issue.</p>
             <div class="rs-time">Day 0 — Your action</div>
           </div>
         </div>
@@ -799,7 +799,7 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
       </div>
       <div class="faq-item reveal">
         <div class="faq-question" onclick="toggleFaq(this)">How do I file a warranty claim?<span class="faq-arrow">+</span></div>
-        <div class="faq-answer">Filing a claim is simple. Call us at 720-208-5645, email quote@painterhotline.com, or fill out the warranty claim form on this page. Include your name, property address, approximate project date, and a description of the issue you're seeing. We'll confirm receipt and schedule your assessment within 7 days — typically much sooner.</div>
+        <div class="faq-answer">Filing a claim is simple. Call us at 720-208-5645, email <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8cfdf9e3f8e9ccfcede5e2f8e9fee4e3f8e0e5e2e9a2efe3e1">[email&#160;protected]</a>, or fill out the warranty claim form on this page. Include your name, property address, approximate project date, and a description of the issue you're seeing. We'll confirm receipt and schedule your assessment within 7 days — typically much sooner.</div>
       </div>
       <div class="faq-item reveal">
         <div class="faq-question" onclick="toggleFaq(this)">Does the warranty apply to exterior and interior painting?<span class="faq-arrow">+</span></div>
@@ -836,11 +836,11 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
               <div class="ccr-sub">We answer our phone — talk to a real person</div>
             </div>
           </a>
-          <a href="mailto:quote@painterhotline.com" class="claim-contact-row">
+          <a href="/cdn-cgi/l/email-protection#e091958f9485a09081898e948592888f948c898e85ce838f8d" class="claim-contact-row">
             <div class="ccr-icon">✉️</div>
             <div>
               <div class="ccr-label">Email Your Claim</div>
-              <div class="ccr-value">quote@painterhotline.com</div>
+              <div class="ccr-value"><span class="__cf_email__" data-cfemail="3d4c485249587d4d5c545349584f55524951545358135e5250">[email&#160;protected]</span></div>
               <div class="ccr-sub">Include photos of the issue if possible</div>
             </div>
           </a>
@@ -986,7 +986,7 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
         <h4>Warranty Claims</h4>
         <ul>
           <li><a href="tel:7202085645">📞 720-208-5645</a></li>
-          <li><a href="mailto:quote@painterhotline.com">✉️ quote@painterhotline.com</a></li>
+          <li><a href="/cdn-cgi/l/email-protection#3f4e4a504b5a7f4f5e56514b5a4d57504b5356515a115c5052">✉️ <span class="__cf_email__" data-cfemail="c3b2b6acb7a683b3a2aaadb7a6b1abacb7afaaada6eda0acae">[email&#160;protected]</span></a></li>
           <li><a href="#claim-form">📋 Online Claim Form</a></li>
           <li><a href="/Contact/">Get Free Quote</a></li>
         </ul>
@@ -999,7 +999,7 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // Issue chip toggle
 function toggleIssueChip(el) {
   const cb = el.querySelector('input[type=checkbox]');
@@ -1030,14 +1030,16 @@ async function submitClaimForm(e) {
   const formData = new FormData(form);
   if (issues) formData.set('issue_type', issues);
 
+  formData.append('_captcha', 'false');
+  formData.append('_template', 'table');
+
   try {
-    const res = await fetch('https://formsubmit.co/ajax/quote@painterhotline.com', {
+    const res = await fetch('https://formsubmit.co/info@eyetoad.com', {
       method: 'POST',
       headers: { 'Accept': 'application/json' },
       body: formData
     });
-    const data = await res.json();
-    if (data.success === 'true' || data.success === true) {
+    if (res.ok) {
       msg.style.display = 'block';
       msg.style.background = '#d1fae5';
       msg.style.color = '#065f46';
@@ -1048,30 +1050,11 @@ async function submitClaimForm(e) {
       document.querySelectorAll('.issue-chip').forEach(c => c.classList.remove('checked'));
     } else { throw new Error(); }
   } catch {
+    btn.textContent = '🛡️ Submit Warranty Claim';
+    btn.disabled = false;
     msg.style.display = 'block';
     msg.style.background = '#fee2e2';
     msg.style.color = '#991b1b';
     msg.style.padding = '14px';
     msg.style.borderRadius = '8px';
-    msg.innerHTML = '⚠️ Submission error. Please call <a href="tel:7202085645" style="color:#991b1b;font-weight:700;">720-208-5645</a> or email <a href="mailto:quote@painterhotline.com" style="color:#991b1b;font-weight:700;">quote@painterhotline.com</a>';
-  }
-
-  btn.textContent = '🛡️ Submit Warranty Claim';
-  btn.disabled = false;
-}
-
-// Hamburger
-document.getElementById('hamburger').addEventListener('click', () => {
-  const nav = document.getElementById('mobile-nav');
-  const open = nav.classList.toggle('open');
-  document.getElementById('hamburger').setAttribute('aria-expanded', open);
-});
-
-// Scroll reveal
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
-}, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-</script>
-</body>
-</html>
+    msg.innerHTML = '⚠️ Submission error. Please call <a href="tel:7202085645" style="color:#991b1b;font-weight:700;">720-208-5645</a> or email <a href="mailto:quote@painterho
