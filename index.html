@@ -1485,7 +1485,6 @@ footer {
       <form id="hero-quote-form" onsubmit="submitHeroForm(event)" novalidate>
         <input type="hidden" name="source_site" value="denverpaintcontractors.com — Hero Form">
         <input type="hidden" name="_subject" value="New Quote Request — Denver Paint Contractors">
-        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 
         <div class="form-group">
           <label for="h_name">Your Name *</label>
@@ -2013,7 +2012,6 @@ footer {
       <form id="quote-form" onsubmit="submitQuoteForm(event)" novalidate>
         <input type="hidden" name="source_site" value="denverpaintcontractors.com — Bottom Quote Form">
         <input type="hidden" name="_subject" value="New Project Quote — Denver Paint Contractors">
-        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 
         <div class="quote-form-grid">
           <div class="form-group">
@@ -2171,6 +2169,8 @@ function submitHeroForm(e) {
 
   const formData = new FormData(form);
   if (areas) formData.set('areas', areas);
+  formData.append('_captcha', 'false');
+  formData.append('_template', 'table');
 
   fetch('https://formsubmit.co/e1c23fbeb94a9888d8d30256d2f109b4', {
     method: 'POST',
@@ -2219,6 +2219,8 @@ function submitQuoteForm(e) {
 
   const formData = new FormData(form);
   if (paintAreas) formData.set('paint_areas', paintAreas);
+  formData.append('_captcha', 'false');
+  formData.append('_template', 'table');
 
   fetch('https://formsubmit.co/e1c23fbeb94a9888d8d30256d2f109b4', {
     method: 'POST',
