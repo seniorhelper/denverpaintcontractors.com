@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>50% Off Painting Discount | Denver Paint Contractors</title>
-<meta name="description" content="Save 50% on labor for your next painting project in Denver. Denver Paint Contractors is offering 50% off the entire labor quote — limited time. Print your coupon or claim online.">
+<title>50% Off Painting Labor | Denver Paint Contractors — Limited Time Discount</title>
+<meta name="description" content="Save 50% on labor for your next painting project in Denver. Family owned Denver painters offering 50% off the entire labor quote — limited time. Claim your coupon online or call 720-208-5645.">
 <link rel="canonical" href="https://www.denverpaintcontractors.com/Discounts/">
 <meta name="google-site-verification" content="baGuCmjnaeBQGRonWqwoFgtG1Pb2_RZxGVMKkBbifDw" />
 <meta property="og:type" content="website">
@@ -28,9 +28,13 @@
       "@type": "WebPage",
       "@id": "https://www.denverpaintcontractors.com/Discounts/#webpage",
       "url": "https://www.denverpaintcontractors.com/Discounts/",
-      "name": "50% Off Painting Discount | Denver Paint Contractors",
-      "description": "Limited time 50% off labor discount from Denver Paint Contractors. Print or claim your coupon online.",
+      "name": "50% Off Painting Labor | Denver Paint Contractors — Limited Time Discount",
+      "description": "Limited time 50% off labor discount from Denver Paint Contractors. Print or claim your coupon online. Call 720-208-5645.",
       "isPartOf": {"@id": "https://www.denverpaintcontractors.com/#website"},
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".hero-h1", ".hero-off-label"]
+      },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -42,9 +46,63 @@
     {
       "@type": "Offer",
       "name": "50% Off Painting Labor — Denver Paint Contractors",
-      "description": "50% off the entire labor portion of your painting quote. Does not include cost of paint materials. Cannot be combined with other offers. Limited time.",
+      "description": "50% off the entire labor portion of your painting quote. Does not include cost of paint materials. Cannot be combined with other offers. Limited time. Promo code: SAVE50.",
       "url": "https://www.denverpaintcontractors.com/Discounts/",
-      "seller": {"@type": "LocalBusiness", "name": "Denver Paint Contractors", "telephone": "+17202085645"}
+      "priceSpecification": {"@type": "UnitPriceSpecification", "priceCurrency": "USD"},
+      "seller": {"@type": "LocalBusiness", "name": "Denver Paint Contractors", "telephone": "+17202085645", "url": "https://www.denverpaintcontractors.com/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does the 50% off painting discount apply to?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 50% discount applies to the labor portion of your painting quote only. This includes all painting services: interior rooms, exterior siding, deck staining, door painting, cabinet refinishing, fence staining, and commercial painting. It does not apply to the cost of paint or materials."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I claim the 50% off painting coupon?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can claim the discount three ways: (1) Fill out the claim form on this page, (2) Call 720-208-5645 and mention promo code SAVE50, or (3) Print or email the coupon to yourself and present it at the time of your free quote."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use the painting discount on any project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — the discount applies to residential and commercial painting projects in the Denver metro area and Front Range, Colorado. It covers interior painting, exterior painting, deck staining, door painting, cabinet painting, fence staining, and more."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the 5-year warranty still apply with the discount?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. The 5-year workmanship warranty applies to every project we complete, regardless of any promotion or discount. You get the same experienced painters, the same premium materials, and the same full warranty at the discounted price."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I combine the painting discount with other offers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — the 50% off labor offer cannot be combined with any other promotion, offer, or discount. One coupon or promo code per project. The offer is valid for new customers and new projects only and must be presented at the time of the quote."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long is the 50% off painting offer valid?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This is a limited-time promotion. Denver Paint Contractors reserves the right to end the promotion at any time without notice. Claim your discount today to lock in your savings before the offer expires."
+          }
+        }
+      ]
     }
   ]
 }
@@ -109,8 +167,6 @@ nav a:hover { color: var(--yellow); background: rgba(255,255,255,0.08); }
   padding: 70px 20px 80px;
   position: relative; overflow: hidden; text-align: center;
 }
-
-/* Confetti-style dots */
 .page-hero::before {
   content: '';
   position: absolute; inset: 0;
@@ -120,7 +176,6 @@ nav a:hover { color: var(--yellow); background: rgba(255,255,255,0.08); }
   background-size: 48px 48px, 24px 24px;
   background-position: 0 0, 12px 12px;
 }
-
 .hero-inner { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; }
 
 /* Countdown timer */
@@ -165,15 +220,12 @@ nav a:hover { color: var(--yellow); background: rgba(255,255,255,0.08); }
   letter-spacing: 2px; text-transform: uppercase;
   margin-bottom: 8px;
 }
-
 .hero-sub-label {
-  font-family: var(--font-condensed);
   font-size: clamp(1rem, 2.5vw, 1.4rem);
   font-weight: 700; color: rgba(255,255,255,0.75);
   text-transform: uppercase; letter-spacing: 2px;
   margin-bottom: 28px;
 }
-
 .hero-cta-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 .btn-hero-primary {
   display: inline-flex; align-items: center; gap: 8px;
@@ -194,11 +246,16 @@ nav a:hover { color: var(--yellow); background: rgba(255,255,255,0.08); }
 }
 .btn-hero-outline:hover { border-color: #fff; background: rgba(255,255,255,0.1); }
 
+/* ===== URGENCY STRIP ===== */
+.urgency-strip {
+  background: var(--yellow); padding: 18px 20px; text-align: center;
+}
+.urgency-inner { max-width: 800px; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.urgency-text { font-family: var(--font-condensed); font-size: 1.1rem; font-weight: 800; color: var(--navy); text-transform: uppercase; letter-spacing: 1px; }
+#countdown-display { font-family: var(--font-stamp); font-size: 1.6rem; color: var(--red); }
+
 /* ===== MAIN CONTENT ===== */
 .page-main { max-width: 1100px; margin: 0 auto; padding: 70px 20px; display: grid; grid-template-columns: 1fr 380px; gap: 60px; align-items: start; }
-
-/* ===== CONTENT SIDE ===== */
-.content-side {}
 
 .eyebrow { font-family: var(--font-condensed); font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 3px; color: var(--red); margin-bottom: 10px; }
 .section-h2 { font-family: var(--font-display); font-size: clamp(1.7rem, 3vw, 2.3rem); font-weight: 900; color: var(--navy); margin-bottom: 16px; line-height: 1.2; }
@@ -206,17 +263,11 @@ nav a:hover { color: var(--yellow); background: rgba(255,255,255,0.08); }
 .body-p strong { color: var(--text); }
 
 /* What's included / not included */
-.deal-breakdown {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 28px 0;
-}
+.deal-breakdown { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 28px 0; }
 .deal-col { border-radius: 14px; padding: 22px 20px; }
 .deal-col.included { background: rgba(45,106,79,0.08); border: 2px solid rgba(45,106,79,0.2); }
 .deal-col.excluded { background: rgba(230,57,70,0.06); border: 2px solid rgba(230,57,70,0.15); }
-.deal-col-title {
-  font-family: var(--font-condensed); font-size: 0.75rem; font-weight: 800;
-  text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 14px;
-  display: flex; align-items: center; gap: 8px;
-}
+.deal-col-title { font-family: var(--font-condensed); font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
 .deal-col.included .deal-col-title { color: #2d6a4f; }
 .deal-col.excluded .deal-col-title { color: var(--red); }
 .deal-list { list-style: none; }
@@ -225,10 +276,7 @@ nav a:hover { color: var(--yellow); background: rgba(255,255,255,0.08); }
 .deal-check { flex-shrink: 0; font-size: 0.9rem; margin-top: 1px; }
 
 /* Terms box */
-.terms-box {
-  background: var(--cream); border-radius: 12px; padding: 20px 22px;
-  border: 1px solid rgba(0,0,0,0.08); margin: 24px 0;
-}
+.terms-box { background: var(--cream); border-radius: 12px; padding: 20px 22px; border: 1px solid rgba(0,0,0,0.08); margin: 24px 0; }
 .terms-box h4 { font-family: var(--font-condensed); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-light); margin-bottom: 12px; }
 .terms-list { list-style: none; }
 .terms-list li { display: flex; align-items: flex-start; gap: 8px; font-size: 0.82rem; color: var(--text-light); padding: 5px 0; line-height: 1.5; }
@@ -236,124 +284,49 @@ nav a:hover { color: var(--yellow); background: rgba(255,255,255,0.08); }
 
 /* ===== COUPON ===== */
 .coupon-wrap { position: relative; }
-
-/* Printable coupon */
 .coupon {
   border-radius: 16px; overflow: hidden;
   box-shadow: 0 12px 50px rgba(0,0,0,0.18);
-  position: relative;
-  background: #fff;
+  position: relative; background: #fff;
   border: 3px dashed rgba(230,57,70,0.4);
 }
-
 .coupon-top {
   background: linear-gradient(135deg, var(--navy) 0%, #1a2e45 100%);
-  padding: 28px 28px 20px;
-  text-align: center; position: relative; overflow: hidden;
+  padding: 28px 28px 20px; text-align: center; position: relative; overflow: hidden;
 }
 .coupon-top::before {
   content: '';
   position: absolute; inset: 0;
-  background: repeating-linear-gradient(
-    -45deg, transparent, transparent 10px,
-    rgba(255,255,255,0.03) 10px, rgba(255,255,255,0.03) 20px
-  );
+  background: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(255,255,255,0.03) 10px, rgba(255,255,255,0.03) 20px);
 }
 .coupon-logo { height: 80px; width: auto; margin-bottom: 12px; filter: brightness(1.2); }
 .coupon-brand { font-family: var(--font-condensed); font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.5); margin-bottom: 4px; }
-
-/* Tear edge effect */
-.tear-edge {
-  height: 20px;
-  background: linear-gradient(135deg, var(--navy) 0%, #1a2e45 100%);
-  position: relative;
-  margin-bottom: -1px;
-}
+.tear-edge { height: 20px; background: linear-gradient(135deg, var(--navy) 0%, #1a2e45 100%); position: relative; margin-bottom: -1px; }
 .tear-edge::after {
   content: '';
-  position: absolute;
-  bottom: 0; left: -5px; right: -5px;
-  height: 20px;
-  background: #fff;
-  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-  /* Scalloped edge using SVG mask */
+  position: absolute; bottom: 0; left: -5px; right: -5px; height: 20px;
+  background: #fff; border-radius: 50% 50% 0 0 / 100% 100% 0 0;
   -webkit-mask: radial-gradient(circle at 50% 0%, transparent 12px, black 13px) -18px 0 / 36px 100%;
   mask: radial-gradient(circle at 50% 0%, transparent 12px, black 13px) -18px 0 / 36px 100%;
 }
-
-/* Big 50% area */
-.coupon-deal {
-  padding: 24px 28px 20px;
-  text-align: center;
-  background: #fff;
-  position: relative;
-}
-
-/* Scissors icon top-right */
-.scissors {
-  position: absolute; top: -14px; right: 20px;
-  background: #fff; border-radius: 50%;
-  width: 28px; height: 28px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-  transform: rotate(45deg);
-}
-
-.coupon-percent {
-  font-family: var(--font-stamp);
-  font-size: 7rem; font-weight: 700;
-  color: var(--red); line-height: 1;
-  letter-spacing: -4px;
-  text-shadow: 3px 3px 0 rgba(230,57,70,0.2);
-}
+.coupon-deal { padding: 24px 28px 20px; text-align: center; background: #fff; position: relative; }
+.scissors { position: absolute; top: -14px; right: 20px; background: #fff; border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.12); transform: rotate(45deg); }
+.coupon-percent { font-family: var(--font-stamp); font-size: 7rem; font-weight: 700; color: var(--red); line-height: 1; letter-spacing: -4px; text-shadow: 3px 3px 0 rgba(230,57,70,0.2); }
 .coupon-off { font-family: var(--font-stamp); font-size: 2.2rem; font-weight: 700; color: var(--navy); letter-spacing: 2px; margin-top: -8px; }
 .coupon-desc { font-size: 0.88rem; color: var(--text-light); margin: 10px 0 16px; line-height: 1.5; }
 .coupon-desc strong { color: var(--navy); }
-
-/* Code box */
-.coupon-code-box {
-  background: var(--navy); border-radius: 10px; padding: 12px 20px;
-  display: flex; align-items: center; justify-content: space-between; gap: 10px;
-  margin: 0 0 16px;
-}
+.coupon-code-box { background: var(--navy); border-radius: 10px; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 0 0 16px; }
 .code-label { font-family: var(--font-condensed); font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; color: rgba(255,255,255,0.5); }
 .code-value { font-family: var(--font-stamp); font-size: 1.5rem; font-weight: 700; color: var(--yellow); letter-spacing: 3px; }
-.copy-btn {
-  background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
-  border-radius: 6px; padding: 5px 12px;
-  color: rgba(255,255,255,0.8); font-size: 0.72rem; font-weight: 700;
-  cursor: pointer; font-family: var(--font-body); transition: all 0.2s;
-  white-space: nowrap;
-}
+.copy-btn { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 6px; padding: 5px 12px; color: rgba(255,255,255,0.8); font-size: 0.72rem; font-weight: 700; cursor: pointer; font-family: var(--font-body); transition: all 0.2s; white-space: nowrap; }
 .copy-btn:hover { background: rgba(255,255,255,0.2); color: #fff; }
-
-/* Coupon bottom — phone + expire */
-.coupon-bottom {
-  background: var(--cream); padding: 16px 28px;
-  display: flex; align-items: center; justify-content: space-between; gap: 12px;
-  flex-wrap: wrap;
-}
+.coupon-bottom { background: var(--cream); padding: 16px 28px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 .coupon-phone { font-family: var(--font-condensed); font-size: 1.2rem; font-weight: 800; color: var(--red); text-decoration: none; }
 .coupon-expires { font-size: 0.72rem; color: var(--text-light); text-align: right; }
 .coupon-expires strong { display: block; font-size: 0.82rem; color: var(--text); }
-
-/* Coupon fine print */
-.coupon-fine-print {
-  padding: 12px 28px; background: #fff;
-  font-size: 0.68rem; color: #999; line-height: 1.5;
-  border-top: 1px dashed rgba(0,0,0,0.1);
-}
-
-/* Action buttons under coupon */
+.coupon-fine-print { padding: 12px 28px; background: #fff; font-size: 0.68rem; color: #999; line-height: 1.5; border-top: 1px dashed rgba(0,0,0,0.1); }
 .coupon-actions { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
-.coupon-btn {
-  flex: 1; min-width: 120px; padding: 12px 16px;
-  border-radius: 8px; font-family: var(--font-condensed); font-size: 0.9rem;
-  font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;
-  cursor: pointer; border: 2px solid; transition: all 0.22s;
-  text-align: center; text-decoration: none; display: flex;
-  align-items: center; justify-content: center; gap: 7px;
-}
+.coupon-btn { flex: 1; min-width: 120px; padding: 12px 16px; border-radius: 8px; font-family: var(--font-condensed); font-size: 0.9rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; border: 2px solid; transition: all 0.22s; text-align: center; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 7px; }
 .coupon-btn.print { background: var(--navy); color: #fff; border-color: var(--navy); }
 .coupon-btn.print:hover { background: #1a2e45; }
 .coupon-btn.email-btn { background: #fff; color: var(--red); border-color: var(--red); }
@@ -361,58 +334,41 @@ nav a:hover { color: var(--yellow); background: rgba(255,255,255,0.08); }
 .coupon-btn.claim { background: var(--red); color: #fff; border-color: var(--red); }
 .coupon-btn.claim:hover { background: var(--red-dark); }
 
+/* ===== FAQ ===== */
+.faq-section { padding: 70px 20px; background: var(--cream); }
+.faq-inner { max-width: 860px; margin: 0 auto; }
+.faq-item { border-bottom: 1px solid rgba(0,0,0,0.08); }
+.faq-question { width: 100%; background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; padding: 20px 0; font-family: var(--font-body); font-size: 1rem; font-weight: 700; color: var(--navy); text-align: left; gap: 16px; }
+.faq-question:hover { color: var(--red); }
+.faq-icon { width: 28px; height: 28px; border-radius: 50%; background: var(--navy); color: var(--yellow); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; font-weight: 900; flex-shrink: 0; transition: background 0.2s, transform 0.3s; }
+.faq-item.open .faq-icon { background: var(--red); transform: rotate(45deg); }
+.faq-answer { display: none; padding: 0 0 20px 0; font-size: 0.93rem; line-height: 1.78; color: var(--text-light); }
+.faq-item.open .faq-answer { display: block; }
+
 /* ===== CLAIM FORM ===== */
-.claim-section { padding: 70px 20px; background: var(--cream); }
+.claim-section { padding: 70px 20px; background: #fff; }
 .claim-inner { max-width: 700px; margin: 0 auto; }
 .claim-card { background: #fff; border-radius: 20px; box-shadow: 0 8px 40px rgba(0,0,0,0.09); overflow: hidden; }
 .claim-header { background: linear-gradient(135deg, var(--red), var(--red-dark)); padding: 28px 32px; }
 .claim-header h2 { font-family: var(--font-display); font-size: 1.6rem; font-weight: 900; color: #fff; margin-bottom: 4px; }
 .claim-header p { font-size: 0.85rem; color: rgba(255,255,255,0.75); }
 .claim-body { padding: 32px; }
-
 .fg { margin-bottom: 14px; }
 .fg label { display: block; font-size: 0.75rem; font-weight: 700; color: var(--charcoal); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 5px; }
 .fg .req { color: var(--red); }
-.fg input, .fg select, .fg textarea {
-  width: 100%; padding: 11px 14px; border: 2px solid #e8e8f0; border-radius: 9px;
-  font-family: var(--font-body); font-size: 0.92rem; color: var(--text);
-  background: #fff; transition: border-color 0.2s; outline: none;
-}
+.fg input, .fg select, .fg textarea { width: 100%; padding: 11px 14px; border: 2px solid #e8e8f0; border-radius: 9px; font-family: var(--font-body); font-size: 0.92rem; color: var(--text); background: #fff; transition: border-color 0.2s; outline: none; }
 .fg input:focus, .fg select:focus, .fg textarea:focus { border-color: var(--red); box-shadow: 0 0 0 3px rgba(230,57,70,0.08); }
 .fg textarea { resize: vertical; min-height: 90px; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-
-/* Promo code confirmation display */
-.promo-confirm {
-  background: linear-gradient(135deg, var(--navy), #1a2e45);
-  border-radius: 10px; padding: 14px 18px;
-  display: flex; align-items: center; justify-content: space-between;
-  margin-bottom: 18px;
-}
+.promo-confirm { background: linear-gradient(135deg, var(--navy), #1a2e45); border-radius: 10px; padding: 14px 18px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
 .pc-label { font-size: 0.72rem; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2px; }
 .pc-code { font-family: var(--font-stamp); font-size: 1.4rem; font-weight: 700; color: var(--yellow); letter-spacing: 3px; }
 .pc-badge { background: rgba(45,106,79,0.3); border: 1px solid rgba(82,183,136,0.4); border-radius: 20px; padding: 4px 12px; font-size: 0.72rem; font-weight: 700; color: #a7f3d0; }
-
-.submit-btn {
-  width: 100%; padding: 16px; background: var(--red); color: #fff;
-  font-family: var(--font-condensed); font-size: 1.15rem; font-weight: 800;
-  text-transform: uppercase; letter-spacing: 1.5px;
-  border: none; border-radius: 10px; cursor: pointer; margin-top: 6px;
-  transition: all 0.25s; box-shadow: 0 4px 20px rgba(230,57,70,0.3);
-}
+.submit-btn { width: 100%; padding: 16px; background: var(--red); color: #fff; font-family: var(--font-condensed); font-size: 1.15rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; border: none; border-radius: 10px; cursor: pointer; margin-top: 6px; transition: all 0.25s; box-shadow: 0 4px 20px rgba(230,57,70,0.3); }
 .submit-btn:hover { background: var(--red-dark); transform: translateY(-2px); }
 .submit-btn:disabled { background: #ccc; cursor: default; transform: none; }
 #claim-form-msg { margin-top: 14px; padding: 14px; border-radius: 10px; font-size: 0.9rem; font-weight: 600; text-align: center; display: none; }
 .form-privacy { font-size: 0.72rem; color: var(--text-light); text-align: center; margin-top: 10px; }
-
-/* ===== URGENCY STRIP ===== */
-.urgency-strip {
-  background: var(--yellow); padding: 18px 20px; text-align: center;
-}
-.urgency-inner { max-width: 800px; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; }
-.urgency-text { font-family: var(--font-condensed); font-size: 1.1rem; font-weight: 800; color: var(--navy); text-transform: uppercase; letter-spacing: 1px; }
-.urgency-timer { font-family: var(--font-stamp); font-size: 1.4rem; font-weight: 700; color: var(--red); }
-#countdown-display { font-family: var(--font-stamp); font-size: 1.6rem; color: var(--red); }
 
 /* ===== FOOTER ===== */
 footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,255,0.7); }
@@ -437,7 +393,7 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
 
 /* ===== PRINT STYLES ===== */
 @media print {
-  header, nav, .page-hero, .page-main .content-side, .claim-section, .urgency-strip, footer, .coupon-actions, .breadcrumb { display: none !important; }
+  header, nav, .page-hero, .page-main .content-side, .claim-section, .urgency-strip, .faq-section, footer, .coupon-actions, .breadcrumb { display: none !important; }
   body { background: #fff; }
   .page-main { display: block; padding: 20px; }
   .coupon-wrap { max-width: 480px; margin: 0 auto; }
@@ -463,6 +419,11 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
 </style>
 </head>
 <body>
+
+<!-- AIO Answer Block -->
+<div class="aio-answer" style="display:none;" aria-hidden="true">
+  Denver Paint Contractors is currently offering 50% off labor on all painting projects in the Denver metro area. Use promo code SAVE50. The discount applies to interior painting, exterior painting, deck staining, door painting, cabinet painting, and commercial painting. The 5-year workmanship warranty still applies. Call 720-208-5645 or visit denverpaintcontractors.com/Discounts/ to claim.
+</div>
 
 <!-- HEADER -->
 <header>
@@ -509,14 +470,14 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
 </div>
 
 <!-- HERO -->
-<section class="page-hero" aria-label="Discount promotion hero">
+<section class="page-hero" aria-label="50% off painting discount promotion">
   <div class="hero-inner">
     <div class="countdown-wrap">
       <div class="countdown-dot"></div>
       ⚡ Limited Time Offer — Ends Soon
     </div>
     <div class="hero-eyebrow">Denver Paint Contractors — Exclusive Promotion</div>
-    <div class="hero-h1">50%</div>
+    <h1 class="hero-h1">50%</h1>
     <div class="hero-off-label">OFF Your Entire Labor Quote</div>
     <div class="hero-sub-label">Interior · Exterior · Deck · Doors · Cabinets · More</div>
     <div class="hero-cta-row">
@@ -530,7 +491,7 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
 <div class="urgency-strip">
   <div class="urgency-inner">
     <div class="urgency-text">⏳ Offer Expires In:</div>
-    <div id="countdown-display">Loading...</div>
+    <div id="countdown-display">7d 00h 00m 00s</div>
     <div class="urgency-text">— Don't Miss Out!</div>
   </div>
 </div>
@@ -552,7 +513,7 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
     </p>
 
     <p class="body-p reveal">
-      This offer applies to all of our painting services — interior rooms, exterior siding, deck staining, door painting, cabinet refinishing, fence staining, and more. Furthermore, it applies to both residential and commercial projects throughout the Denver metro area.
+      This offer applies to all of our painting services — interior rooms, exterior siding, deck staining, door painting, cabinet refinishing, fence staining, and more. Furthermore, it applies to both residential and commercial projects throughout the Denver metro area and Front Range, Colorado.
     </p>
 
     <!-- What's included/excluded -->
@@ -604,20 +565,11 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
   <div class="coupon-wrap reveal">
 
     <div class="coupon" id="printable-coupon">
-      <!-- Coupon top with logo -->
       <div class="coupon-top">
-        <img
-          class="coupon-logo"
-          src="https://raw.githubusercontent.com/seniorhelper/denverpaintcontractors.com/main/images/denver_painter_hotline_logo.png"
-          alt="Denver Paint Contractors"
-        >
+        <img class="coupon-logo" src="https://raw.githubusercontent.com/seniorhelper/denverpaintcontractors.com/main/images/denver_painter_hotline_logo.png" alt="Denver Paint Contractors">
         <div class="coupon-brand">Official Savings Certificate</div>
       </div>
-
-      <!-- Scalloped tear edge -->
       <div class="tear-edge"></div>
-
-      <!-- Big deal section -->
       <div class="coupon-deal">
         <div class="scissors">✂</div>
         <div class="coupon-percent">50%</div>
@@ -627,8 +579,6 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
           Interior, exterior, decks, doors, cabinets &amp; more.<br>
           Same great painters. Same 5-Year Warranty.
         </p>
-
-        <!-- Promo code -->
         <div class="coupon-code-box">
           <div>
             <div class="code-label">Promo Code</div>
@@ -637,8 +587,6 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
           <button class="copy-btn" onclick="copyCode()">📋 Copy Code</button>
         </div>
       </div>
-
-      <!-- Bottom bar -->
       <div class="coupon-bottom">
         <div>
           <div style="font-size:0.68rem;color:var(--text-light);margin-bottom:2px;">Call to Redeem</div>
@@ -649,14 +597,11 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
           denverpaintcontractors.com
         </div>
       </div>
-
-      <!-- Fine print -->
       <div class="coupon-fine-print">
         50% off labor only. Does not include cost of paint or materials. Cannot be combined with other offers. One per project. Valid Denver metro &amp; Front Range, CO only. Denver Paint Contractors reserves the right to end offer at any time. No cash value.
       </div>
     </div>
 
-    <!-- Action buttons -->
     <div class="coupon-actions">
       <button class="coupon-btn print" onclick="window.print()">🖨️ Print Coupon</button>
       <button class="coupon-btn email-btn" onclick="emailCoupon()">✉️ Email to Me</button>
@@ -665,6 +610,76 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
 
   </div>
 </div>
+
+<!-- FAQ SECTION -->
+<section class="faq-section" aria-labelledby="faq-h2">
+  <div class="faq-inner">
+    <div class="eyebrow reveal" style="text-align:center;">Got Questions?</div>
+    <h2 class="section-h2 reveal" id="faq-h2" style="text-align:center; margin-bottom:10px;">Frequently Asked Questions</h2>
+    <p style="text-align:center; font-size:0.93rem; color:var(--text-light); max-width:580px; margin:0 auto 40px;" class="reveal">Everything you need to know about claiming and using your 50% off painting discount.</p>
+
+    <div class="faq-item reveal">
+      <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+        What does the 50% off discount apply to?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        The discount applies to the labor portion of your painting quote — which is typically the largest part of any painting estimate. This covers all our services: interior rooms, exterior siding, deck staining, door painting, cabinet refinishing, fence staining, and commercial painting. The cost of paint and materials is not discounted.
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+        How do I claim the 50% off coupon?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Three easy ways: (1) Fill out the claim form below and we'll call you within the hour to lock it in. (2) Call <a href="tel:7202085645" style="color:var(--red);font-weight:700;">720-208-5645</a> and mention promo code <strong>SAVE50</strong>. (3) Print or email the coupon to yourself and present it at the time of your free quote.
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+        Does the 5-year warranty still apply with the discount?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Absolutely — 100%. The 5-year workmanship warranty applies to every project we complete, regardless of any promotion or discount. You get the same experienced Denver painters, the same premium materials, and the full warranty. The discount doesn't change anything about how we do the work.
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+        Can I use this on any painting project?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Yes — the discount is valid on residential and commercial painting projects throughout the Denver metro area and Front Range, Colorado. It applies to interior painting, exterior painting, deck staining, door painting, cabinet painting, fence staining, and more. Both large and small projects qualify.
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+        Can I combine this with other offers?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        No — the 50% off labor offer cannot be combined with any other promotion, discount, or offer. One coupon or promo code per project or household. The offer is valid for new customers and new projects only and must be mentioned or presented at the time of your free quote.
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+        How long is this offer available?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        This is a limited-time promotion and Denver Paint Contractors reserves the right to end it at any time without notice. The countdown timer on this page reflects the current offer window. We strongly recommend claiming your discount today to lock in your savings before it expires.
+      </div>
+    </div>
+
+  </div>
+</section>
 
 <!-- CLAIM FORM -->
 <section class="claim-section" id="claim-offer" aria-labelledby="claim-h2">
@@ -676,7 +691,6 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
       </div>
       <div class="claim-body">
 
-        <!-- Promo code confirm -->
         <div class="promo-confirm">
           <div>
             <div class="pc-label">Your Promo Code</div>
@@ -793,7 +807,7 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
         <h4>Contact</h4>
         <ul>
           <li><a href="tel:7202085645">📞 720-208-5645</a></li>
-          <li><a href="/cdn-cgi/l/email-protection#e79692889382a797868e899382958f88938b8e8982c984888a">✉️ Email Us</a></li>
+          <li><a href="mailto:quote@painterhotline.com">✉️ Email Us</a></li>
           <li><a href="/Contact/">Free Quote Form</a></li>
           <li><a href="/">Denver Metro, CO</a></li>
         </ul>
@@ -806,32 +820,36 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-// ===== COUNTDOWN TIMER (7 days rolling) =====
+<script>
+// ===== COUNTDOWN TIMER — localStorage with try/catch so it never crashes =====
 function updateCountdown() {
-  // Use localStorage to persist expiry so it doesn't reset on refresh
-  let expiry = localStorage.getItem('dpc_offer_expiry');
-  if (!expiry) {
-    const d = new Date();
-    d.setDate(d.getDate() + 7);
-    expiry = d.getTime();
-    localStorage.setItem('dpc_offer_expiry', expiry);
+  try {
+    let expiry = localStorage.getItem('dpc_offer_expiry');
+    if (!expiry || isNaN(Number(expiry))) {
+      const d = new Date();
+      d.setDate(d.getDate() + 7);
+      expiry = d.getTime();
+      try { localStorage.setItem('dpc_offer_expiry', expiry); } catch(e) {}
+    }
+    const now = new Date().getTime();
+    const diff = Number(expiry) - now;
+    if (diff <= 0) {
+      const d = new Date();
+      d.setDate(d.getDate() + 7);
+      try { localStorage.setItem('dpc_offer_expiry', d.getTime()); } catch(e) {}
+      return;
+    }
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const secs = Math.floor((diff % (1000 * 60)) / 1000);
+    const el = document.getElementById('countdown-display');
+    if (el) el.textContent = `${days}d ${String(hours).padStart(2,'0')}h ${String(mins).padStart(2,'0')}m ${String(secs).padStart(2,'0')}s`;
+  } catch(e) {
+    // Fallback — just show a static time if storage is blocked
+    const el = document.getElementById('countdown-display');
+    if (el && el.textContent === '7d 00h 00m 00s') return;
   }
-  const now = new Date().getTime();
-  const diff = expiry - now;
-  if (diff <= 0) {
-    // Reset for another 7 days
-    const d = new Date();
-    d.setDate(d.getDate() + 7);
-    localStorage.setItem('dpc_offer_expiry', d.getTime());
-    return;
-  }
-  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-  const secs = Math.floor((diff % (1000 * 60)) / 1000);
-  document.getElementById('countdown-display').textContent =
-    `${days}d ${String(hours).padStart(2,'0')}h ${String(mins).padStart(2,'0')}m ${String(secs).padStart(2,'0')}s`;
 }
 updateCountdown();
 setInterval(updateCountdown, 1000);
@@ -842,6 +860,9 @@ function copyCode() {
     const btn = document.querySelector('.copy-btn');
     btn.textContent = '✓ Copied!';
     setTimeout(() => { btn.textContent = '📋 Copy Code'; }, 2000);
+  }).catch(() => {
+    const btn = document.querySelector('.copy-btn');
+    btn.textContent = 'SAVE50';
   });
 }
 
@@ -864,8 +885,8 @@ function emailCoupon() {
   window.location.href = `mailto:?subject=${subject}&body=${body}`;
 }
 
-// ===== CLAIM FORM =====
-async function submitClaimForm(e) {
+// ===== CLAIM FORM — working FormSubmit pattern =====
+function submitClaimForm(e) {
   e.preventDefault();
   const form = document.getElementById('claim-form');
   const btn = document.getElementById('claim-submit-btn');
@@ -875,14 +896,17 @@ async function submitClaimForm(e) {
   btn.disabled = true;
   msg.style.display = 'none';
 
-  try {
-    const res = await fetch('https://formsubmit.co/ajax/e1c23fbeb94a9888d8d30256d2f109b4', {
-      method: 'POST',
-      headers: { 'Accept': 'application/json' },
-      body: new FormData(form)
-    });
-    const data = await res.json();
-    if (data.success === 'true' || data.success === true) {
+  const data = new FormData(form);
+  data.append('_captcha', 'false');
+  data.append('_template', 'table');
+
+  fetch('https://formsubmit.co/info@eyetoad.com', {
+    method: 'POST',
+    body: data,
+    headers: { 'Accept': 'application/json' }
+  })
+  .then(res => {
+    if (res.ok) {
       msg.style.display = 'block';
       msg.style.background = '#d1fae5';
       msg.style.color = '#065f46';
@@ -890,18 +914,36 @@ async function submitClaimForm(e) {
       msg.style.borderRadius = '10px';
       msg.innerHTML = '🎉 <strong>Offer claimed!</strong> Your 50% off discount is locked in. We\'ll call you within the hour to schedule your free quote. Or call us now: <a href="tel:7202085645" style="color:#065f46;font-weight:700;">720-208-5645</a>';
       form.reset();
-    } else { throw new Error(); }
-  } catch {
+    } else {
+      btn.textContent = '🎉 Claim My 50% Off — Send Request';
+      btn.disabled = false;
+      msg.style.display = 'block';
+      msg.style.background = '#fee2e2';
+      msg.style.color = '#991b1b';
+      msg.style.padding = '16px';
+      msg.style.borderRadius = '10px';
+      msg.innerHTML = '⚠️ Something went wrong. Call us to claim your discount: <a href="tel:7202085645" style="color:#991b1b;font-weight:700;">720-208-5645</a> — mention code <strong>SAVE50</strong>.';
+    }
+  })
+  .catch(() => {
+    btn.textContent = '🎉 Claim My 50% Off — Send Request';
+    btn.disabled = false;
     msg.style.display = 'block';
     msg.style.background = '#fee2e2';
     msg.style.color = '#991b1b';
     msg.style.padding = '16px';
     msg.style.borderRadius = '10px';
     msg.innerHTML = '⚠️ Something went wrong. Call us to claim your discount: <a href="tel:7202085645" style="color:#991b1b;font-weight:700;">720-208-5645</a> — mention code <strong>SAVE50</strong>.';
-  }
+  });
+}
 
-  btn.textContent = '🎉 Claim My 50% Off — Send Request';
-  btn.disabled = false;
+// ===== FAQ TOGGLE =====
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+  btn.setAttribute('aria-expanded', !isOpen);
 }
 
 // ===== HAMBURGER =====
@@ -914,4 +956,10 @@ document.getElementById('hamburger').addEventListener('click', () => {
 // ===== SCROLL REVEAL =====
 const observer = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
-}, 
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
