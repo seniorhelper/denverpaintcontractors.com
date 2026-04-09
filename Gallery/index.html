@@ -109,7 +109,7 @@ nav a:hover { color: var(--yellow); background: rgba(255,255,255,0.08); }
   background: rgba(255,255,255,0.04); padding: 12px 20px;
   font-size: 0.8rem; color: rgba(255,255,255,0.45);
   border-bottom: 1px solid rgba(255,255,255,0.07);
-  margin-top: 80px;
+  margin-top: 223px;
 }
 .breadcrumb-inner { max-width: 1200px; margin: 0 auto; }
 .breadcrumb a { color: var(--red); text-decoration: none; font-weight: 600; }
@@ -481,6 +481,13 @@ footer { background: rgba(0,0,0,0.6); padding: 50px 20px 24px; color: rgba(255,2
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .logo-wrap img { height: 120px; }
   .footer-logo img { height: 120px; }
+  .breadcrumb { margin-top: 143px; }
+}
+@media (max-width: 640px) {
+  nav { display: none; }
+  .hamburger { display: flex; }
+  .header-right { display: none; }
+  .breadcrumb { margin-top: 103px; }
 }
 @media (max-width: 580px) {
   .masonry-grid { columns: 1; }
