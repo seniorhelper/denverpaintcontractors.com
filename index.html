@@ -1499,6 +1499,10 @@ footer {
           <input type="tel" id="h_phone" name="user_phone" placeholder="720-555-0100" required>
         </div>
         <div class="form-group">
+          <label for="h_email">Email Address</label>
+          <input type="email" id="h_email" name="user_email" placeholder="you@example.com">
+        </div>
+        <div class="form-group">
           <label for="h_zip">Zip Code</label>
           <input type="text" id="h_zip" name="user_zip" placeholder="80202">
         </div>
@@ -2175,7 +2179,7 @@ async function submitHeroForm(e) {
   if (areas) formData.set('areas', areas);
 
   try {
-    const res = await fetch('https://formsubmit.co/ajax/quote@painterhotline.com', {
+    const res = await fetch('https://formsubmit.co/ajax/e1c23fbeb94a9888d8d30256d2f109b4', {
       method: 'POST',
       headers: { 'Accept': 'application/json' },
       body: formData
@@ -2219,7 +2223,7 @@ async function submitQuoteForm(e) {
   if (paintAreas) formData.set('paint_areas', paintAreas);
 
   try {
-    const res = await fetch('https://formsubmit.co/ajax/quote@painterhotline.com', {
+    const res = await fetch('https://formsubmit.co/ajax/e1c23fbeb94a9888d8d30256d2f109b4', {
       method: 'POST',
       headers: { 'Accept': 'application/json' },
       body: formData
