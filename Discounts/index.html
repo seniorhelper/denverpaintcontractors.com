@@ -793,7 +793,7 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
         <h4>Contact</h4>
         <ul>
           <li><a href="tel:7202085645">📞 720-208-5645</a></li>
-          <li><a href="mailto:quote@painterhotline.com">✉️ Email Us</a></li>
+          <li><a href="/cdn-cgi/l/email-protection#e79692889382a797868e899382958f88938b8e8982c984888a">✉️ Email Us</a></li>
           <li><a href="/Contact/">Free Quote Form</a></li>
           <li><a href="/">Denver Metro, CO</a></li>
         </ul>
@@ -806,7 +806,7 @@ footer { background: var(--navy); padding: 50px 20px 24px; color: rgba(255,255,2
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // ===== COUNTDOWN TIMER (7 days rolling) =====
 function updateCountdown() {
   // Use localStorage to persist expiry so it doesn't reset on refresh
@@ -876,7 +876,7 @@ async function submitClaimForm(e) {
   msg.style.display = 'none';
 
   try {
-    const res = await fetch('https://formsubmit.co/ajax/quote@painterhotline.com', {
+    const res = await fetch('https://formsubmit.co/ajax/e1c23fbeb94a9888d8d30256d2f109b4', {
       method: 'POST',
       headers: { 'Accept': 'application/json' },
       body: new FormData(form)
@@ -914,8 +914,4 @@ document.getElementById('hamburger').addEventListener('click', () => {
 // ===== SCROLL REVEAL =====
 const observer = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
-}, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-</script>
-</body>
-</html>
+}, 
