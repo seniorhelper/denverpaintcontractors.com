@@ -3,11 +3,11 @@ if(window.__ramsey)return;window.__ramsey=1;
 var PH='+17209124676',PD='720-912-4676';
 
 var CSS='\
-.rmy-launch{position:fixed;right:18px;bottom:18px;z-index:980;display:flex;align-items:flex-end;gap:10px;font-family:Archivo,Arial,sans-serif}\
+.rmy-launch{position:fixed;right:18px;bottom:18px;z-index:980;display:flex;flex-direction:column;align-items:flex-end;gap:4px;font-family:Archivo,Arial,sans-serif}\
 .rmy-btn{width:190px;height:162px;border-radius:0;background:transparent;border:0;cursor:pointer;padding:0;overflow:visible;transition:transform .2s;filter:drop-shadow(0 8px 16px rgba(19,42,25,.35))}\
 .rmy-btn:hover{transform:scale(1.06)}\
 .rmy-btn svg{width:100%;height:100%;display:block}\
-.rmy-tip{background:#fff;color:#132a19;border:2px solid #1f3d26;border-radius:14px 14px 4px 14px;padding:10px 32px 10px 14px;font-weight:700;font-size:.95rem;max-width:230px;box-shadow:0 8px 24px rgba(0,0,0,.15);position:relative;margin-bottom:110px;line-height:1.3}\
+.rmy-tip{background:#fff;color:#132a19;border:2px solid #1f3d26;border-radius:14px 14px 4px 14px;padding:10px 32px 10px 14px;font-weight:700;font-size:.95rem;max-width:250px;box-shadow:0 8px 24px rgba(0,0,0,.15);position:relative;margin:0 30px 0 0;line-height:1.3;cursor:pointer}\
 .rmy-tip button{position:absolute;top:4px;right:6px;border:0;background:none;font-size:1.1rem;cursor:pointer;color:#4b564c}\
 .rmy-wave{transform-origin:274px 402px;animation:rmyw 1.6s ease-in-out infinite alternate}\
 @keyframes rmyw{from{transform:rotate(-10deg)}to{transform:rotate(12deg)}}\
@@ -41,7 +41,7 @@ var CSS='\
 .rmy-dtop .x{position:absolute;top:10px;right:10px;background:none;border:2px solid rgba(255,255,255,.4);color:#fff;border-radius:6px;padding:3px 9px;cursor:pointer;font-weight:800}\
 .rmy-dbody{padding:18px 20px 20px}\
 .rmy-seg{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}\
-@media (max-width:640px){.rmy-launch{bottom:74px;right:4px}.rmy-btn{width:118px;height:101px}.rmy-tip{margin-bottom:70px;font-size:.88rem;max-width:180px}.rmy-panel{right:6px;left:6px;width:auto;bottom:180px;height:auto;top:70px;max-height:none}.rmy-seg{grid-template-columns:1fr}}\
+@media (max-width:640px){.rmy-launch{bottom:74px;right:4px}.rmy-btn{width:118px;height:101px}.rmy-tip{margin:0 14px 0 0;font-size:.84rem;max-width:210px;padding:8px 28px 8px 11px}.rmy-panel{right:6px;left:6px;width:auto;bottom:180px;height:auto;top:70px;max-height:none}.rmy-seg{grid-template-columns:1fr}}\
 @media (prefers-reduced-motion:reduce){.rmy-wave{animation:none}}';
 var st=document.createElement('style');st.textContent=CSS;document.head.appendChild(st);
 
@@ -251,12 +251,11 @@ var launch=el('<div class="rmy-launch"><button type="button" class="rmy-btn" ari
 document.body.appendChild(launch);
 launch.querySelector('.rmy-btn').addEventListener('click',function(){if(panel&&!panel.hidden)closeChat();else openChat();});
 document.addEventListener('click',function(e){if(e.target.closest('[data-chat]')){e.preventDefault();openChat();}});
-var seen=false;try{seen=sessionStorage.getItem('rmyTip')==='1';}catch(e){}
-if(!seen){setTimeout(function(){
+var tipX=false;try{tipX=sessionStorage.getItem('rmyTipX')==='1';}catch(e){}
+if(!tipX){setTimeout(function(){
   if(panel&&!panel.hidden)return;
-  var tip=el('<div class="rmy-tip" role="status">Hi, I\'m Ramsey! Want a price on your paint job?<button type="button" aria-label="Dismiss">&times;</button></div>');
+  var tip=el('<div class="rmy-tip" role="status">I\'m here to answer questions and help make your painting project a total success!<button type="button" aria-label="Dismiss">&times;</button></div>');
   launch.insertBefore(tip,launch.firstChild);
-  tip.addEventListener('click',function(e){if(e.target.tagName==='BUTTON'){tip.remove();}else openChat();});
-  try{sessionStorage.setItem('rmyTip','1');}catch(e){}
-},6000);}
+  tip.addEventListener('click',function(e){if(e.target.tagName==='BUTTON'){tip.remove();try{sessionStorage.setItem('rmyTipX','1');}catch(x){}}else openChat();});
+},1200);}
 })();
