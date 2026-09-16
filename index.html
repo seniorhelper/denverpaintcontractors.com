@@ -39,7 +39,7 @@
   --wrap:1180px;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:110px}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
 body{font-family:var(--f-read);font-size:1.06rem;line-height:1.7;color:var(--ink);background:var(--white);overflow-x:hidden}
 img{max-width:100%;display:block}
 a{color:var(--forest)}
@@ -70,7 +70,8 @@ section{padding:84px 0}
 .site-head{position:sticky;top:0;z-index:900;background:#fff;border-bottom:4px solid var(--ochre);box-shadow:0 2px 14px rgba(19,42,25,.08)}
 .head-in{max-width:1320px;margin:0 auto;padding:8px 22px;display:flex;align-items:center;gap:18px}
 .brand{display:flex;align-items:center;text-decoration:none;flex-shrink:0}
-.brand img{height:66px;width:auto}
+.brand img{height:190px;width:auto;transition:height .25s ease}
+.site-head.small .brand img{height:84px}
 .main-nav{display:flex;align-items:center;gap:0;margin-left:auto}
 .main-nav a{font-family:var(--f-ui);color:var(--forest-deep);text-decoration:none;font-weight:650;font-size:.93rem;padding:8px 9px;border-radius:5px}
 .main-nav a:hover,.main-nav a[aria-current="page"]{color:var(--rust);background:var(--paper)}
@@ -92,7 +93,7 @@ section{padding:84px 0}
 .drawer.open{display:block}
 .drawer a{display:block;font-family:var(--f-ui);color:var(--forest-deep);text-decoration:none;font-weight:700;padding:13px 0;border-bottom:1px solid var(--line)}
 
-.card-form{background:#fff;border-radius:10px;box-shadow:0 24px 60px rgba(8,20,10,.35);overflow:hidden}
+.card-form{color:var(--ink);background:#fff;border-radius:10px;box-shadow:0 24px 60px rgba(8,20,10,.35);overflow:hidden}
 .form-top{background:var(--forest);color:#fff;padding:20px 24px}
 .form-top .ft{font-size:1.4rem;color:#fff;margin:0;font-weight:850;font-stretch:90%;font-family:var(--f-ui);line-height:1.15}
 .form-top p{font-family:var(--f-ui);font-size:.88rem;color:rgba(255,255,255,.8);margin-top:4px}
@@ -137,18 +138,18 @@ legend{font-family:var(--f-ui);font-weight:800;font-size:1.05rem;color:var(--for
 
 .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:34px}
 .rev{background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px 22px 20px;display:flex;flex-direction:column;gap:10px}
-.rev .stars{color:#e0a300;font-size:1.05rem;letter-spacing:2px}
+.rev .stars{color:#855a00;font-size:1.05rem;letter-spacing:2px}
 .rev blockquote{font-size:1rem;color:var(--ink);line-height:1.6;flex:1}
 .rev cite{font-family:var(--f-ui);font-style:normal;font-weight:800;font-size:.9rem;color:var(--forest-deep)}
 .rev cite span{display:block;font-weight:600;color:var(--ink-soft);font-size:.8rem}
 .rating-bar{display:flex;align-items:center;gap:16px;flex-wrap:wrap;font-family:var(--f-ui)}
 .rating-bar .big{font-weight:900;font-stretch:80%;font-size:3.2rem;line-height:1;color:var(--forest-deep)}
-.rating-bar .stars{color:#e0a300;font-size:1.4rem;letter-spacing:3px}
+.rating-bar .stars{color:#855a00;font-size:1.4rem;letter-spacing:3px}
 
 .site-foot{background:var(--forest-deep);color:rgba(255,255,255,.78);padding:64px 0 28px;font-family:var(--f-ui);font-size:.93rem}
 .foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.3fr;gap:36px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.12)}
 .foot-brand{display:inline-block;background:#fff;border-radius:12px;padding:10px 16px;margin-bottom:16px}
-.foot-brand img{height:112px;width:auto}
+.foot-brand img{height:240px;width:auto}
 .site-foot h3{color:#fff;font-size:1rem;margin-bottom:12px}
 .site-foot ul{list-style:none}
 .site-foot li{margin-bottom:8px}
@@ -165,11 +166,12 @@ legend{font-family:var(--f-ui);font-weight:800;font-size:1.05rem;color:var(--for
 .mbar .c{background:var(--ochre);color:var(--forest-deep)}
 .mbar .q{background:#fff;color:var(--forest-deep)}
 
-@media (max-width:1380px){.main-nav{display:none}.burger{display:block}.head-call{margin-left:auto}}
+@media (max-width:1580px){.main-nav{display:none}.burger{display:block}.head-call{margin-left:auto}}
 @media (max-width:900px){.foot-grid{grid-template-columns:1fr 1fr}.reviews-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:700px){
   .head-in{padding:7px 12px;gap:8px}
-  .brand img{height:48px}
+  .brand img{height:118px}
+  .site-head.small .brand img{height:58px}
   .head-est,.hc-sub{display:none}
   .head-call{gap:0;background:var(--forest);border-radius:8px;padding:9px 11px}
   .head-call .ic{display:none}
@@ -183,7 +185,7 @@ legend{font-family:var(--f-ui);font-weight:800;font-size:1.05rem;color:var(--for
   .mbar{display:flex}
   body{padding-bottom:70px}
 }
-@media (max-width:370px){.brand img{height:40px}.head-call b{font-size:1.05rem}}
+@media (max-width:370px){.brand img{height:96px}.site-head.small .brand img{height:52px}.head-call b{font-size:1.05rem}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
 .hero{position:relative;background:var(--forest-deep);color:#fff;overflow:hidden}
@@ -283,7 +285,7 @@ legend{font-family:var(--f-ui);font-weight:800;font-size:1.05rem;color:var(--for
 .costnote{background:var(--forest);color:#fff;border-radius:10px;padding:26px}
 .costnote h3{color:var(--ochre);margin-bottom:10px;font-size:1.3rem}
 .costnote p{color:rgba(255,255,255,.88);font-size:1rem;margin-bottom:12px}
-.costnote a{color:#fff}
+.costnote a:not(.btn){color:#fff}
 
 .deck{background:var(--forest-deep);color:#fff}
 .deck h2{color:#fff}
@@ -352,7 +354,7 @@ legend{font-family:var(--f-ui);font-weight:800;font-size:1.05rem;color:var(--for
 .house-panel p{color:var(--ink-soft);min-height:8.5em}
 .hp-nav{display:flex;gap:10px;margin-top:12px}.hp-nav .btn{flex:1;padding:12px}
 .walk{background:#fff}
-.deck{max-width:900px;margin-top:30px;border:3px solid var(--forest);border-radius:14px;padding:30px;position:relative;background:var(--paper)}
+.wdeck{max-width:900px;margin-top:30px;border:3px solid var(--forest);border-radius:14px;padding:30px;position:relative;background:var(--paper)}
 .deck-bar{height:6px;background:var(--line);border-radius:3px;margin-bottom:22px;overflow:hidden}.deck-bar i{display:block;height:100%;width:12.5%;background:var(--ochre);transition:width .4s}
 .slide-grid{display:grid;grid-template-columns:260px 1fr;gap:26px;align-items:center}
 .ramsey-art svg{width:100%;height:auto}
@@ -370,7 +372,7 @@ legend{font-family:var(--f-ui);font-weight:800;font-size:1.05rem;color:var(--for
 .deck-nav{display:flex;justify-content:space-between;align-items:center;margin-top:16px;font-family:var(--f-ui);font-weight:700;color:var(--ink-soft)}
 .deck-nav .btn{padding:10px 18px}
 @media (max-width:980px){.house-grid{grid-template-columns:1fr}.slide-grid{grid-template-columns:1fr}.ramsey-art{max-width:220px}}
-@media (max-width:640px){.opts{grid-template-columns:1fr}.deck{padding:20px}.splats{opacity:.55}.sp3,.sp4,.sp6,.sp7{display:none}.sp{width:120px;height:130px}.sp2{width:150px;height:160px}.hs{width:32px;height:32px}.house-panel p{min-height:0}}
+@media (max-width:640px){.opts{grid-template-columns:1fr}.wdeck{padding:20px}.splats{opacity:.55}.sp3,.sp4,.sp6,.sp7{display:none}.sp{width:120px;height:130px}.sp2{width:150px;height:160px}.hs{width:32px;height:32px}.house-panel p{min-height:0}}
 @media (prefers-reduced-motion:reduce){.sp,.sp .drip{transform:none}}
 
 @media (max-width:980px){
@@ -807,7 +809,7 @@ legend{font-family:var(--f-ui);font-weight:800;font-size:1.05rem;color:var(--for
 <header class="site-head">
   <div class="head-in">
     <a href="/" class="brand" aria-label="Bighorn Painting, Denver paint contractors, home">
-      <img src="/images/bighorn-painting-logo.avif" alt="Bighorn Painting logo" height="66" loading="eager" fetchpriority="high">
+      <img src="/images/bighorn-painting-logo.avif" alt="Bighorn Painting logo" height="190" loading="eager" fetchpriority="high">
     </a>
     <nav class="main-nav" aria-label="Main"><div class="dd"><button type="button" class="dd-btn" aria-expanded="false" aria-haspopup="true">Services <span aria-hidden="true">&#9662;</span></button><div class="dd-menu"><a href="/Exterior-Painting/">Exterior house painting</a><a href="/Interior-Painting/">Interior painting</a><a href="/Interior-Painting/#cabinets">Kitchen cabinet painting</a><a href="/Exterior-Painting/#decks">Deck and fence staining</a><a href="/Commercial-Painting/">Commercial painting</a><a href="/Color-Selection/">Color consultation</a><a href="/Service-Areas/">Service areas</a><a href="/" style="border-top:1px solid var(--line)">All services and home</a></div></div><a href="/About/">About</a><a href="/Gallery/">Gallery</a><a href="/Color-Selection/">Color Selection</a><a href="/Warranty/">Warranty</a><a href="/Discounts/">Ways to Save</a><a href="/Why-Choose-Us/">Why Us</a><a href="/Blog/">Blog</a><a href="/Contact/">Contact</a></nav>
     <a class="head-call" href="tel:+17209124676" aria-label="Call Bighorn Painting at 720-912-4676"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></span><span class="hc-txt"><b>720-912-4676</b><span class="hc-sub">Call or book free, Mon to Sat</span></span></a>
@@ -1092,7 +1094,7 @@ legend{font-family:var(--f-ui);font-weight:800;font-size:1.05rem;color:var(--for
   <div class="wrap">
     <p class="kicker">Saw a Bighorn yard sign? Start here</p>
     <h2 id="walk-h">Plan your paint job with Ramsey in about 60 seconds</h2>
-    <div class="deck" id="deck">
+    <div class="wdeck" id="deck">
       <div class="deck-bar" aria-hidden="true"><i></i></div>
       <div class="slide on" data-s="0">
         <div class="slide-grid"><div class="ramsey-art" data-ramsey></div>
@@ -1356,7 +1358,7 @@ legend{font-family:var(--f-ui);font-weight:800;font-size:1.05rem;color:var(--for
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a href="/" class="foot-brand"><img src="/images/bighorn-painting-logo.avif" alt="Bighorn Painting logo" height="112" loading="lazy"></a>
+        <a href="/" class="foot-brand"><img src="/images/bighorn-painting-logo.avif" alt="Bighorn Painting logo" height="240" loading="lazy"></a>
         <p style="max-width:40ch;margin-bottom:14px">Bighorn Painting is a locally owned painting contractor in Arvada serving Denver and the Front Range. Insured crews, Sherwin-Williams and PPG coatings, and a 5-year workmanship warranty on every project.</p>
         <a class="foot-phone" href="tel:+17209124676">720-912-4676</a>
       </div>
@@ -1414,6 +1416,8 @@ legend{font-family:var(--f-ui);font-weight:800;font-size:1.05rem;color:var(--for
   var y=document.querySelectorAll('.yr');for(var i=0;i<y.length;i++){y[i].textContent=new Date().getFullYear();}
   var b=document.getElementById('burger'),dr=document.getElementById('drawer');
   if(b){b.addEventListener('click',function(){var o=dr.classList.toggle('open');b.setAttribute('aria-expanded',o);});}
+  var sh=document.querySelector('.site-head');
+  if(sh){var sm=false;function hs(){var y=window.scrollY||0;if(!sm&&y>260){sm=true;sh.classList.add('small');}else if(sm&&y<40){sm=false;sh.classList.remove('small');}}window.addEventListener('scroll',hs,{passive:true});hs();}
   document.querySelectorAll('.dd-btn').forEach(function(x){x.addEventListener('click',function(){var o=x.parentNode.classList.toggle('open');x.setAttribute('aria-expanded',o);});});
   document.addEventListener('click',function(e){document.querySelectorAll('.dd.open').forEach(function(d){if(!d.contains(e.target)){d.classList.remove('open');d.querySelector('.dd-btn').setAttribute('aria-expanded','false');}});});
   function d(s){try{return atob(s||'');}catch(e){return '';}}
