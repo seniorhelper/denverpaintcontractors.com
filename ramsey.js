@@ -4,14 +4,14 @@ var PH='+17209124676',PD='720-912-4676';
 
 var CSS='\
 .rmy-launch{position:fixed;right:18px;bottom:18px;z-index:980;display:flex;align-items:flex-end;gap:10px;font-family:Archivo,Arial,sans-serif}\
-.rmy-btn{width:92px;height:92px;border-radius:50%;background:#fff;border:4px solid #1f3d26;box-shadow:0 10px 30px rgba(19,42,25,.35);cursor:pointer;padding:0;overflow:hidden;transition:transform .2s}\
+.rmy-btn{width:190px;height:162px;border-radius:0;background:transparent;border:0;cursor:pointer;padding:0;overflow:visible;transition:transform .2s;filter:drop-shadow(0 8px 16px rgba(19,42,25,.35))}\
 .rmy-btn:hover{transform:scale(1.06)}\
 .rmy-btn svg{width:100%;height:100%;display:block}\
-.rmy-tip{background:#fff;color:#132a19;border:2px solid #1f3d26;border-radius:14px 14px 4px 14px;padding:10px 32px 10px 14px;font-weight:700;font-size:.95rem;max-width:230px;box-shadow:0 8px 24px rgba(0,0,0,.15);position:relative;margin-bottom:40px;line-height:1.3}\
+.rmy-tip{background:#fff;color:#132a19;border:2px solid #1f3d26;border-radius:14px 14px 4px 14px;padding:10px 32px 10px 14px;font-weight:700;font-size:.95rem;max-width:230px;box-shadow:0 8px 24px rgba(0,0,0,.15);position:relative;margin-bottom:110px;line-height:1.3}\
 .rmy-tip button{position:absolute;top:4px;right:6px;border:0;background:none;font-size:1.1rem;cursor:pointer;color:#4b564c}\
 .rmy-wave{transform-origin:274px 402px;animation:rmyw 1.6s ease-in-out infinite alternate}\
 @keyframes rmyw{from{transform:rotate(-10deg)}to{transform:rotate(12deg)}}\
-.rmy-panel{position:fixed;right:18px;bottom:124px;z-index:990;width:390px;max-width:calc(100vw - 24px);height:600px;max-height:calc(100vh - 150px);background:#fff;border-radius:16px;box-shadow:0 30px 80px rgba(8,20,10,.4);display:flex;flex-direction:column;overflow:hidden;font-family:Archivo,Arial,sans-serif;border:2px solid #1f3d26}\
+.rmy-panel{position:fixed;right:18px;bottom:190px;z-index:990;width:390px;max-width:calc(100vw - 24px);height:600px;max-height:calc(100vh - 220px);background:#fff;border-radius:16px;box-shadow:0 30px 80px rgba(8,20,10,.4);display:flex;flex-direction:column;overflow:hidden;font-family:Archivo,Arial,sans-serif;border:2px solid #1f3d26}\
 .rmy-head{background:#1f3d26;color:#fff;display:flex;align-items:center;gap:10px;padding:10px 12px}\
 .rmy-head .av{width:52px;height:52px;border-radius:50%;background:#fff;overflow:hidden;flex-shrink:0}\
 .rmy-head .av svg{width:100%;height:100%}\
@@ -41,7 +41,7 @@ var CSS='\
 .rmy-dtop .x{position:absolute;top:10px;right:10px;background:none;border:2px solid rgba(255,255,255,.4);color:#fff;border-radius:6px;padding:3px 9px;cursor:pointer;font-weight:800}\
 .rmy-dbody{padding:18px 20px 20px}\
 .rmy-seg{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}\
-@media (max-width:640px){.rmy-launch{bottom:84px;right:10px}.rmy-btn{width:76px;height:76px}.rmy-tip{margin-bottom:30px;font-size:.88rem}.rmy-panel{right:6px;left:6px;width:auto;bottom:168px;height:auto;top:76px;max-height:none}.rmy-seg{grid-template-columns:1fr}}\
+@media (max-width:640px){.rmy-launch{bottom:74px;right:4px}.rmy-btn{width:118px;height:101px}.rmy-tip{margin-bottom:70px;font-size:.88rem;max-width:180px}.rmy-panel{right:6px;left:6px;width:auto;bottom:180px;height:auto;top:70px;max-height:none}.rmy-seg{grid-template-columns:1fr}}\
 @media (prefers-reduced-motion:reduce){.rmy-wave{animation:none}}';
 var st=document.createElement('style');st.textContent=CSS;document.head.appendChild(st);
 
@@ -144,7 +144,7 @@ var KB=[
  [/\b(voc|fumes|smell|odor|pets?|kids|baby|allerg)/i,'Colorado adopted tighter VOC limits for architectural paints in 2020, and most interior wall paints today are water-based and low in VOCs. If anyone in the home is sensitive, ask about zero-VOC options at your estimate.'],
  [/\b(area|serve|service area|come to|arvada|lakewood|golden|westminster|aurora|littleton|denver|broomfield|thornton|wheat ridge|centennial|highlands|location|where)\b/i,'Bighorn is based in Arvada and works across Denver and the Front Range: Arvada, Wheat Ridge, Golden, Lakewood, Westminster, Broomfield, Thornton, Aurora, Englewood, Littleton, Centennial, Highlands Ranch and Denver neighborhoods. Jefferson County usually gets the fastest scheduling.'],
  [/\b(hours|open|available|saturday|sunday)\b/i,'Bighorn answers Monday through Saturday, 7am to 7pm. Call <a href="tel:'+PH+'">'+PD+'</a>, or I can take your info right here.'],
- [/\b(discount|coupon|deal|promo|sale|save|saving)s?\b/i,'No fake countdown coupons here. The real savings come from bundling projects, flexible scheduling and easy prep you can handle. See <a href="/Discounts/">ways to save</a>, and ask about any seasonal pricing when you book.'],
+ [/\b(discount|coupon|deal|promo|sale|save|saving)s?\b/i,'No fake countdown coupons here. The real savings come from bundling projects, flexible scheduling and easy prep you can handle. See <a href="/discounts/">ways to save</a>, and ask about any seasonal pricing when you book.'],
  [/\b(review|reviews|rating|stars|references)\b/i,'Bighorn holds 4.9 stars across 95 Google reviews. Justin wrote that no corners were cut and the crew took real pride in the prep. Jane called Bighorn the best painting company she has ever worked with.'],
  [/\b(owner|asa|who are you|about you|company|local)\b/i,'Bighorn Painting is locally owned and based in Arvada. Customers mention Asa by name a lot for being responsive and kind, and the crew for being meticulous and cleaning up.'],
  [/\b(exterior|siding|trim|outside|house paint)\b/i,'Exterior jobs start with washing, scraping, caulking and priming, then Sherwin-Williams or PPG coatings picked for sun exposure. Most take 3 to 5 working days. Want me to '+BOOK+'?'],
@@ -247,7 +247,7 @@ function openChat(){
 function closeChat(){panel.hidden=true;launch.querySelector('.rmy-btn').setAttribute('aria-expanded','false');launch.querySelector('.rmy-btn').focus();}
 window.BPchat=openChat;
 
-var launch=el('<div class="rmy-launch"><button type="button" class="rmy-btn" aria-label="Chat with Ramsey for a free painting estimate" aria-expanded="false">'+RAMSEY.face()+'</button></div>');
+var launch=el('<div class="rmy-launch"><button type="button" class="rmy-btn" aria-label="Chat with Ramsey for a free painting estimate" aria-expanded="false">'+RAMSEY.full()+'</button></div>');
 document.body.appendChild(launch);
 launch.querySelector('.rmy-btn').addEventListener('click',function(){if(panel&&!panel.hidden)closeChat();else openChat();});
 document.addEventListener('click',function(e){if(e.target.closest('[data-chat]')){e.preventDefault();openChat();}});
