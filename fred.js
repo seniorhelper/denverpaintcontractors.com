@@ -186,6 +186,14 @@
     [/\b(lead|1978|old house)\b/i, 'Homes built before 1978 may contain lead-based paint, and federal EPA rules require certified firms and lead-safe work practices when those surfaces are disturbed. Tell us the year built and we will plan for it.'],
     [/\b(voc|smell|odor|pet|kid|safe)\b/i, 'Most interior paints today are water-based and low in VOC, and Colorado tightened VOC limits for architectural coatings in 2020. Zero-VOC options are available if anyone in the home is sensitive.'],
     [/\b(hoa|approval|covenant)\b/i, 'Many Front Range communities require color approval before an exterior repaint. We match approved palettes, prepare samples and handle the submission.'],
+    [/(cheaper|do better on price|better price|lower (the )?price|beat .*(price|quote|bid)|more of a discount|negotiat|price match)/i, 'Straight answer: the October discount is already built into the number you get, so there is no second price hiding behind it. What can move is scope or schedule. If budget is the constraint we can phase the work and start with the sun-facing elevations that are actually failing.'],
+    [/\b(why (you|should)|what makes|different|better than|choose you)\b/i, 'Four things. Crews that specialize by type of work instead of doing a bit of everything. Over 20 years of Colorado experience, which mostly means knowing what fails here and why. A dedicated project manager so one person owns your project. And a 5-year workmanship warranty in writing, which only works because the preparation is real.'],
+    [/\b(twice|again|redo|do it over|shortcut|short cut|cheap (job|bid|quote))\b/i, 'The expensive version is doing it twice. A cheap job skips washing, scraping and priming, looks fine for a season, then fails. The next painter has to remove the failed coating before starting, so you pay for the cheap job, the removal, and the correct job. That is exactly why our prep is itemized in writing.'],
+    [/\b(prep|preparation|what.*included|scope|process|steps)\b/i, 'Exterior: protect the property, power wash, scrape and sand back to a sound edge, fill and caulk, prime what needs it, then the agreed coats on siding, trim, window and door casings, soffit and fascia. Then full cleanup and a walkthrough with you. Interiors follow the same logic indoors. All itemized on your estimate.'],
+    [/\b(deposit|payment|financ|pay|invoice|down payment)\b/i, 'A deposit reserves your dates, commonly half, and the balance is due at completion after you walk the work with us. Terms are printed on the estimate, and the <a href="/terms/">terms page</a> spells out the rest.'],
+    [/\b(crew|who does|subcontract|project manager)\b/i, 'Crews that specialize: exterior, interior, cabinets and commercial are different skill sets. You also get a dedicated project manager, so there is one person accountable rather than a rotating phone tree.'],
+    [/\b(proposal|contract|paperwork|sign|agreement|in writing)\b/i, 'Everything goes in writing: surfaces, preparation steps, product line and sheen, coat counts, schedule, payment terms and the warranty. You can sign it electronically on your phone and a PDF copy lands in your inbox.'],
+    [/\b(think about it|not ready|hold off|get back to you)\b/i, 'Completely fair. Usually one specific thing is unresolved: price, timing, the crew, or whether the scope is right. Which one is it? I would rather answer it now than leave you guessing.'],
     [/\b(phone|call|contact|talk|human)\b/i, 'Call us any day at <a href="tel:' + TEL + '">' + DISP + '</a>, or I can take your details right here and have someone call you.']
   ];
 
@@ -482,7 +490,14 @@
       say('That is a solid working range. A written estimate confirms it, and we can do that from photos or in person, whichever you prefer.');
       answers.recommendation = 'Photos sufficient, in-person optional';
     }
-    collect(V.inperson ? 'inperson' : 'virtual');
+    setTimeout(function () {
+      say('One honest question before I take your details: if a written estimate comes back at that number, with the preparation spelled out and your dates confirmed, is that something you would be ready to move forward on?');
+      opts([
+        { label: 'Yes, if the details are right', go: true, fn: function () { answers.intent = 'Ready to move forward if details fit'; collect(V.inperson ? 'inperson' : 'virtual'); } },
+        { label: 'Maybe, I want to compare', fn: function () { answers.intent = 'Comparing options'; say('Smart. When you compare, look at four lines: the preparation, the exact product and sheen, the number of coats, and the warranty. A lower number is almost always one of those four being smaller.'); collect(V.inperson ? 'inperson' : 'virtual'); } },
+        { label: 'Just gathering information', fn: function () { answers.intent = 'Information gathering'; say('No pressure. I will still get you the written scope so you have a real benchmark whenever you are ready.'); collect(V.inperson ? 'inperson' : 'virtual'); } }
+      ]);
+    }, 700);
   }
 
   /* ---------- lead capture ---------- */
