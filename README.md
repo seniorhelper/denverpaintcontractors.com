@@ -1,2 +1,1 @@
-# denverpaintcontractors.com
-denverpaintcontractors.com
+Static site.

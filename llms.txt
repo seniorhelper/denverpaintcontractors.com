@@ -1,42 +1,76 @@
-# Denver Paint Contractors (Bighorn Painting)
+# Denver Paint Contractors
 
-> Denver Paint Contractors is the Denver website of Bighorn Painting, a locally owned painting contractor founded in 2023 at 12191 W 64th Ave Unit 102-8, Arvada, CO 80004. Bighorn paints home exteriors and interiors, kitchen cabinets, doors and trim, stains decks and fences, and handles commercial painting across Denver, Jefferson County and the Front Range.
+> Painting contractors serving Denver, Colorado and the Front Range. Interior and exterior house painting, kitchen cabinet painting, deck and fence staining, residential and commercial work. Over 20 years of experience, fully insured, 5-year workmanship warranty on every project.
 
-## Key facts
-- Phone: 720-912-4676, answered Monday through Saturday, 7am to 7pm
-- Email: asa@bighornpainting.com
-- Google rating: 4.9 stars across 95 reviews
-- Warranty: 5-year workmanship warranty, in writing with the estimate; paint also carries manufacturer warranties
-- Paint brands: primarily Sherwin-Williams and PPG
-- Estimates: free, either virtual from photos or in person; free color consultation included
-- Insurance: insured, with proof of coverage at the estimate (Colorado has no statewide painting license)
-- Service area: Denver, Arvada, Wheat Ridge, Golden, Lakewood, Edgewater, Westminster, Broomfield, Thornton, Northglenn, Louisville, Superior, Aurora, Englewood, Littleton, Centennial, Highlands Ranch
-- Related site: https://bighornpainting.com/
+## Business facts
+
+- Name: Denver Paint Contractors
+- Website: https://denverpaintcontractors.com
+- Phone: 720-208-5645
+- Email: quote@painterhotline.com
+- Service area: Denver, Aurora, Littleton, Centennial, Highlands Ranch, Castle Rock, Parker, Thornton, Englewood, Broomfield, Lakewood, Arvada, Westminster, Golden, Wheat Ridge, Northglenn, Commerce City, Greenwood Village, Lone Tree, Brighton
+- Experience: over 20 years painting in Colorado
+- Insurance: fully insured; proof of coverage provided at every estimate
+- Warranty: 5-year workmanship warranty in writing, plus manufacturer warranty on coatings
+- Paint brands: Sherwin-Williams, PPG, Behr
+- Estimates: free, written, virtual from photos or in person
+- Current offer: 25% off painting projects booked by October 31, 2026; discount applies to labor, paint and materials not included
+- Specialty: correcting failed paint work done by other contractors
+
+## Published Denver cost context
+
+- Exterior house painting: about $1.55 to $4.10 per square foot of paintable surface (2026 published Denver data)
+- Interior painting: about $1.50 to $3.50 per square foot
+- Kitchen cabinet refinishing: about $2,000 to $8,000 per kitchen; replacement commonly $15,000 to $30,000+
+
+## Colorado conditions that affect paint
+
+- UV increases roughly 10% per 1,000 meters of elevation (World Health Organization); Denver sits near 1,600 meters
+- Denver average last spring freeze about May 5; average first fall freeze about October 7 (National Weather Service, Boulder)
+- Average first measurable snow about October 18; latest recorded spring freeze June 8, 2007
+- Homes built before 1978 may contain lead paint; EPA Renovation, Repair and Painting rule applies
 
 ## Pages
-- [Home](https://denverpaintcontractors.com/): overview, Denver painting costs, interactive house, walkthrough, FAQ
-- [Exterior House Painting](https://denverpaintcontractors.com/exterior-painting/): exterior prep, Colorado weather, siding types, deck staining, cost factors
-- [Interior Painting](https://denverpaintcontractors.com/interior-painting/): rooms, ceilings, trim, cabinets, sheens, cost factors
-- [Residential Painting](https://denverpaintcontractors.com/residential-painting/): homes, townhomes, condos and rentals, most of Bighorn's work
-- [Commercial Painting](https://denverpaintcontractors.com/commercial-painting/): offices, retail, warehouses, HOAs and multi-unit properties
-- [5-Year Warranty](https://denverpaintcontractors.com/warranty/): workmanship vs paint warranties, warranty service requests
-- [Why Choose Us](https://denverpaintcontractors.com/why-choose-us/): how to find the best painters in Denver
-- [Color Selection](https://denverpaintcontractors.com/color-selection/): palettes for Denver home styles, sheen guide, color consultation
-- [Gallery](https://denverpaintcontractors.com/gallery/): project photos
-- [Ways to Save](https://denverpaintcontractors.com/discounts/): real ways to lower painting costs
-- [About](https://denverpaintcontractors.com/about/): company story and principles
-- [Contact](https://denverpaintcontractors.com/contact/): free estimate request, hours, map
-- [Service Areas](https://denverpaintcontractors.com/service-areas/): Denver metro coverage map and city pages
-- [House Painters Aurora CO](https://denverpaintcontractors.com/service-areas/aurora/)
-- [House Painters Centennial CO](https://denverpaintcontractors.com/service-areas/centennial/)
-- [House Painters Highlands Ranch CO](https://denverpaintcontractors.com/service-areas/highlands-ranch/): HRCA color approval guidance
-- [House Painters Littleton CO](https://denverpaintcontractors.com/service-areas/littleton/)
-- [House Painters Thornton CO](https://denverpaintcontractors.com/service-areas/thornton/)
 
-## Guides
-- [Cost to Paint a House in Denver: 2026 Price Guide](https://denverpaintcontractors.com/blog/cost-to-paint-a-house-in-denver/)
-- [Best Time to Paint a House Exterior in Colorado](https://denverpaintcontractors.com/blog/best-time-to-paint-house-exterior-colorado/): NWS freeze dates and a month-by-month calendar
-- [Why Exterior Paint Fails in Colorado and How to Stop It](https://denverpaintcontractors.com/blog/why-exterior-paint-fails-colorado/)
+- [Denver Paint Contractors | House Painters in Denver, CO](https://denverpaintcontractors.com/): Denver paint contractors with 20+ years of experience, full insurance and a 5-year workmanship warranty. Interior, exterior, cabinets and decks. Call 720-208-5645.
+- [About Denver Paint Contractors | 20+ Years Painting Colorado](https://denverpaintcontractors.com/about/): Denver Paint Contractors: 20+ years of Colorado painting experience, fully insured, 5-year workmanship warranty. Interior, exterior, cabinets, decks. 720-208-5645.
+- [Best Painters in Denver? How to Compare | Denver Paint Contractors](https://denverpaintcontractors.com/why-choose-us/): How to compare Denver painting companies: insurance, written scope, named products, coats and warranty. 20+ years, fully insured, 5-year warranty. 720-208-5645.
+- [5-Year Painting Warranty | Denver Paint Contractors](https://denverpaintcontractors.com/warranty/): Our 5-year workmanship warranty comes in writing with every Denver painting estimate, plus the manufacturer warranty on the coatings we use. Call 720-208-5645.
+- [Denver Painting Project Photos | Denver Paint Contractors](https://denverpaintcontractors.com/gallery/): Photos of interior, exterior, cabinet and deck painting projects across the Denver metro by Denver Paint Contractors. Free estimates: 720-208-5645.
+- [25% Off Painting in Denver | Offer Ends Oct 31, 2026](https://denverpaintcontractors.com/discounts/): 25% off painting projects booked by October 31, 2026 with Denver Paint Contractors. Labor only; paint not included. Interior, exterior, cabinets, decks. 720-208-5645.
+- [Contact Denver Paint Contractors | Free Painting Estimate](https://denverpaintcontractors.com/contact/): Contact Denver Paint Contractors for a free written painting estimate in Denver and the Front Range. Call 720-208-5645 or send photos online. 25% off through Oct 31.
+- [Paint Brands We Use in Denver | Sherwin-Williams, PPG, Behr](https://denverpaintcontractors.com/paint-brands/): Denver Paint Contractors specify Sherwin-Williams, PPG and Behr by surface and exposure, named on every written estimate. Free estimates: 720-208-5645.
+- [Paint Color Selection Denver | Free Color Consultation](https://denverpaintcontractors.com/color-selection/): Free paint color consultation in Denver: real Sherwin-Williams swatches, palettes by house style, sheen guide and HOA color help. Call 720-208-5645.
+- [Denver Painting Cost Guide 2026 | Prices & Calculator](https://denverpaintcontractors.com/painting-cost-denver/): What painting costs in Denver in 2026: exterior and interior per-square-foot ranges, cabinet pricing, a cost calculator and how to compare quotes. 720-208-5645.
+- [Denver Metro Painting Service Areas | House Painters](https://denverpaintcontractors.com/service-areas/): Denver Paint Contractors serve Denver, Aurora, Littleton, Centennial, Highlands Ranch, Castle Rock, Parker, Thornton, Englewood and Broomfield. 720-208-5645.
+- [Denver Painting Guides & Tips | Denver Paint Contractors](https://denverpaintcontractors.com/blog/): Colorado painting guides: Denver painting costs, why paint peels, fixing bad paint jobs, cabinet pricing, exterior timing and color selection. 720-208-5645.
+- [Interior Painting Denver CO | Interior House Painters](https://denverpaintcontractors.com/interior-painting/): Interior painters in Denver, CO: walls, ceilings, trim, doors and basements. 20+ years, fully insured, 5-year warranty. 25% off through Oct 31. 720-208-5645.
+- [Exterior House Painters Denver CO | Exterior Painting](https://denverpaintcontractors.com/exterior-painting/): Exterior house painters in Denver: full prep, Sherwin-Williams, PPG and Behr coatings, 5-year warranty. 25% off through Oct 31, 2026. Call 720-208-5645.
+- [Cabinet Painting Denver | Kitchen Cabinet Refinishing](https://denverpaintcontractors.com/cabinet-painting/): Cabinet painting and refinishing in Denver: degreased, sanded, bonding-primed and sprayed to a factory-smooth finish. 5-year warranty. Call 720-208-5645.
+- [Deck Staining Denver | Deck & Fence Stain Contractors](https://denverpaintcontractors.com/deck-staining/): Deck staining and fence staining in Denver: cleaned, brightened, sanded and sealed for Colorado sun and freeze-thaw. 5-year warranty. Call 720-208-5645.
+- [Residential Painting Denver | Home Painters in Denver, CO](https://denverpaintcontractors.com/residential-painting/): Residential painting in Denver: interiors, exteriors, cabinets and decks for houses, townhomes, condos and rentals. 20+ years, insured, 5-year warranty. 720-208-5645.
+- [Commercial Painting Contractors Denver CO | Denver Paint](https://denverpaintcontractors.com/commercial-painting/): Commercial painting contractors in Denver for offices, retail, warehouses, HOAs and multi-unit properties. Phased scheduling, insured, 5-year warranty. 720-208-5645.
+- [Sherwin-Williams Paint in Denver | Why We Specify It](https://denverpaintcontractors.com/paint-brands/sherwin-williams/): Why Denver Paint Contractors specify Sherwin-Williams on Denver homes: product lines, color tools, where to buy locally, and when another brand fits better. 720-208-5645.
+- [PPG Paint in Denver | Why We Use PPG Professional Lines](https://denverpaintcontractors.com/paint-brands/ppg/): Why Denver Paint Contractors use PPG professional paint lines on Colorado homes, how PPG store products differ from big-box paint, and when we specify it. 720-208-5645.
+- [Behr Paint in Denver | When We Specify Behr](https://denverpaintcontractors.com/paint-brands/behr/): When Denver Paint Contractors specify Behr paint, which lines work on Colorado projects, and how Behr compares to Sherwin-Williams and PPG. Call 720-208-5645.
+- [House Painters Littleton CO | Painting Contractors](https://denverpaintcontractors.com/service-areas/littleton/): House painters in Littleton, CO: interior, exterior, cabinet and deck painting. 20+ years, fully insured, 5-year warranty. 25% off through Oct 31. 720-208-5645.
+- [House Painters Aurora CO | Painting Contractors](https://denverpaintcontractors.com/service-areas/aurora/): House painters in Aurora, CO: interior, exterior, cabinet and deck painting. 20+ years, fully insured, 5-year warranty. 25% off through Oct 31. 720-208-5645.
+- [House Painters Castle Rock CO | Painting Contractors](https://denverpaintcontractors.com/service-areas/castle-rock/): House painters in Castle Rock, CO: interior, exterior, cabinet and deck painting. 20+ years, fully insured, 5-year warranty. 25% off through Oct 31. 720-208-5645.
+- [House Painters Parker CO | Painting Contractors](https://denverpaintcontractors.com/service-areas/parker/): House painters in Parker, CO: interior, exterior, cabinet and deck painting. 20+ years, fully insured, 5-year warranty. 25% off through Oct 31. 720-208-5645.
+- [House Painters Highlands Ranch CO | Painting Contractors](https://denverpaintcontractors.com/service-areas/highlands-ranch/): House painters in Highlands Ranch, CO: interior, exterior, cabinet and deck painting. 20+ years, fully insured, 5-year warranty. 25% off through Oct 31. 720-208-5645.
+- [House Painters Centennial CO | Painting Contractors](https://denverpaintcontractors.com/service-areas/centennial/): House painters in Centennial, CO: interior, exterior, cabinet and deck painting. 20+ years, fully insured, 5-year warranty. 25% off through Oct 31. 720-208-5645.
+- [House Painters Thornton CO | Painting Contractors](https://denverpaintcontractors.com/service-areas/thornton/): House painters in Thornton, CO: interior, exterior, cabinet and deck painting. 20+ years, fully insured, 5-year warranty. 25% off through Oct 31. 720-208-5645.
+- [House Painters Englewood CO | Painting Contractors](https://denverpaintcontractors.com/service-areas/englewood/): House painters in Englewood, CO: interior, exterior, cabinet and deck painting. 20+ years, fully insured, 5-year warranty. 25% off through Oct 31. 720-208-5645.
+- [House Painters Broomfield CO | Painting Contractors](https://denverpaintcontractors.com/service-areas/broomfield/): House painters in Broomfield, CO: interior, exterior, cabinet and deck painting. 20+ years, fully insured, 5-year warranty. 25% off through Oct 31. 720-208-5645.
+- [Why Is My Paint Peeling? Causes & Fixes | Denver Guide](https://denverpaintcontractors.com/blog/why-is-my-paint-peeling/): Why paint peels off walls, ceilings, bathrooms, cabinets and decks, how to diagnose the cause from what you can see, and what each fix actually requires.
+- [Cost to Paint a House in Denver 2026 | Real Price Ranges](https://denverpaintcontractors.com/blog/cost-to-paint-a-house-in-denver/): What it really costs to paint a house in Denver in 2026: exterior and interior per-square-foot ranges, 12 cost factors, sample math and how to compare quotes.
+- [Fixing a Bad Paint Job in Denver | Costs & What To Do](https://denverpaintcontractors.com/blog/fixing-a-bad-paint-job/): What to do when a painting contractor leaves failed work: how to document it, what repairs actually involve, what redoing it costs, and how to avoid paying twice.
+- [Cabinet Painting Cost Denver 2026 | Refinish vs Replace](https://denverpaintcontractors.com/blog/cabinet-painting-cost-denver/): What cabinet painting and refinishing costs in Denver in 2026, how pricing is built, refinishing vs refacing vs replacement, and how to compare cabinet quotes.
+- [Best Time to Paint a House Exterior in Colorado | Month Guide](https://denverpaintcontractors.com/blog/best-time-to-paint-house-exterior-colorado/): When to paint your home's exterior in Colorado: month-by-month guidance, National Weather Service freeze data, temperature rules and what goes wrong outside the window.
+- [Why Exterior Paint Fails in Colorado | Peeling, Chalking, Fading](https://denverpaintcontractors.com/blog/why-exterior-paint-fails-colorado/): Why exterior paint peels, chalks, fades and cracks in Colorado: altitude UV, freeze-thaw, sprinklers and prep failures, with a surface-by-surface fix guide.
+- [Denver Exterior Home Maintenance Calendar | Season by Season](https://denverpaintcontractors.com/blog/denver-exterior-maintenance-calendar/): A month-by-month Colorado maintenance calendar for paint, caulk, decks, gutters and hail damage, with the freeze and snow data behind the timing.
+- [Denver Paint Color Guide | Colors for Colorado Light](https://denverpaintcontractors.com/blog/denver-paint-colors-guide/): How to choose interior and exterior paint colors for Colorado's high-altitude light, with real color codes, HOA guidance, vinyl-safe rules and sheen advice.
 
-## Pricing context
-Angi's Denver cost data puts exterior house painting at roughly $1.55 to $4.10 per square foot. Interior painting in Denver is commonly quoted between $1.50 and $3.50 per square foot. These are market ranges, not Bighorn's price list; Bighorn provides free written estimates.
+## Contact
+
+Call 720-208-5645 or request a free written estimate at https://denverpaintcontractors.com/contact/.
