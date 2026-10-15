@@ -5,7 +5,7 @@
 
   /* ---------- Fred artwork ---------- */
   function fredSVG(cls) {
-    return '<svg class="' + (cls || '') + '" viewBox="0 0 300 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fred, the Denver Paint Contractors painter">' +
+    return '<svg class="' + (cls || '') + '" viewBox="0 0 300 380" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">' +
       '<defs><linearGradient id="fdCap" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e3a63"/><stop offset="1" stop-color="#16294a"/></linearGradient></defs>' +
       /* ladder behind */
       '<g opacity=".95"><rect x="236" y="96" width="9" height="250" rx="3" fill="#c98b3a"/><rect x="276" y="96" width="9" height="250" rx="3" fill="#c98b3a"/>' +
@@ -54,7 +54,7 @@
     '.fd-btn svg{width:100%;height:100%;display:block}',
     '.fd-wave{transform-origin:86px 206px;animation:fdwave 3.4s ease-in-out infinite}',
     '@keyframes fdwave{0%,70%,100%{transform:rotate(0)}80%{transform:rotate(-16deg)}90%{transform:rotate(6deg)}}',
-    '.fd-tip{background:#fff;color:#16294a;border:2px solid #16294a;border-radius:12px 12px 4px 12px;padding:10px 30px 10px 13px;font:700 .92rem/1.3 Inter,system-ui,sans-serif;max-width:235px;box-shadow:0 10px 26px rgba(0,0,0,.16);position:relative;margin-right:26px;cursor:pointer}',
+    '.fd-tip{background:#fff;color:#16294a;border:2px solid #16294a;border-radius:12px 12px 4px 12px;padding:10px 30px 10px 13px;font:700 .92rem/1.3 Inter,system-ui,sans-serif;max-width:235px;box-shadow:0 10px 26px rgba(0,0,0,.16);position:absolute;bottom:100%;right:26px;margin-bottom:6px;width:max-content;cursor:pointer}',
     '.fd-tip button{position:absolute;top:3px;right:5px;border:0;background:none;font-size:1.05rem;color:#5a6679;cursor:pointer;line-height:1}',
     '.fd-tabs{position:fixed;right:0;top:46%;transform:translateY(-50%);z-index:975;display:flex;flex-direction:column;gap:8px}',
     '.fd-tab{writing-mode:vertical-rl;background:#16294a;color:#fff;border:0;border-radius:6px 0 0 6px;padding:16px 10px;font:700 .85rem Inter,system-ui,sans-serif;letter-spacing:.06em;cursor:pointer;box-shadow:-3px 4px 14px rgba(22,41,74,.25);display:flex;align-items:center;gap:8px}',
@@ -94,7 +94,7 @@
     '.fd-bar{height:7px;background:#dde3ec;border-radius:4px;overflow:hidden;margin:10px 14px 0}',
     '.fd-bar i{display:block;height:100%;background:#d9a441;width:0;transition:width .3s}',
     '@media (max-width:640px){.fd-panel{right:6px;left:6px;width:auto;bottom:74px;top:62px;height:auto;max-height:none}',
-    '.fd-launch{right:4px;bottom:72px}.fd-btn{width:104px;height:132px}.fd-tip{font-size:.84rem;max-width:180px;margin-right:16px}',
+    '.fd-launch{right:4px;bottom:72px}.fd-btn{width:104px;height:132px}.fd-tip{font-size:.84rem;max-width:180px;right:16px}',
     '.fd-tabs{top:170px;bottom:auto;transform:none}.fd-tab{padding:11px 7px;font-size:.72rem;letter-spacing:.03em}}',
     '@media (prefers-reduced-motion:reduce){.fd-wave{animation:none}}'
   ].join('');
@@ -168,12 +168,12 @@
 
   /* ---------- knowledge base ---------- */
   var KB = [
-    [/\b(cost|price|pricing|how much|expensive|charge)\b/i, 'Published 2026 Denver data puts exterior painting around <strong>$1.55 to $4.10 per square foot</strong> and interior around <strong>$1.50 to $3.50</strong>. Cabinets usually run <strong>$2,000 to $8,000</strong>. Want me to walk you through a virtual estimate for your project?'],
+    [/\b(cost|price|pricing|how much|expensive|charge)\b/i, 'Published 2026 Denver data puts exterior painting around <strong>$1.55 to $4.10 per square foot</strong> and interior around <strong>$2 to $6</strong>. Cabinets usually run <strong>$2,000 to $8,000</strong>. Want me to walk you through a virtual estimate for your project?'],
     [/\b(warranty|guarantee)\b/i, 'Every project carries a <strong>5-year workmanship warranty</strong> in writing, plus the manufacturer warranty on the Sherwin-Williams, PPG or Behr coating we use. Details are on our <a href="/warranty/">warranty page</a>.'],
     [/\b(insur|licen|bonded)\b/i, 'We are <strong>fully insured</strong> and bring proof of coverage to every estimate. Colorado does not issue a statewide painting license, so insurance and a written scope are what you should ask any painter to show.'],
     [/\b(discount|deal|offer|coupon|sale|special|25)\b/i, 'Right now it is <strong>25% off painting projects booked by October 31, 2026</strong>. The discount applies to labor; paint and materials are not included. See <a href="/discounts/">the offer</a>.'],
     [/\b(peel|flak|bubbl|chalk|fail|crack)\b/i, 'Peeling and chalking usually trace back to moisture, contamination or skipped prep. Our <a href="/blog/why-is-my-paint-peeling/">peeling diagnosis guide</a> walks through it, and we fix other companies\' failed work regularly. Send photos and I will get you a real answer.'],
-    [/\b(cabinet|kitchen)\b/i, 'Cabinets get degreased, scuff sanded, bonding primed and sprayed with a cabinet-grade finish. Denver pricing typically lands <strong>$2,000 to $8,000</strong>. See <a href="/cabinet-painting/">cabinet painting</a>.'],
+    [/\b(cabinet|kitchen)\b/i, 'Cabinets get degreased, scuff sanded, bonding primed and sprayed with a cabinet-grade finish. At about $100 to $250 per door (Angi, 2026), a typical kitchen lands around <strong>$2,000 to $8,000</strong>. See <a href="/cabinet-painting/">cabinet painting</a>.'],
     [/\b(deck|fence|stain)\b/i, 'Decks and fences are cleaned, brightened, sanded where needed and sealed with products chosen for Colorado sun. More on <a href="/deck-staining/">deck and fence staining</a>.'],
     [/\b(interior|inside|room|wall|ceiling)\b/i, 'Interior work runs year-round: walls, ceilings, trim, doors and basements, with everything protected and daily cleanup. See <a href="/interior-painting/">interior painting</a>.'],
     [/\b(exterior|outside|siding|stucco|brick)\b/i, 'Exteriors get washed, scraped, sanded, caulked and spot-primed before any finish coat. See <a href="/exterior-painting/">exterior painting</a>.'],
@@ -460,7 +460,7 @@
     var prep = V.prep || 1, sheen = V.sheen || 1, extra = V.extraCoat ? 1.12 : 1;
     if (V.type === 'interior') {
       var base = V.ceilOnly ? .9 : 1, ceil = V.ceil && !V.ceilOnly ? 1.22 : 1;
-      lo = V.sq * 1.50 * base * ceil; hi = V.sq * 3.50 * base * ceil;
+      lo = V.sq * 2.00 * base * ceil; hi = V.sq * 6.00 * base * ceil;
       lo += V.trimLF * 1.75; hi += V.trimLF * 3.50;
       lines.push(['Area painted', Math.round(V.sq) + ' sq ft']);
       if (V.trimLF) lines.push(['Trim', V.trimLF + ' linear feet']);
@@ -468,7 +468,7 @@
       lo = V.sq * 1.55 * (V.story || 1) * (V.sub || 1); hi = V.sq * 4.10 * (V.story || 1) * (V.sub || 1);
       lines.push(['Paintable surface', 'about ' + Math.round(V.sq) + ' sq ft']);
     } else if (V.type === 'cabinets') {
-      lo = (1500 + V.doors * 70) * (V.boxes || 1); hi = (2400 + V.doors * 135) * (V.boxes || 1);
+      lo = V.doors * 100 * (V.boxes || 1); hi = V.doors * 250 * (V.boxes || 1);
       lines.push(['Doors and drawer fronts', 'about ' + V.doors]);
     } else {
       lo = V.sq * 2.10; hi = V.sq * 4.60;

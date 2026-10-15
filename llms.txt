@@ -19,15 +19,15 @@
 
 ## Published Denver cost context
 
-- Exterior house painting: about $1.55 to $4.10 per square foot of paintable surface (2026 published Denver data)
-- Interior painting: about $1.50 to $3.50 per square foot
-- Kitchen cabinet refinishing: about $2,000 to $8,000 per kitchen; replacement commonly $15,000 to $30,000+
+- Exterior house painting: about $1.55 to $4.10 per square foot of paintable surface (Angi Denver exterior cost data, updated November 2025)
+- Interior painting: about $2 to $6 per square foot (Angi Denver interior cost data, updated August 2026)
+- Kitchen cabinet painting: about $100 to $250 per door and drawer front (Angi, September 2026), roughly $2,000 to $8,000 for a typical 20 to 32 piece kitchen; new cabinets alone average about $8,000 installed (Inch Calculator), before countertops and demolition
 
 ## Colorado conditions that affect paint
 
 - UV increases roughly 10% per 1,000 meters of elevation (World Health Organization); Denver sits near 1,600 meters
 - Denver average last spring freeze about May 5; average first fall freeze about October 7 (National Weather Service, Boulder)
-- Average first measurable snow about October 18; latest recorded spring freeze June 8, 2007
+- Average first measurable snow about October 19; latest recorded spring freeze June 8, 2007
 - Homes built before 1978 may contain lead paint; EPA Renovation, Repair and Painting rule applies
 
 ## Pages
@@ -44,8 +44,6 @@
 - [Denver Painting Cost Guide 2026 | Prices & Calculator](https://denverpaintcontractors.com/painting-cost-denver/): What painting costs in Denver in 2026: exterior and interior per-square-foot ranges, cabinet pricing, a cost calculator and how to compare quotes. 720-208-5645.
 - [Denver Metro Painting Service Areas | House Painters](https://denverpaintcontractors.com/service-areas/): Denver Paint Contractors serve Denver, Aurora, Littleton, Centennial, Highlands Ranch, Castle Rock, Parker, Thornton, Englewood and Broomfield. 720-208-5645.
 - [Denver Painting Guides & Tips | Denver Paint Contractors](https://denverpaintcontractors.com/blog/): Colorado painting guides: Denver painting costs, why paint peels, fixing bad paint jobs, cabinet pricing, exterior timing and color selection. 720-208-5645.
-- [Estimator & Proposal Builder | Denver Paint Contractors](https://denverpaintcontractors.com/estimator/): Internal field estimating and proposal tool: measure by elevation and room, price the work, and generate a signable PDF proposal on site with the client.
-- [Your Painting Proposal | Denver Paint Contractors](https://denverpaintcontractors.com/proposal/): View, review and electronically sign your Denver Paint Contractors painting proposal, including the full scope of work, pricing, schedule and warranty terms.
 - [Terms & Conditions | Denver Paint Contractors](https://denverpaintcontractors.com/terms/): Denver Paint Contractors terms: who you contract with, estimates and pricing, scope, change orders, payment, the 5-year warranty, insurance and website use.
 - [Interior Painting Denver CO | Interior House Painters](https://denverpaintcontractors.com/interior-painting/): Interior painters in Denver, CO: walls, ceilings, trim, doors and basements. 20+ years, fully insured, 5-year warranty. 25% off through Oct 31. 720-208-5645.
 - [Exterior House Painters Denver CO | Exterior Painting](https://denverpaintcontractors.com/exterior-painting/): Exterior house painters in Denver: full prep, Sherwin-Williams, PPG and Behr coatings, 5-year warranty. 25% off through Oct 31, 2026. Call 720-208-5645.
@@ -68,21 +66,13 @@
 - [Lakewood Painting Contractors | Denver Paint Contractors](https://denverpaintcontractors.com/service-areas/lakewood/): Painting contractors serving Lakewood, CO: interior, exterior, cabinets, decks and commercial. Insured, 20+ years, 5-year warranty. 25% off through Oct 31.
 - [Arvada Painting Contractors | Denver Paint Contractors](https://denverpaintcontractors.com/service-areas/arvada/): Painting contractors serving Arvada, CO: interior, exterior, cabinets, decks and commercial. Insured, 20+ years, 5-year warranty. 25% off through Oct 31.
 - [Westminster Painting Contractors | Denver Paint Contractors](https://denverpaintcontractors.com/service-areas/westminster/): Painting contractors serving Westminster, CO: interior, exterior, cabinets, decks and commercial. Insured, 20+ years, 5-year warranty. 25% off through Oct 31.
-- [Golden Painting Contractors | Denver Paint Contractors](https://denverpaintcontractors.com/service-areas/golden/): Painting contractors serving Golden, CO: interior, exterior, cabinets, decks and commercial. Insured, 20+ years, 5-year warranty. 25% off through Oct 31.
 - [Wheat Ridge Painting Contractors | Denver Paint Contractors](https://denverpaintcontractors.com/service-areas/wheat-ridge/): Painting contractors serving Wheat Ridge, CO: interior, exterior, cabinets, decks and commercial. Insured, 20+ years, 5-year warranty. 25% off through Oct 31.
 - [Evergreen Painting Contractors | Denver Paint Contractors](https://denverpaintcontractors.com/service-areas/evergreen/): Painting contractors serving Evergreen, CO: interior, exterior, cabinets, decks and commercial. Insured, 20+ years, 5-year warranty. 25% off through Oct 31.
 - [Lone Tree Painting Contractors | Denver Paint Contractors](https://denverpaintcontractors.com/service-areas/lone-tree/): Painting contractors serving Lone Tree, CO: interior, exterior, cabinets, decks and commercial. Insured, 20+ years, 5-year warranty. 25% off through Oct 31.
 - [Greenwood Village Painting Contractors](https://denverpaintcontractors.com/service-areas/greenwood-village/): Painting contractors serving Greenwood Village, CO: interior, exterior, cabinets, decks and commercial. Insured, 20+ years, 5-year warranty.
 - [Ken Caryl Painting Contractors | Denver Paint Contractors](https://denverpaintcontractors.com/service-areas/ken-caryl/): Painting contractors serving Ken Caryl, CO: interior, exterior, cabinets, decks and commercial. Insured, 20+ years, 5-year warranty. 25% off through Oct 31.
 - [Castle Pines Painting Contractors | Denver Paint Contractors](https://denverpaintcontractors.com/service-areas/castle-pines/): Painting contractors serving Castle Pines, CO: interior, exterior, cabinets, decks and commercial. Insured, 20+ years, 5-year warranty. 25% off through Oct 31.
-- [Commerce City Painting Contractors](https://denverpaintcontractors.com/service-areas/commerce-city/): Painting contractors serving Commerce City, CO: interior, exterior, cabinets, decks and commercial. Insured, 20+ years, 5-year warranty. 25% off through Oct 31.
-- [Northglenn Painting Contractors | Denver Paint Contractors](https://denverpaintcontractors.com/service-areas/northglenn/): Painting contractors serving Northglenn, CO: interior, exterior, cabinets, decks and commercial. Insured, 20+ years, 5-year warranty. 25% off through Oct 31.
 - [Edgewater Painting Contractors | Denver Paint Contractors](https://denverpaintcontractors.com/service-areas/edgewater/): Painting contractors serving Edgewater, CO: interior, exterior, cabinets, decks and commercial. Insured, 20+ years, 5-year warranty. 25% off through Oct 31.
-- [Louisville Painting Contractors | Denver Paint Contractors](https://denverpaintcontractors.com/service-areas/louisville/): Painting contractors serving Louisville, CO: interior, exterior, cabinets, decks and commercial. Insured, 20+ years, 5-year warranty. 25% off through Oct 31.
-- [Lafayette Painting Contractors | Denver Paint Contractors](https://denverpaintcontractors.com/service-areas/lafayette/): Painting contractors serving Lafayette, CO: interior, exterior, cabinets, decks and commercial. Insured, 20+ years, 5-year warranty. 25% off through Oct 31.
-- [Erie Painting Contractors | Denver Paint Contractors](https://denverpaintcontractors.com/service-areas/erie/): Painting contractors serving Erie, CO: interior, exterior, cabinets, decks and commercial. Insured, 20+ years, 5-year warranty. 25% off through Oct 31.
-- [Longmont Painting Contractors | Denver Paint Contractors](https://denverpaintcontractors.com/service-areas/longmont/): Painting contractors serving Longmont, CO: interior, exterior, cabinets, decks and commercial. Insured, 20+ years, 5-year warranty. 25% off through Oct 31.
-- [Firestone Painting Contractors | Denver Paint Contractors](https://denverpaintcontractors.com/service-areas/firestone/): Painting contractors serving Firestone and Frederick, CO: interior, exterior, cabinets, decks and commercial. Insured, 20+ years, 5-year warranty.
 - [Breckenridge Painting Contractors | Denver Paint Contractors](https://denverpaintcontractors.com/service-areas/breckenridge/): Painting contractors serving Breckenridge and Summit County, CO: interior, exterior, cabinets, decks and commercial. Insured, 20+ years, 5-year warranty.
 - [Idaho Springs Painting Contractors](https://denverpaintcontractors.com/service-areas/idaho-springs/): Painting contractors serving Idaho Springs and Clear Creek, CO: interior, exterior, cabinets, decks and commercial. Insured, 20+ years, 5-year warranty.
 - [Bennett, Strasburg Painting Contractors](https://denverpaintcontractors.com/service-areas/bennett/): Painting contractors serving Bennett, Strasburg and the I-70 corridor, CO: interior, exterior, cabinets, decks and commercial.
@@ -90,10 +80,9 @@
 - [Painting Contractors in the Denver Metro](https://denverpaintcontractors.com/service-areas/denver-metro/): House painting across the Denver metro: Aurora, Thornton, Westminster, Commerce City, Northglenn, Englewood and Edgewater. Insured, 5-year warranty.
 - [Painting Contractors in the South Denver Metro](https://denverpaintcontractors.com/service-areas/south-metro/): House painting across the south metro: Littleton, Centennial, Highlands Ranch, Parker, Castle Rock, Lone Tree, Greenwood Village, Castle Pines and Ken Caryl.
 - [Painting Contractors in Jefferson County](https://denverpaintcontractors.com/service-areas/west-metro/): House painting across west Denver and Jefferson County: Lakewood, Arvada, Golden, Wheat Ridge and Evergreen. Stucco, hardboard and foothills exposure.
-- [Painting Contractors North of Denver](https://denverpaintcontractors.com/service-areas/north-metro/): House painting north of Denver: Broomfield, Louisville, Lafayette, Erie, Longmont and the Carbon Valley. Covenant palettes and open-ground exposure.
 - [Painting Contractors in the Mountains & Eastern Plains](https://denverpaintcontractors.com/service-areas/mountains-and-plains/): House painting along I-70 from Summit County to the eastern plains: Breckenridge, Idaho Springs, Georgetown, Bennett, Strasburg, Byers and Fort Morgan.
 - [Why Is My Paint Peeling? Causes & Fixes | Denver Guide](https://denverpaintcontractors.com/blog/why-is-my-paint-peeling/): Why paint peels off walls, ceilings, bathrooms, cabinets and decks, how to diagnose the cause from what you can see, and what each fix actually requires.
-- [Lead-Safe Painting in Pre-1978 Homes | Denver Guide](https://denverpaintcontractors.com/blog/lead-safe-painting-older-homes/): What the EPA Renovation, Repair and Painting rule means when you repaint a Denver home built before 1978.
+- [Lead-Safe Painting in Pre-1978 Homes | Denver Guide](https://denverpaintcontractors.com/blog/lead-safe-painting-older-homes/): Repainting a Denver home built before 1978? When the EPA lead rule applies, what lead-safe work looks like, and Census data on how many local homes it covers.
 - [Cost to Paint a House in Denver 2026 | Real Price Ranges](https://denverpaintcontractors.com/blog/cost-to-paint-a-house-in-denver/): What it really costs to paint a house in Denver in 2026: exterior and interior per-square-foot ranges, 12 cost factors, sample math and how to compare quotes.
 - [Fixing a Bad Paint Job in Denver | Costs & What To Do](https://denverpaintcontractors.com/blog/fixing-a-bad-paint-job/): What to do when a painting contractor leaves failed work: how to document it, what repairs actually involve, what redoing it costs, and how to avoid paying.
 - [Cabinet Painting Cost Denver 2026 | Refinish vs Replace](https://denverpaintcontractors.com/blog/cabinet-painting-cost-denver/): What cabinet painting and refinishing costs in Denver in 2026, how pricing is built, refinishing vs refacing vs replacement, and how to compare cabinet quotes.
@@ -101,6 +90,12 @@
 - [Why Exterior Paint Fails in Colorado](https://denverpaintcontractors.com/blog/why-exterior-paint-fails-colorado/): Why exterior paint peels, chalks, fades and cracks in Colorado: altitude UV, freeze-thaw, sprinklers and prep failures, with a surface-by-surface fix guide.
 - [Denver Exterior Home Maintenance Calendar | Season by Season](https://denverpaintcontractors.com/blog/denver-exterior-maintenance-calendar/): A month-by-month Colorado maintenance calendar for paint, caulk, decks, gutters and hail damage, with the freeze and snow data behind the timing.
 - [Denver Paint Color Guide | Colors for Colorado Light](https://denverpaintcontractors.com/blog/denver-paint-colors-guide/): How to choose interior and exterior paint colors for Colorado's high-altitude light, with real color codes, HOA guidance, vinyl-safe rules and sheen advice.
+
+## Sister sites (same company, Painter Hotline)
+
+- https://www.painterhotline.com: Front Range hub, including towns outside the Denver metro
+- https://bouldercopainters.com: Boulder and Boulder County, including Longmont, Louisville, Lafayette, Erie and Golden
+- https://paintingbrighton.com: Brighton and the Adams and Weld County towns, including Commerce City, Northglenn, Firestone and Frederick
 
 ## Contact
 
