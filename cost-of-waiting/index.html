@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paint Now or Wait? Denver Cost-of-Waiting Calculator</title>
+<meta name="description" content="Free Denver calculator: what waiting to paint really costs, using BLS price trends, Angi Denver repair costs and NOAA freeze dates. Honest when waiting is fine.">
+<link rel="canonical" href="https://denverpaintcontractors.com/cost-of-waiting/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="google-site-verification" content="baGuCmjnaeBQGRonWqwoFgtG1Pb2_RZxGVMKkBbifDw">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Paint now or wait? What waiting really costs in Denver">
+<meta property="og:description" content="Free Denver calculator: what waiting to paint really costs, using BLS price trends, Angi Denver repair costs and NOAA freeze dates. Honest when waiting is fine.">
+<meta property="og:url" content="https://denverpaintcontractors.com/cost-of-waiting/">
+<meta property="og:image" content="https://denverpaintcontractors.com/images/best-painters-in-denver.jpeg">
+<meta property="og:site_name" content="Denver Paint Contractors">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="geo.region" content="US-CO">
+<meta name="geo.placename" content="Denver, Colorado">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+<link rel="icon" type="image/png" href="/images/dpc-favicon.png">
+<link rel="apple-touch-icon" href="/images/dpc-favicon.png">
+<meta name="theme-color" content="#ffffff">
+<style>
+:root{
+  --navy:#16294a; --navy-deep:#0e1b33; --ink:#1b2435; --muted:#5a6679;
+  --red:#d6342c; --red-ink:#b3241d; --blue-ink:#15609f; --orange:#ef7d1a; --gold:#f2b705; --green:#2f9e44; --blue:#1c7ed6;
+  --paper:#f5f7fa; --line:#dde3ec; --white:#fff;
+  --f-d:'Fraunces',Georgia,serif; --f-u:'Inter',-apple-system,"Segoe UI",Arial,sans-serif;
+  --wrap:1200px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:150px}
+body{font-family:var(--f-u);font-size:1.03rem;line-height:1.7;color:var(--ink);background:#fff;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--blue-ink)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+h1,h2,h3,h4{font-family:var(--f-d);color:var(--navy);line-height:1.1;letter-spacing:-.01em}
+h2{font-size:clamp(1.8rem,3.4vw,2.7rem);font-weight:700;margin-bottom:14px}
+h3{font-size:1.2rem;font-weight:700;line-height:1.25}
+p{color:var(--ink)}
+.lead{font-size:1.14rem;color:var(--muted);max-width:66ch}
+.kicker{font-family:var(--f-u);font-weight:700;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--red-ink);margin-bottom:10px}
+section{padding:78px 0}
+.tint{background:var(--paper)}
+.navy{background:var(--navy);color:#fff}
+.navy h2,.navy h3{color:#fff}.navy p{color:rgba(255,255,255,.88)}.navy .lead{color:rgba(255,255,255,.82)}.navy .kicker{color:var(--gold)}
+.prose p{max-width:70ch;margin-bottom:15px;color:#364052}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:var(--f-u);font-weight:700;font-size:1.02rem;text-decoration:none;border-radius:4px;padding:15px 26px;border:2px solid transparent;cursor:pointer;transition:background .18s,transform .18s,border-color .18s,color .18s;line-height:1.1}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--red);color:#fff}
+.btn-primary:hover{background:#b82a22}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-deep)}
+.btn-gold{background:var(--gold);color:var(--navy-deep)}
+.btn-gold:hover{background:#dba704}
+.btn-out{background:transparent;color:var(--navy);border-color:var(--navy)}
+.btn-out:hover{background:var(--navy);color:#fff}
+.btn-light{background:#fff;color:var(--navy);border-color:#fff}
+.btn-light:hover{background:var(--paper)}
+.btn svg{width:17px;height:17px;flex-shrink:0}
+
+/* promo strip */
+.promo{background:var(--navy);color:#fff;font-size:.93rem;padding:9px 0}
+.promo .wrap{display:flex;gap:14px;align-items:center;justify-content:center;flex-wrap:wrap;text-align:center}
+.promo b{color:var(--gold);font-weight:700}
+.promo a{color:#fff;font-weight:700;text-decoration:underline}
+.promo span.fine{color:rgba(255,255,255,.65);font-size:.82rem}
+
+/* header */
+.site-head{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 2px 16px rgba(22,41,74,.07)}
+.head-in{max-width:1320px;margin:0 auto;padding:10px 22px;display:flex;align-items:center;gap:20px}
+.brand{display:flex;align-items:center;text-decoration:none;flex-shrink:0}
+.brand img{height:104px;width:auto;transition:height .25s}
+.site-head.small .brand img{height:64px}
+.main-nav{display:flex;align-items:center;gap:2px;margin-left:auto}
+.main-nav a,.dd-btn{font-family:var(--f-u);color:var(--navy);text-decoration:none;font-weight:600;font-size:.95rem;padding:9px 11px;border-radius:4px;background:none;border:0;cursor:pointer}
+.main-nav a:hover,.dd-btn:hover,.main-nav a[aria-current="page"],.dd-btn[data-cur]{color:var(--red-ink);background:var(--paper)}
+.dd{position:relative}
+.dd-menu{display:none;position:absolute;top:100%;left:0;background:#fff;border:1px solid var(--line);border-top:3px solid var(--red);border-radius:0 0 6px 6px;box-shadow:0 20px 44px rgba(22,41,74,.16);min-width:262px;padding:6px;z-index:950}
+.dd:hover .dd-menu,.dd:focus-within .dd-menu,.dd.open .dd-menu{display:block}
+.main-nav .dd-menu a{display:block;padding:10px 12px;white-space:nowrap;font-weight:500}
+.head-call{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy)}
+.head-call .ic{width:40px;height:40px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;flex-shrink:0}
+.head-call .ic svg{width:19px;height:19px}
+.hc b{display:block;font-family:var(--f-u);font-weight:800;font-size:1.4rem;letter-spacing:-.02em;white-space:nowrap}
+.hc span{display:block;font-size:.74rem;color:var(--red-ink);font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.head-cta{font-size:.92rem;padding:12px 17px}
+.burger{display:none;background:#fff;border:2px solid var(--navy);border-radius:4px;color:var(--navy);font-family:var(--f-u);font-weight:700;padding:9px 12px;cursor:pointer}
+.drawer{display:none;background:#fff;padding:4px 22px 18px;border-top:1px solid var(--line)}
+.drawer.open{display:block}
+.drawer a{display:block;font-family:var(--f-u);color:var(--navy);text-decoration:none;font-weight:600;padding:12px 0;border-bottom:1px solid var(--line)}
+.drawer .sub{padding-left:14px;font-weight:500;font-size:.95rem;color:var(--muted)}
+
+/* cards + grids */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.grid-2>*,.grid-3>*,.grid-4>*{min-width:0}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:26px;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(22,41,74,.11)}
+.card h3{margin-bottom:8px}
+.card p{color:var(--muted);font-size:.98rem}
+.card .num{font-family:var(--f-d);font-size:2.2rem;font-weight:900;color:var(--gold);line-height:1}
+.navy .card{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16)}
+.navy .card h3{color:#fff}.navy .card p{color:rgba(255,255,255,.84)}
+.photo-card{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff;display:flex;flex-direction:column;text-decoration:none}
+.photo-card img{aspect-ratio:3/2;object-fit:cover;width:100%;transition:transform .4s}
+.photo-card:hover img{transform:scale(1.04)}
+.photo-card .body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:7px;flex:1}
+.photo-card h3{font-size:1.22rem}
+.photo-card p{color:var(--muted);font-size:.96rem;flex:1}
+
+.photo-card .go{font-family:var(--f-u);font-weight:700;color:var(--red-ink);font-size:.95rem}
+
+/* trust bar */
+.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:8px;background:#fff;overflow:hidden}
+.trust div{padding:22px 20px;border-right:1px solid var(--line)}
+.trust div:last-child{border-right:0}
+.trust b{display:block;font-family:var(--f-d);font-size:1.5rem;font-weight:900;color:var(--navy);line-height:1.1}
+.trust span{font-size:.92rem;color:var(--muted)}
+
+/* tables */
+.tbl{overflow-x:auto;margin:20px 0}
+.tbl table{width:100%;border-collapse:collapse;font-size:.97rem;min-width:560px;background:#fff}
+.tbl th,.tbl td{text-align:left;padding:13px 15px;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl table{color:var(--ink)}
+.tbl td,.tbl th{color:var(--ink)}
+.tbl thead th{background:var(--navy);color:#fff;font-family:var(--f-u);font-weight:700}
+.tbl tbody td:first-child{font-weight:700;color:var(--navy)}
+.tbl caption{caption-side:bottom;padding-top:10px;font-size:.85rem;color:var(--muted);text-align:left}
+
+/* bar chart */
+.chart{display:grid;gap:12px;margin:22px 0}
+.chart .row{display:grid;grid-template-columns:190px 1fr;gap:14px;align-items:center}
+.chart .lb{font-size:.95rem;font-weight:600;color:var(--navy)}
+.chart .bar{background:var(--paper);border-radius:3px;height:30px;position:relative;overflow:hidden}
+.chart .fill{height:100%;background:linear-gradient(90deg,#1864ab,var(--navy));border-radius:3px;display:flex;align-items:center;justify-content:flex-end;padding-right:10px;color:#fff;font-size:.86rem;font-weight:700;width:0;transition:width 1.1s cubic-bezier(.2,.7,.3,1)}
+.chart .fill.g{background:linear-gradient(90deg,#237032,#19592a)}
+.chart .fill.o{background:linear-gradient(90deg,#a85f12,#8a4a0c)}
+
+/* forms */
+.form-card{background:#fff;border:1px solid var(--line);border-radius:8px;box-shadow:0 20px 50px rgba(22,41,74,.12);overflow:hidden}
+.form-top{background:var(--navy);color:#fff;padding:20px 24px}
+.form-top .ft{font-family:var(--f-d);font-size:1.45rem;font-weight:700;color:#fff}
+.form-top p{color:rgba(255,255,255,.8);font-size:.9rem;margin-top:4px}
+.form-body{padding:22px 24px 24px}
+.fld{margin-bottom:13px}
+.fld label,.fld .lbl{display:block;font-weight:600;font-size:.86rem;color:var(--navy);margin-bottom:5px}
+.fld em{font-style:normal;color:var(--red-ink)}
+.fld input,.fld select,.fld textarea{width:100%;font-family:var(--f-u);font-size:1rem;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:12px 13px;outline:none;transition:border-color .2s,background .2s}
+.fld input:focus,.fld select:focus,.fld textarea:focus{border-color:var(--navy);background:#fff}
+.fld textarea{min-height:92px;resize:vertical}
+.fld input[type=file]{padding:10px;background:#fff;border-style:dashed}
+.fld small{display:block;font-size:.8rem;color:var(--muted);margin-top:4px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+.pick{position:relative;display:block}
+.pick input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.pick span{display:flex;align-items:center;min-height:48px;padding:10px 12px;border:1px solid var(--line);border-radius:4px;font-weight:600;font-size:.93rem;background:var(--paper);cursor:pointer;transition:all .15s}
+.pick input:checked+span{border-color:var(--navy);background:#eaf0f9;box-shadow:inset 3px 0 0 var(--red)}
+.pick input:focus-visible+span{outline:3px solid var(--gold);outline-offset:2px}
+.opt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.form-note{font-size:.82rem;color:var(--muted);margin-top:12px;text-align:center}
+.form-msg{display:none;margin-top:12px;padding:12px 14px;border-radius:4px;font-size:.93rem;font-weight:600}
+.form-msg.ok{display:block;background:#e7f5ec;color:#1b5e2b}
+.form-msg.warn{display:block;background:#fdeceb;color:#8c2019}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+[hidden]{display:none!important}
+
+/* faq */
+.faq{max-width:900px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:18px;align-items:center;padding:19px 0;font-family:var(--f-d);font-weight:700;font-size:1.12rem;color:var(--navy)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex-shrink:0;width:28px;height:28px;border-radius:50%;border:2px solid var(--navy);display:grid;place-items:center;font-family:var(--f-u);font-weight:700;color:var(--navy);transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(45deg);background:var(--navy);color:#fff}
+.faq .ans{padding:0 0 20px;color:var(--muted);max-width:76ch}
+
+/* breadcrumbs */
+.crumbs{background:var(--paper);border-bottom:1px solid var(--line);font-size:.86rem;padding:11px 0}
+.crumbs ol{list-style:none;display:flex;gap:8px;flex-wrap:wrap}
+.crumbs li+li::before{content:"/";margin-right:8px;color:var(--muted)}
+.crumbs a{text-decoration:none;font-weight:600}
+
+/* footer */
+.site-foot{background:#fff;border-top:4px solid var(--navy);padding:56px 0 20px;font-size:.95rem}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:36px;padding-bottom:32px;border-bottom:1px solid var(--line)}
+.foot-brand img{height:150px;width:auto;margin-bottom:14px}
+.site-foot h3{font-family:var(--f-u);font-size:.86rem;letter-spacing:.12em;text-transform:uppercase;color:var(--red-ink);margin-bottom:12px}
+.site-foot ul{list-style:none}
+.site-foot li{margin-bottom:8px}
+.site-foot a{color:var(--navy);text-decoration:none}
+.site-foot a:hover{color:var(--red-ink);text-decoration:underline}
+.foot-phone{font-weight:800;font-size:1.5rem;color:var(--navy)!important;text-decoration:none!important}
+.site-foot address{font-style:normal;color:var(--muted);line-height:1.8}
+.foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-top:20px;font-size:.85rem;color:var(--muted)}
+.heart-wrap{text-align:center;padding:16px 0 26px;font-family:var(--f-u);font-size:.95rem}.heart-wrap a{text-decoration:underline}
+.heart{display:inline-block;color:var(--red);font-size:1.25rem;animation:beat 2.4s ease-in-out infinite;transform-origin:center}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+
+/* mobile bar */
+.mbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:950;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 18px rgba(22,41,74,.12);padding:8px;gap:8px}
+.mbar a{flex:1;text-align:center;padding:13px 6px;border-radius:4px;font-weight:700;text-decoration:none;font-size:.98rem}
+.mbar .c{background:var(--red);color:#fff}
+.mbar .q{background:var(--navy);color:#fff}
+
+@media (max-width:1240px){.main-nav{display:none}.burger{display:block}.head-call{margin-left:auto}}
+@media (max-width:980px){.grid-3,.grid-4,.grid-2{grid-template-columns:1fr 1fr}.foot-grid{grid-template-columns:1fr 1fr}.trust{grid-template-columns:1fr 1fr}.trust div:nth-child(2n){border-right:0}}
+@media (max-width:760px){
+  .head-in{padding:8px 13px;gap:10px}
+  .brand img{height:68px}
+  .site-head.small .brand img{height:48px}
+  .head-cta,.hc span{display:none}
+  .head-call{gap:0;background:var(--red);border-radius:4px;padding:9px 12px}
+  .head-call .ic{display:none}
+  .hc b{color:#fff;font-size:1.12rem}
+  .promo{font-size:.82rem}.promo span.fine{display:none}
+}
+@media (max-width:640px){
+  section{padding:56px 0}
+  .grid-3,.grid-4,.grid-2,.two-col,.opt-grid,.trust{grid-template-columns:1fr}
+  .trust div{border-right:0;border-bottom:1px solid var(--line)}
+  .foot-grid{grid-template-columns:1fr}
+  .chart .row{grid-template-columns:1fr;gap:4px}
+  .mbar{display:flex}
+  body{padding-bottom:70px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* split hero, photo-first, no tint */
+.hero{background:#fff;border-bottom:1px solid var(--line)}
+.hero-in{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,1.1fr);align-items:stretch}
+.hero-copy{padding:60px 50px 60px max(22px,calc((100vw - 1320px)/2 + 22px));display:flex;flex-direction:column;justify-content:center}
+.hero h1{font-size:clamp(2.2rem,4.2vw,3.5rem);font-weight:900;margin-bottom:16px;max-width:17ch}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero .sub{font-size:1.16rem;color:var(--muted);max-width:50ch;margin-bottom:24px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px}
+.hero-pts{display:grid;gap:9px;font-size:.99rem;font-weight:600;color:var(--navy)}
+.hero-pts span{display:flex;gap:10px;align-items:flex-start}
+.hero-pts i{color:var(--green);font-style:normal;font-weight:800}
+.hero-shots{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:4px;min-height:480px}
+.hero-shots img{width:100%;height:100%;object-fit:cover}
+.hero-shots .big{grid-row:1 / span 2}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:#fdf3d4;color:#7a5a00;border:1px solid #f0d99a;border-radius:3px;padding:7px 13px;font-weight:700;font-size:.9rem;margin-bottom:16px;width:fit-content}
+
+/* answer box */
+.answer{border-left:5px solid var(--gold);background:var(--paper);border-radius:0 8px 8px 0;padding:26px 30px;display:grid;grid-template-columns:190px 1fr;gap:24px}
+.answer h2{font-size:1.4rem;margin:0}
+.answer p{color:var(--muted);max-width:78ch}
+.answer p+p{margin-top:10px}
+
+/* generic bits */
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:46px;align-items:center}
+.split>*{min-width:0}
+.split.wide{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}
+.checks{list-style:none}
+.checks li{position:relative;padding:12px 0 12px 32px;border-bottom:1px solid var(--line);color:var(--muted)}
+.checks li::before{content:"";position:absolute;left:3px;top:19px;width:15px;height:8px;border-left:3px solid var(--green);border-bottom:3px solid var(--green);transform:rotate(-45deg)}
+.checks strong{color:var(--navy)}
+.navy .checks li{border-color:rgba(255,255,255,.15);color:rgba(255,255,255,.86)}
+.navy .checks strong{color:#fff}
+.steps{list-style:none;counter-reset:s;display:grid;gap:0}
+.steps li{counter-increment:s;display:grid;grid-template-columns:62px 1fr;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}
+.steps li::before{content:counter(s);font-family:var(--f-d);font-weight:900;font-size:1.9rem;color:#fff;background:var(--navy);width:46px;height:46px;border-radius:50%;display:grid;place-items:center;line-height:1}
+.steps p{color:var(--muted);margin-top:4px}
+.navy .steps li{border-color:rgba(255,255,255,.14)}
+.navy .steps li::before{background:var(--gold);color:var(--navy-deep)}
+.pill-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}
+.pill{border:1px solid var(--line);border-radius:3px;padding:7px 13px;font-size:.92rem;font-weight:600;color:var(--navy);background:#fff;text-decoration:none}
+a.pill:hover{border-color:var(--navy);background:var(--paper)}
+.cta-band{background:var(--navy);color:#fff;border-radius:8px;padding:30px 34px;display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap}
+.cta-band h3{color:#fff;font-size:1.6rem}
+.cta-band p{color:rgba(255,255,255,.84);margin-top:4px}
+.map-embed{border-radius:8px;overflow:hidden;border:1px solid var(--line);min-height:340px;background:var(--paper)}
+.map-embed iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+.quote-form-sec .split{align-items:start}
+.badge-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.badge{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:3px;background:#fff;padding:9px 14px;font-weight:700;font-size:.9rem;color:var(--navy)}
+.badge i{font-style:normal;color:var(--red-ink);font-size:1.05rem}
+@media (max-width:1000px){
+  .hero-in{grid-template-columns:1fr}
+  .hero-copy{padding:44px 22px 36px}
+  .hero-shots{min-height:300px}
+  .split,.split.wide{grid-template-columns:1fr;gap:30px}
+  .answer{grid-template-columns:1fr;gap:10px}
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://denverpaintcontractors.com/cost-of-waiting/#webpage",
+   "url": "https://denverpaintcontractors.com/cost-of-waiting/",
+   "name": "Paint Now or Wait? Denver Cost-of-Waiting Calculator",
+   "description": "Free Denver calculator: what waiting to paint really costs, using BLS price trends, Angi Denver repair costs and NOAA freeze dates. Honest when waiting is fine.",
+   "isPartOf": {
+    "@id": "https://denverpaintcontractors.com/#website"
+   },
+   "about": {
+    "@id": "https://denverpaintcontractors.com/#business"
+   },
+   "inLanguage": "en-US",
+   "datePublished": "2026-10-17",
+   "dateModified": "2026-10-17",
+   "breadcrumb": {
+    "@id": "https://denverpaintcontractors.com/cost-of-waiting/#breadcrumb"
+   },
+   "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+     "#page-answer"
+    ]
+   },
+   "citation": [
+    {
+     "@type": "CreativeWork",
+     "name": "Employment Cost Index, construction workers, total compensation (CIU2012300000000I)",
+     "url": "https://fred.stlouisfed.org/series/CIU2012300000000I",
+     "publisher": "U.S. Bureau of Labor Statistics via FRED"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "Producer Price Index, paint and coating manufacturing (PCU325510325510)",
+     "url": "https://data.bls.gov/timeseries/PCU325510325510",
+     "publisher": "U.S. Bureau of Labor Statistics"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "Cost to paint a house exterior in Denver",
+     "url": "https://www.angi.com/articles/cost-paint-house-exterior/co/denver",
+     "publisher": "Angi"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "Cost to paint the interior of a house in Denver",
+     "url": "https://www.angi.com/articles/how-much-does-it-cost-paint-interior-house/co/denver",
+     "publisher": "Angi"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "Fascia board replacement cost",
+     "url": "https://www.angi.com/articles/fascia-cost.htm",
+     "publisher": "Angi"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "Wood Handbook, chapter 16: finishing of wood (FPL-GTR-282)",
+     "url": "https://research.fs.usda.gov/download/treesearch/62200.pdf",
+     "publisher": "USDA Forest Service, Forest Products Laboratory"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "1991-2020 climate normals, Denver International Airport (USW00003017)",
+     "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-annualseasonal-1991-2020&stations=USW00003017&format=json&includeStationName=true",
+     "publisher": "NOAA National Centers for Environmental Information"
+    }
+   ]
+  },
+  {
+   "@type": [
+    "HousePainter",
+    "LocalBusiness"
+   ],
+   "@id": "https://denverpaintcontractors.com/#business",
+   "name": "Denver Paint Contractors",
+   "url": "https://denverpaintcontractors.com/",
+   "telephone": "+17202085645",
+   "email": "quote@painterhotline.com",
+   "logo": "https://denverpaintcontractors.com/images/denver-paint-contractors-logo.png",
+   "image": "https://denverpaintcontractors.com/images/exterior-house-painting-denver.jpeg",
+   "description": "Denver Paint Contractors is a painting contractor serving Denver and the Front Range with interior and exterior house painting, cabinet painting, deck and fence staining, and commercial painting. Over 20 years of experience, fully insured, and a 5-year workmanship warranty on every project.",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Denver",
+    "addressRegion": "CO",
+    "addressCountry": "US"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "Denver, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Aurora, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Lakewood, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Littleton, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Centennial, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Highlands Ranch, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Thornton, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Westminster, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Arvada, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Englewood, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Broomfield, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Castle Rock, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Parker, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Golden, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Wheat Ridge, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Northglenn, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Brighton, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Commerce City, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Greenwood Village, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Lone Tree, CO"
+    }
+   ],
+   "priceRange": "$$",
+   "currenciesAccepted": "USD",
+   "knowsAbout": [
+    "Interior house painting",
+    "Exterior house painting",
+    "Kitchen cabinet painting",
+    "Deck and fence staining",
+    "Commercial painting",
+    "Repainting failed paint jobs",
+    "Painting at high altitude in Colorado",
+    "Sherwin-Williams paint",
+    "PPG paint",
+    "Behr paint"
+   ],
+   "makesOffer": {
+    "@type": "Offer",
+    "name": "25% off painting projects",
+    "description": "25% off painting projects booked by November 15, 2026. Discount applies to labor; paint and materials are not included.",
+    "availabilityStarts": "2026-10-01",
+    "availabilityEnds": "2026-11-15",
+    "url": "https://denverpaintcontractors.com/discounts/"
+   },
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Painting services in Denver, CO",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Interior house painting",
+       "areaServed": "Denver, CO"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Exterior house painting",
+       "areaServed": "Denver, CO"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Cabinet painting",
+       "areaServed": "Denver, CO"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Deck and fence staining",
+       "areaServed": "Denver, CO"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Residential painting",
+       "areaServed": "Denver, CO"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Commercial painting",
+       "areaServed": "Denver, CO"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Color consultation",
+       "areaServed": "Denver, CO"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Free painting estimate",
+       "areaServed": "Denver, CO"
+      }
+     }
+    ]
+   },
+   "potentialAction": {
+    "@type": "AskAction",
+    "name": "Request a free painting estimate",
+    "target": {
+     "@type": "EntryPoint",
+     "urlTemplate": "https://denverpaintcontractors.com/contact/",
+     "actionPlatform": [
+      "http://schema.org/DesktopWebPlatform",
+      "http://schema.org/MobileWebPlatform"
+     ]
+    }
+   },
+   "sameAs": [
+    "https://www.painterhotline.com"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://denverpaintcontractors.com/#website",
+   "url": "https://denverpaintcontractors.com/",
+   "name": "Denver Paint Contractors",
+   "inLanguage": "en-US",
+   "publisher": {
+    "@id": "https://denverpaintcontractors.com/#business"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://denverpaintcontractors.com/cost-of-waiting/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://denverpaintcontractors.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Painting cost",
+     "item": "https://denverpaintcontractors.com/painting-cost-denver/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Cost of waiting",
+     "item": "https://denverpaintcontractors.com/cost-of-waiting/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://denverpaintcontractors.com/cost-of-waiting/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is it cheaper to paint my house now or next year?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "If the paint is sound, next year usually costs a little more because labor and paint prices keep rising: 3.5% and 5.0% over the latest federal data. If paint is peeling to bare wood, waiting can cost far more, because stripping and rotted trim replacement get added to the job."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I paint the outside of my house in Denver in winter?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sometimes. Denver’s median first freeze is October 9 and median last freeze is May 5 (NOAA), but warm stretches happen all winter. What matters is the temperature range on the product label for each coat, day and night. Interiors can be painted any time of year."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I know if my exterior paint has failed?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Look for paint lifting at the edges, cracks that show wood underneath, and split caulk around windows and trim. Press trim and fascia with a screwdriver: if the wood is soft, water has already gotten in. South and west walls usually fail first."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does this calculator replace an estimate?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. It shows the shape of the cost using published averages. A written estimate measures your actual house. Ours are free, in person or from photos, whichever you prefer."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style id="brand-2026">
+.brand-logo{display:block;width:280px!important;max-width:none!important;height:auto!important;transition:width .25s ease}
+header.is-scrolled .brand-logo{width:180px!important}
+.brand-band{background:#fff;border-bottom:1px solid rgba(0,0,0,.08)}
+.brand-band .bb-in{max-width:1240px;margin:0 auto;padding:26px 24px;display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.brand-band .bb-logo{display:block;width:280px!important;max-width:100%!important;height:auto!important}
+.brand-band p{margin:0;max-width:46ch;font-size:1rem;line-height:1.5}
+.brand-band .bb-tel{font-weight:800;font-size:1.35rem;text-decoration:none;white-space:nowrap}
+.foot-brand-logo{display:block;width:280px!important;max-width:100%!important;height:auto!important;margin:0 0 14px}
+@media (max-width:760px){.brand-logo{width:200px!important}header.is-scrolled .brand-logo{width:150px!important}.brand-band .bb-in{padding:22px 18px;gap:14px}}
+@media (prefers-reduced-motion:reduce){.brand-logo{transition:none}}
+@media (max-width:480px){.head-call{padding:0!important;background:none!important}.head-call .ic{display:grid!important;width:44px;height:44px}.head-call .hc{display:none!important}.head-in{gap:8px!important;padding-left:12px!important;padding-right:12px!important}}
+</style><style id="est-choice-css">
+.est-choice{border:0;margin:6px 0 14px;padding:0;grid-column:1/-1;min-width:0}
+.est-choice legend{font-weight:700;margin-bottom:8px;padding:0;font-size:.98rem}
+.est-choice .ec-opts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.est-choice label{position:relative;display:block;margin:0;cursor:pointer}
+.est-choice input{position:absolute;opacity:0;width:1px;height:1px}
+.est-choice span{display:block;height:100%;border:2px solid rgba(0,0,0,.18);border-radius:10px;padding:10px 10px 9px;background:#fff;color:#1b1f27;line-height:1.25;transition:border-color .15s,box-shadow .15s}
+.est-choice b{display:block;font-size:.95rem}
+.est-choice small{display:block;font-size:.8rem;opacity:.8;margin-top:2px}
+.est-choice input:checked+span{border-color:currentColor;box-shadow:0 0 0 3px rgba(0,0,0,.08);background:#fffdf6}
+.est-choice input:focus-visible+span{outline:3px solid #2563eb;outline-offset:2px}
+.est-choice .ec-hint{margin:8px 0 0;font-size:.86rem;line-height:1.4;opacity:.9}
+@media (max-width:520px){.est-choice .ec-opts{grid-template-columns:1fr}}
+</style><style id="credit-css">.credit{font-size:.78rem;opacity:.7;letter-spacing:.01em}.credit a{color:inherit;text-decoration:underline;text-underline-offset:2px}</style><style id="np-css">
+.crumbs{font-size:.86rem;padding:14px 0 0;color:var(--muted)}.crumbs a{color:inherit}
+.np-hero{padding:46px 0 22px}.np-hero h1{font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.08;max-width:22ch;margin:6px 0 14px}
+.np-hero .sub{font-size:1.15rem;max-width:62ch;color:var(--muted)}
+.np-sec{padding:34px 0}.np-sec h2{font-size:clamp(1.5rem,3vw,2.1rem);margin:4px 0 12px}
+.np-sec p,.np-sec li{max-width:72ch}
+.np-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:16px}
+.np-card{border:1px solid var(--line);border-radius:14px;padding:18px 18px 14px;background:#fff}
+.np-card b.big{display:block;font-family:var(--f-d,inherit);font-size:2rem;line-height:1.05;color:var(--navy)}
+.np-card .src{font-size:.78rem;color:var(--muted);margin-top:8px}
+.np-tool{border:2px solid var(--navy);border-radius:18px;padding:22px;background:#fbfaf7;margin-top:14px}
+.np-tool label{display:block;font-weight:600;margin:0 0 4px;font-size:.95rem}
+.np-tool input,.np-tool select{width:100%;padding:11px 12px;border:1px solid #c9ced8;border-radius:9px;font:inherit;background:#fff}
+.np-tool .row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:14px}
+.np-tool .hint{font-size:.8rem;color:var(--muted);margin-top:4px}
+.np-out{margin-top:10px;border-top:1px dashed #c9ced8;padding-top:16px}
+.np-out .total{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;color:var(--navy);line-height:1.1}
+.np-bar{display:flex;height:22px;border-radius:999px;overflow:hidden;background:#e9ecf1;margin:12px 0 8px}
+.np-bar span{display:block;height:100%;width:0;transition:width .7s cubic-bezier(.2,.8,.2,1)}
+.np-legend{display:flex;flex-wrap:wrap;gap:12px;font-size:.86rem}.np-legend i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.np-note{font-size:.86rem;color:var(--muted)}#cite-text{overflow-wrap:anywhere}.np-sources a{overflow-wrap:anywhere}
+.np-chart{width:100%;max-width:760px}.np-chart text{font-family:inherit}
+.np-faq details{border-bottom:1px solid var(--line);padding:14px 0}.np-faq summary{font-weight:700;cursor:pointer;font-size:1.05rem}
+.np-faq details p{margin:10px 0 0;max-width:72ch}
+.np-sources ol{padding-left:20px;font-size:.92rem}.np-sources li{margin:6px 0}
+.np-check{list-style:none;padding:0}.np-check li{position:relative;padding:8px 0 8px 34px;border-bottom:1px solid var(--line)}
+.np-check li:before{content:"";position:absolute;left:4px;top:11px;width:18px;height:18px;border:2px solid var(--navy);border-radius:5px}
+.np-steps{counter-reset:s;list-style:none;padding:0}.np-steps li{counter-increment:s;position:relative;padding:10px 0 10px 48px}
+.np-steps li:before{content:counter(s);position:absolute;left:0;top:8px;width:32px;height:32px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:800}
+.np-pill{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;background:#fff4d6;color:#7a5200;border-radius:999px;padding:4px 10px}
+@media (prefers-reduced-motion:reduce){.np-bar span{transition:none}}
+#cw-ext[hidden]{display:none}</style></head>
+<body data-h1="Zm9ybQ==" data-h2="c3VibWl0LmNv" data-u1="aW4=" data-u2="Zm8=" data-d1="ZXlldG9hZA==" data-d2="LmNvbQ==">
+<a class="sr" href="#main">Skip to content</a>
+<div class="promo"><div class="wrap"><span><b>25% off all painting projects booked by November 15, 2026</b> &nbsp;|&nbsp; <a href="/discounts/">See the offer</a></span><span class="fine">Discount applies to labor. Paint and materials not included.</span></div></div>
+<header class="site-head">
+  <div class="head-in">
+    <a href="/" class="brand" aria-label="Denver Paint Contractors, home"><img class="brand-logo" src="/images/brand/denver-paint-contractors-logo.webp" alt="Denver Paint Contractors, house painters in Denver" width="640" height="416" fetchpriority="high" decoding="async"></a>
+    <nav class="main-nav" aria-label="Main"><div class="dd"><button type="button" class="dd-btn" aria-expanded="false">Services <span aria-hidden="true">&#9662;</span></button><div class="dd-menu"><a href="/residential-painting/">Residential painting</a><a href="/interior-painting/">Interior painting</a><a href="/exterior-painting/">Exterior painting</a><a href="/cabinet-painting/">Cabinet painting</a><a href="/deck-staining/">Deck &amp; fence staining</a><a href="/commercial-painting/">Commercial painting</a></div></div><div class="dd"><button type="button" class="dd-btn" aria-expanded="false">Resources <span aria-hidden="true">&#9662;</span></button><div class="dd-menu"><a href="/painting-cost-denver/">Denver painting costs</a><a href="/cost-of-waiting/">Paint now or wait? calculator</a><a href="/denver-painting-data/">Denver painting data</a><a href="/hoa-paint-approval/">HOA color approval</a><a href="/paint-brands/">Paint brands we use</a><a href="/color-selection/">Color selection &amp; swatches</a><a href="/blog/">Painting guides</a><a href="/warranty/">5-year warranty</a><a href="/gallery/">Project gallery</a></div></div><a href="/service-areas/">Service areas</a><a href="/why-choose-us/">Why us</a><a href="/discounts/">25% off</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav>
+    <a class="head-call" href="tel:+17202085645"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></span><span class="hc"><b>720-208-5645</b><span>Free estimates, 7 days</span></span></a>
+    <a class="btn btn-primary head-cta" href="/contact/" data-estimate>Free estimate</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="drawer">Menu</button>
+  </div>
+  <nav class="drawer" id="drawer" aria-label="Mobile"><a href="/">Home</a><a class="sub" href="/residential-painting/">Residential painting</a><a class="sub" href="/interior-painting/">Interior painting</a><a class="sub" href="/exterior-painting/">Exterior painting</a><a class="sub" href="/cabinet-painting/">Cabinet painting</a><a class="sub" href="/deck-staining/">Deck &amp; fence staining</a><a class="sub" href="/commercial-painting/">Commercial painting</a><a class="sub" href="/painting-cost-denver/">Denver painting costs</a><a class="sub" href="/cost-of-waiting/">Paint now or wait? calculator</a><a class="sub" href="/denver-painting-data/">Denver painting data</a><a class="sub" href="/hoa-paint-approval/">HOA color approval</a><a class="sub" href="/paint-brands/">Paint brands we use</a><a class="sub" href="/color-selection/">Color selection &amp; swatches</a><a class="sub" href="/blog/">Painting guides</a><a class="sub" href="/warranty/">5-year warranty</a><a class="sub" href="/gallery/">Project gallery</a><a href="/service-areas/">Service areas</a><a href="/why-choose-us/">Why us</a><a href="/discounts/">25% off</a><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/contact/" data-estimate style="color:var(--red)">Get my free estimate</a></nav>
+</header><nav class="crumbs" aria-label="Breadcrumb"><div class="wrap"><ol><li><a href="/">Home</a></li><li><a href="/painting-cost-denver/">Painting cost</a></li><li aria-current="page">Cost of waiting</li></ol></div></nav>
+<main id="main">
+
+<section class="np-hero"><div class="wrap">
+  <span class="np-pill">Free tool &middot; sources listed</span>
+  <h1>Paint now or wait? See what waiting actually costs in Denver.</h1>
+  <p class="sub">Sometimes waiting a season is fine. Sometimes it turns a paint job into a carpentry job. Put in your numbers and see which one you are looking at, using published Denver cost data instead of a sales pitch.</p>
+</div></section>
+
+<section style="padding:6px 0 0"><div class="wrap"><div class="answer" id="page-answer"><h2>Direct answer</h2><div><p>If your exterior paint is faded but still <strong>sound</strong>, waiting a season mostly costs price drift: construction labor costs rose <strong>3.5%</strong> and paint prices <strong>5.0%</strong> over the latest year of federal data, which works out to roughly <strong>$120 on a $3,250 job</strong> (Angi's Denver average). Once paint is <strong>peeling to bare wood</strong>, the math changes: Angi's Denver data puts stripping failed paint at <strong>$0.50 to $2.05 per square foot</strong>, and rotted fascia runs <strong>$7 to $22 per linear foot</strong> to replace. Interior painting can wait without damage; only the price moves.</p></div></div></div></section>
+
+<section class="np-sec" aria-labelledby="tool-h"><div class="wrap">
+  <p class="kicker">The calculator</p>
+  <h2 id="tool-h">What does waiting cost on your house?</h2>
+  <form class="np-tool" id="cow" onsubmit="return false">
+    <div class="row">
+      <div><label for="cw-type">Project</label><select id="cw-type"><option value="ext">Exterior</option><option value="int">Interior</option></select></div>
+      <div><label for="cw-quote">Your quote, or a ballpark ($)</label><input id="cw-quote" inputmode="numeric" value="3250"><p class="hint">$3,250 is Angi's Denver exterior average. Use your real quote if you have one.</p></div>
+      <div><label for="cw-wait">How long would you wait?</label><select id="cw-wait"><option value="6">6 months</option><option value="12" selected>12 months</option><option value="24">2 years</option></select></div>
+    </div>
+    <div class="row" id="cw-ext">
+      <div><label for="cw-cond">Condition of the paint today</label><select id="cw-cond"><option value="sound">Faded or chalky, but no peeling</option><option value="some">Some cracking or peeling</option><option value="bare">Peeling down to bare wood</option></select></div>
+      <div><label for="cw-area">Area that has failed (sq ft)</label><input id="cw-area" inputmode="numeric" value="0"><p class="hint">A 4 x 8 ft patch is 32 sq ft. Check south and west walls first.</p></div>
+      <div><label for="cw-rot">Soft or rotted trim or fascia (linear ft)</label><input id="cw-rot" inputmode="numeric" value="0"><p class="hint">Push a screwdriver into the wood. If it sinks in, count it.</p></div>
+    </div>
+    <div class="row">
+      <div><label for="cw-labor">Labor share of the job (%)</label><input id="cw-labor" inputmode="numeric" value="80"><p class="hint">Assumption you can change. Angi says labor is often 75% to 95% of an interior job.</p></div>
+    </div>
+    <div class="np-out" aria-live="polite">
+      <p style="margin:0 0 4px;font-weight:600" id="cw-head">Estimated added cost of waiting</p>
+      <div class="total" id="cw-total">$0</div>
+      <div class="np-bar" role="img" aria-label="Breakdown of the added cost"><span id="b1" style="background:#1c7ed6"></span><span id="b2" style="background:#ef7d1a"></span><span id="b3" style="background:#d6342c"></span></div>
+      <div class="np-legend"><span><i style="background:#1c7ed6"></i>Price drift <b id="l1"></b></span><span><i style="background:#ef7d1a"></i>Extra prep (stripping) <b id="l2"></b></span><span><i style="background:#d6342c"></i>Carpentry exposure <b id="l3"></b></span></div>
+      <p id="cw-read" style="margin:14px 0 4px;font-size:1.05rem"></p>
+      <p class="np-note" id="cw-season"></p>
+      <p class="np-note">This is a planning tool, not a prediction. Price drift assumes last year's cost trends continue, which they may not. Prep and carpentry figures only appear when you report failed paint or soft wood, because those costs exist today whether you paint now or later; waiting lets the area grow.</p>
+    </div>
+  </form>
+</div></section>
+
+<section class="np-sec" aria-labelledby="in-h"><div class="wrap">
+  <p class="kicker">Inputs, in plain view</p>
+  <h2 id="in-h">Where every number in the calculator comes from</h2>
+  <div class="tbl"><table>
+    <thead><tr><th scope="col">Input</th><th scope="col">Figure</th><th scope="col">Source</th></tr></thead>
+    <tbody>
+      <tr><td>Labor cost trend</td><td>+3.5% (Q2 2025 to Q2 2026)</td><td>BLS Employment Cost Index, construction, total compensation</td></tr>
+      <tr><td>Paint price trend</td><td>+5.0% (Sept 2025 to Sept 2026, preliminary)</td><td>BLS Producer Price Index, paint and coating manufacturing</td></tr>
+      <tr><td>Typical Denver exterior job</td><td>$3,250 average, most $2,170 to $4,433</td><td>Angi, Denver exterior painting cost guide</td></tr>
+      <tr><td>Stripping failed paint</td><td>$0.50 to $2.05 per sq ft</td><td>Angi, Denver exterior painting cost guide</td></tr>
+      <tr><td>Replacing fascia</td><td>$7 to $22 per linear ft</td><td>Angi, fascia replacement cost guide (national)</td></tr>
+      <tr><td>Labor share</td><td>80% default</td><td>Assumption you control; Angi reports labor at 75% to 95% of interior jobs</td></tr>
+    </tbody></table></div>
+</div></section>
+
+<section class="np-sec" aria-labelledby="fine-h"><div class="wrap">
+  <p class="kicker">Honest answer</p>
+  <h2 id="fine-h">When waiting is fine, and when it gets expensive</h2>
+  <div class="np-grid">
+    <div class="np-card"><h3>Waiting is usually fine</h3><ul><li>Paint is faded or chalky but nothing is lifting.</li><li>The job is interior. Walls do not rot while you decide.</li><li>It is late fall and the job is exterior. A careful spring job beats a rushed cold one.</li></ul></div>
+    <div class="np-card"><h3>Waiting starts to cost you</h3><ul><li>Paint is peeling and you can see bare wood.</li><li>Caulk has split around windows and trim, letting water behind the paint.</li><li>Any trim, fascia or sill feels soft. Paint cannot protect wood that is already wet.</li></ul></div>
+    <div class="np-card"><h3>Waiting is the wrong call</h3><ul><li>You are listing the house soon and buyers will see the failure.</li><li>The home was built before 1978 and paint is flaking where kids or pets play. Lead-safe work needs planning time.</li><li>An HOA notice gave you a deadline.</li></ul></div>
+  </div>
+</div></section>
+
+<section class="np-sec" aria-labelledby="wood-h"><div class="wrap">
+  <p class="kicker">What federal wood research shows</p>
+  <h2 id="wood-h">Why bare wood is the expensive part</h2>
+  <p>The U.S. Forest Products Laboratory, the federal lab that studies wood, has tested paint on siding for decades. Three of its findings explain most of the cost of waiting:</p>
+  <ul>
+    <li><strong>Exposure ruins the bond.</strong> Cedar boards left bare in the weather for 16 weeks before painting needed refinishing within 3 years. Boards exposed for one week lasted 13 years before peeling began.</li>
+    <li><strong>Paint is not a preservative.</strong> It keeps water out, but it will not stop decay in wood that is already wet.</li>
+    <li><strong>Coats matter.</strong> A primer plus one topcoat lasts about half as long as a full three-coat system, which the lab says should last 20 years without cracking or peeling on good wood.</li>
+  </ul>
+  <p>So the cost of waiting is not really the paint. It is the bare wood weathering behind it. If you can see raw wood, cover it first, even as a small spot repair, and plan the full job when the weather allows.</p>
+</div></section>
+
+<section class="np-sec" aria-labelledby="season-h"><div class="wrap">
+  <p class="kicker">The Denver calendar</p>
+  <h2 id="season-h">Denver's exterior painting window</h2>
+  <p>At Denver International Airport, NOAA's 1991 to 2020 climate normals put the median last spring freeze on <strong>May 5</strong> and the median first fall freeze on <strong>October 9</strong>, a 156-day freeze-free season. Those are 50/50 dates, not cutoffs: exterior paint can go on outside that window when daytime and overnight temperatures meet the product label, and a good crew checks the forecast for every coat. Interior work runs all year.</p>
+</div></section>
+
+<section class="np-faq" aria-labelledby="faq-h"><div class="wrap"><p class="kicker">Questions</p><h2 id="faq-h">Common questions</h2><details><summary>Is it cheaper to paint my house now or next year?</summary><div><p>If the paint is sound, next year usually costs a little more because labor and paint prices keep rising: 3.5% and 5.0% over the latest federal data. If paint is peeling to bare wood, waiting can cost far more, because stripping and rotted trim replacement get added to the job.</p></div></details><details><summary>Can I paint the outside of my house in Denver in winter?</summary><div><p>Sometimes. Denver’s median first freeze is October 9 and median last freeze is May 5 (NOAA), but warm stretches happen all winter. What matters is the temperature range on the product label for each coat, day and night. Interiors can be painted any time of year.</p></div></details><details><summary>How do I know if my exterior paint has failed?</summary><div><p>Look for paint lifting at the edges, cracks that show wood underneath, and split caulk around windows and trim. Press trim and fascia with a screwdriver: if the wood is soft, water has already gotten in. South and west walls usually fail first.</p></div></details><details><summary>Does this calculator replace an estimate?</summary><div><p>No. It shows the shape of the cost using published averages. A written estimate measures your actual house. Ours are free, in person or from photos, whichever you prefer.</p></div></details></div></section>
+<section class="np-sources" aria-labelledby="src-h"><div class="wrap"><h2 id="src-h">Sources</h2><p class="np-note">Every number on this page comes from the source listed. Checked October 17, 2026.</p><ol><li><a href="https://fred.stlouisfed.org/series/CIU2012300000000I" rel="noopener" target="_blank">Employment Cost Index, construction workers, total compensation (CIU2012300000000I)</a>, U.S. Bureau of Labor Statistics via FRED, Q2 2026.</li><li><a href="https://data.bls.gov/timeseries/PCU325510325510" rel="noopener" target="_blank">Producer Price Index, paint and coating manufacturing (PCU325510325510)</a>, U.S. Bureau of Labor Statistics, September 2026, preliminary.</li><li><a href="https://www.angi.com/articles/cost-paint-house-exterior/co/denver" rel="noopener" target="_blank">Cost to paint a house exterior in Denver</a>, Angi, updated November 13, 2025.</li><li><a href="https://www.angi.com/articles/how-much-does-it-cost-paint-interior-house/co/denver" rel="noopener" target="_blank">Cost to paint the interior of a house in Denver</a>, Angi, updated August 4, 2026.</li><li><a href="https://www.angi.com/articles/fascia-cost.htm" rel="noopener" target="_blank">Fascia board replacement cost</a>, Angi, updated October 8, 2026.</li><li><a href="https://research.fs.usda.gov/download/treesearch/62200.pdf" rel="noopener" target="_blank">Wood Handbook, chapter 16: finishing of wood (FPL-GTR-282)</a>, USDA Forest Service, Forest Products Laboratory, 2021 edition.</li><li><a href="https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-annualseasonal-1991-2020&stations=USW00003017&format=json&includeStationName=true" rel="noopener" target="_blank">1991-2020 climate normals, Denver International Airport (USW00003017)</a>, NOAA National Centers for Environmental Information, 1991-2020.</li></ol></div></section>
+<section class="tint quote-form-sec" id="quote" aria-labelledby="quote-h">
+  <div class="wrap"><div class="split wide">
+    <div>
+      <p class="kicker">Free estimate</p>
+      <h2 id="quote-h">Want the real number for your house?</h2>
+      <p class="lead" style="margin-bottom:18px">Tell us about the project and we'll come take a look. Free, in writing, no pressure.</p>
+      <div class="badge-row">
+        <span class="badge"><i>&#9733;</i> 20+ years of experience</span>
+        <span class="badge"><i>&#9733;</i> Fully insured</span>
+        <span class="badge"><i>&#9733;</i> 5-year workmanship warranty</span>
+        <span class="badge"><i>&#9733;</i> 25% off through Nov 15, 2026</span>
+      </div>
+      <p style="margin-top:20px"><a class="btn btn-navy" href="tel:+17202085645"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg> Call 720-208-5645</a></p>
+      
+    </div>
+    <div class="form-card">
+      <div class="form-top"><div class="ft">Request your estimate</div><p>Name and phone are all we need to get started.</p></div>
+      <div class="form-body">
+        <form data-lead data-subject="New estimate request: Denver Paint Contractors (cost-of-waiting)" novalidate>
+          <input type="hidden" name="source_site" value="denverpaintcontractors.com /cost-of-waiting/">
+          <div class="hp" aria-hidden="true"><label>Leave blank<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
+          <div class="two-col">
+            <div class="fld"><label for="w_name">Name <em>*</em></label><input id="w_name" name="user_name" autocomplete="name" required></div>
+            <div class="fld"><label for="w_phone">Phone <em>*</em></label><input id="w_phone" name="user_phone" type="tel" inputmode="tel" autocomplete="tel" required></div>
+            <div class="fld"><label for="w_email">Email</label><input id="w_email" name="user_email" type="email" autocomplete="email"></div>
+            <div class="fld"><label for="w_zip">Project ZIP code</label><input id="w_zip" name="user_zip" inputmode="numeric" autocomplete="postal-code" maxlength="10"></div>
+          </div>
+          <div class="fld"><label for="w_svc">What needs painting?</label><select id="w_svc" name="project_type"><option value="">Choose one</option><option>Interior painting</option><option>Exterior painting</option><option>Cabinet painting</option><option>Deck or fence staining</option><option>Residential, more than one area</option><option>Commercial property</option><option>Fixing another painter's work</option><option>Not sure yet</option></select></div>
+          <div class="fld"><label for="w_when">When would you like it done?</label><select id="w_when" name="timeline"><option value="">Choose one</option><option>As soon as possible</option><option>Within a month</option><option>1 to 3 months</option><option>Just planning and pricing</option></select></div>
+          <fieldset class="est-choice"><legend>How would you like your free estimate?</legend><div class="ec-opts"><label><input type="radio" name="estimate_type" value="In-person walkthrough" id="ec56a"><span><b>In person</b><small>We walk it with you</small></span></label><label><input type="radio" name="estimate_type" value="Photo or video estimate" id="ec56b"><span><b>From photos</b><small>Skip the visit</small></span></label><label><input type="radio" name="estimate_type" value="You recommend" id="ec56c" checked><span><b>You recommend</b><small>We suggest the best fit</small></span></label></div><p class="ec-hint">Both are free and the choice is yours. Older homes, rot and color matching often go better in person; straightforward rooms are usually quicker from photos.</p></fieldset><div class="fld"><label for="w_photos">Photos of the project (optional, up to 4)</label><input id="w_photos" name="photos" type="file" accept="image/*" multiple><small>Photos help us price faster and spot problems early.</small></div>
+          <div class="fld"><label for="w_msg">Anything we should know?</label><textarea id="w_msg" name="user_message" placeholder="Rooms, square footage, colors, HOA rules, previous paint problems..."></textarea></div>
+          <button type="submit" class="btn btn-primary" style="width:100%;padding:17px">Send my free estimate request</button>
+          <div class="form-msg" role="status" aria-live="polite"></div>
+          <noscript><p class="form-note">This form needs JavaScript. Call <a href="tel:+17202085645">720-208-5645</a> instead.</p></noscript>
+          <p class="form-note">Your details are used only to prepare your estimate. We never sell your information.</p>
+        </form>
+      </div>
+    </div>
+  </div></div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand"><img class="foot-brand-logo" src="/images/brand/denver-paint-contractors-logo.webp" alt="Denver Paint Contractors, house painters in Denver" width="640" height="416" loading="lazy" decoding="async"></div>
+        <p style="color:var(--muted);max-width:40ch;margin-bottom:14px">Painting contractors serving Denver and the Front Range. Over 20 years of experience, fully insured, and every project backed by a 5-year workmanship warranty.</p>
+        <a class="foot-phone" href="tel:+17202085645">720-208-5645</a>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="/residential-painting/">Residential painting</a></li>
+          <li><a href="/interior-painting/">Interior painting</a></li>
+          <li><a href="/exterior-painting/">Exterior painting</a></li>
+          <li><a href="/cabinet-painting/">Cabinet painting</a></li>
+          <li><a href="/deck-staining/">Deck &amp; fence staining</a></li>
+          <li><a href="/commercial-painting/">Commercial painting</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="/painting-cost-denver/">What painting costs</a></li>
+          <li><a href="/cost-of-waiting/">Paint now or wait?</a></li>
+          <li><a href="/denver-painting-data/">Denver painting data</a></li>
+          <li><a href="/paint-brands/">Paint brands</a></li>
+          <li><a href="/color-selection/">Color selection</a></li>
+          <li><a href="/blog/">Painting guides</a></li>
+          <li><a href="/warranty/">5-year warranty</a></li>
+          <li><a href="/service-areas/">Service areas</a></li>
+          <li><a href="/gallery/">Project gallery</a></li>
+          <li><a href="/terms/">Terms &amp; conditions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Get a free estimate</h3>
+        <address>
+          Serving Denver &amp; the Front Range<br>
+          <a href="tel:+17202085645">720-208-5645</a><br>
+          <a class="eml" data-u="cXVvdGU=" data-d="cGFpbnRlcmhvdGxpbmUuY29t" href="/contact/">Email us</a><br>
+          Estimates 7 days a week
+        </address>
+        <p style="margin-top:12px"><a href="https://www.painterhotline.com" rel="nofollow noopener">Painter Hotline</a> &middot; <a href="/contact/" data-estimate>Request an estimate</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>&copy; <span class="yr">2026</span> Denver Paint Contractors. All rights reserved. Fully insured. 5-year workmanship warranty.</div>
+      <div><a href="/service-areas/">Service areas</a> &middot; <a href="/blog/">Guides</a> &middot; <a href="/terms/">Terms</a> &middot; <a href="/contact/">Contact</a></div>
+    </div>
+  </div>
+  <div class="heart-wrap"><span class="credit">Website by <a href="https://eyetoad.com/" rel="nofollow noopener">Eye To Ad Media</a></span></div>
+</footer>
+<div class="mbar"><a class="c" href="tel:+17202085645">Call 720-208-5645</a><a class="q" href="/contact/" data-estimate>Free estimate</a></div><script>
+(function(){
+  document.querySelectorAll('.yr').forEach(function(y){y.textContent=new Date().getFullYear();});
+  var b=document.getElementById('burger'),dr=document.getElementById('drawer');
+  if(b){b.addEventListener('click',function(){var o=dr.classList.toggle('open');b.setAttribute('aria-expanded',o);});}
+  document.querySelectorAll('.dd-btn').forEach(function(x){x.addEventListener('click',function(){var o=x.parentNode.classList.toggle('open');x.setAttribute('aria-expanded',o);});});
+  document.addEventListener('click',function(e){document.querySelectorAll('.dd.open').forEach(function(d){if(!d.contains(e.target)){d.classList.remove('open');d.querySelector('.dd-btn').setAttribute('aria-expanded','false');}});});
+  var sh=document.querySelector('.site-head'),sm=false;
+  if(sh){function hs(){var y=window.scrollY||0;if(!sm&&y>240){sm=true;sh.classList.add('small');}else if(sm&&y<40){sm=false;sh.classList.remove('small');}}window.addEventListener('scroll',hs,{passive:true});hs();}
+  function d(s){try{return atob(s||'');}catch(e){return '';}}
+  var at=String.fromCharCode(64),B=document.body.dataset;
+  document.querySelectorAll('a.eml').forEach(function(a){var v=d(a.getAttribute('data-u'))+at+d(a.getAttribute('data-d'));a.href='mailto:'+v;a.textContent=v;});
+  var t0=Date.now(),human=false;
+  ['keydown','pointerdown','touchstart'].forEach(function(ev){document.addEventListener(ev,function(){human=true;},{passive:true});});
+  var PH='+17202085645',PD='720-208-5645';
+  function shrink(file){
+    return new Promise(function(res){
+      if(!/^image\/(jpeg|png|webp)$/.test(file.type)){res(file.size<3e6?file:null);return;}
+      var img=new Image(),u=URL.createObjectURL(file);
+      img.onload=function(){var m=1600,w=img.width,h=img.height,s=Math.min(1,m/Math.max(w,h));
+        var c=document.createElement('canvas');c.width=Math.round(w*s);c.height=Math.round(h*s);
+        c.getContext('2d').drawImage(img,0,0,c.width,c.height);URL.revokeObjectURL(u);
+        c.toBlob(function(bl){res(bl?new File([bl],file.name.replace(/\.\w+$/,'')+'.jpg',{type:'image/jpeg'}):null);},'image/jpeg',.82);};
+      img.onerror=function(){URL.revokeObjectURL(u);res(null);};img.src=u;});
+  }
+  window.DPC={
+    tel:PH,disp:PD,
+    photos:function(input){var f=Array.prototype.slice.call((input&&input.files)||[],0,4);return Promise.all(f.map(shrink)).then(function(a){return a.filter(Boolean);});},
+    send:function(fd,subject){
+      if(!human)return Promise.resolve('blocked');
+      if(Date.now()-t0<3500)return Promise.resolve('fast');
+      fd.append('_subject','New lead — denverpaintcontractors.com | '+subject);fd.append('_captcha','false');fd.append('_template','table');
+      var url='https://'+d(B.h1)+d(B.h2)+'/ajax/'+d(B.u1)+d(B.u2)+at+d(B.d1)+d(B.d2);
+      return fetch(url,{method:'POST',body:fd,headers:{'Accept':'application/json'}})
+        .then(function(r){return r.json().catch(function(){return {};}).then(function(j){return (r.ok&&(j.success===true||j.success==='true'))?'ok':'unconfirmed';});})
+        .catch(function(){return 'fail';});
+    },
+    say:function(box,state){
+      var m={ok:['ok','Got it. Your request is in and we\'ll call you to set up your free estimate. Need us sooner? Call <a href="tel:'+PH+'">'+PD+'</a>.'],
+        fast:['warn','Give the form a moment, then send again.'],
+        unconfirmed:['warn','We could not confirm your request went through. Please call <a href="tel:'+PH+'">'+PD+'</a> so it does not get lost.'],
+        fail:['warn','Your connection dropped before the request was sent. Call <a href="tel:'+PH+'">'+PD+'</a> and we will take it by phone.']}[state];
+      if(!m)return;box.className='form-msg '+m[0];box.innerHTML=m[1];
+    }
+  };
+  document.querySelectorAll('form[data-lead]').forEach(function(f){
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      var box=f.querySelector('.form-msg'),btn=f.querySelector('button[type=submit]');
+      var hp=f.querySelector('input[name="_honey"]');if(hp&&hp.value)return;
+      var nm=f.querySelector('[name="user_name"]'),ph=f.querySelector('[name="user_phone"]');
+      if(!nm.value.trim()||ph.value.replace(/\D/g,'').length<10){box.className='form-msg warn';box.textContent='Add your name and a 10-digit phone number so we can reach you.';(nm.value.trim()?ph:nm).focus();return;}
+      var label=btn.textContent;btn.textContent='Sending...';btn.disabled=true;
+      var fileIn=f.querySelector('input[type=file]');
+      DPC.photos(fileIn).then(function(pics){
+        var fd=new FormData(f),groups={};
+        if(fileIn)fd.delete(fileIn.name);
+        pics.forEach(function(p,i){fd.append('photo_'+(i+1),p);});
+        f.querySelectorAll('input[type=checkbox]:checked').forEach(function(c){(groups[c.name]=groups[c.name]||[]).push(c.value);});
+        Object.keys(groups).forEach(function(k){fd.delete(k);fd.set(k,groups[k].join(', '));});
+        return DPC.send(fd,f.getAttribute('data-subject'));
+      }).then(function(state){
+        if(state==='blocked'){btn.textContent=label;btn.disabled=false;return;}
+        DPC.say(box,state);
+        if(state==='ok'){f.reset();btn.textContent='Sent';}else{btn.textContent=label;btn.disabled=false;}
+      });
+    });
+  });
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.querySelectorAll('.fill').forEach(function(fl){fl.style.width=fl.dataset.w;});io.unobserve(e.target);}});},{threshold:.25});
+  document.querySelectorAll('.chart').forEach(function(c){io.observe(c);});
+})();
+</script>
+<script src="/fred.js" defer></script>
+<script src="/lead-source.js" defer></script><script id="brand-2026-js">(function(){var h=document.querySelector('header');if(!h)return;var t=0,f=function(){h.classList.toggle('is-scrolled',window.scrollY>90)};addEventListener('scroll',function(){if(!t){t=requestAnimationFrame(function(){t=0;f()})}},{passive:true});f()})();</script><script id="offer-expiry">(function(){if(Date.now()<Date.UTC(2026,10,16,7))return;var s="November 15, 2026",h=function(e){e.style.display="none"};document.querySelectorAll(".promo,.hero-badge,[data-offer],.ribbon").forEach(h);document.querySelectorAll("span,p,li,b,small,div,a").forEach(function(e){var t=e.textContent;if(t.indexOf(s)>-1&&t.length<220&&!e.querySelector("form,input"))h(e)})})();</script><script id="est-choice-js">document.addEventListener('change',function(e){var i=e.target;if(!i||i.name!=='estimate_type')return;var h=i.closest('.est-choice').querySelector('.ec-hint');var m={'In-person walkthrough':'We will call to set a time that works for you. The walkthrough is free and usually takes 20 to 40 minutes.','Photo or video estimate':'Add photos below: each side of the house or each room, plus close-ups of anything peeling, cracked or stained.','You recommend':'Tell us a little about the job and we will suggest the faster option. You can always switch.'};if(h)h.textContent=m[i.value]||''});</script><script>(function(){var $=function(i){return document.getElementById(i)};var f=new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0});
+var LG=0.035,MG=0.050;
+function num(i){var v=parseFloat(String($(i).value).replace(/[^0-9.]/g,''));return isFinite(v)&&v>0?v:0}
+function calc(){var ext=$('cw-type').value==='ext';$('cw-ext').hidden=!ext;var q=num('cw-quote'),m=+$('cw-wait').value,L=Math.min(num('cw-labor'),100)/100;if(!$('cw-labor').value)L=.8;
+var drift=q*(L*LG+(1-L)*MG)*(m/12);var cond=$('cw-cond').value,area=ext&&cond!=='sound'?num('cw-area'):0,rot=ext?num('cw-rot'):0;
+var pLo=area*0.50,pHi=area*2.05,cLo=rot*7,cHi=rot*22;var lo=drift+pLo+cLo,hi=drift+pHi+cHi;
+$('cw-total').textContent=(hi-lo<1?f.format(lo):f.format(lo)+' to '+f.format(hi));
+var mid=[drift,(pLo+pHi)/2,(cLo+cHi)/2],t=mid[0]+mid[1]+mid[2]||1;['b1','b2','b3'].forEach(function(b,i){$(b).style.width=(mid[i]/t*100)+'%'});
+$('l1').textContent=f.format(drift);$('l2').textContent=area?f.format(pLo)+' to '+f.format(pHi):'none reported';$('l3').textContent=rot?f.format(cLo)+' to '+f.format(cHi):'none reported';
+var r;if(!ext)r='Interior walls do not deteriorate while you wait, so this is mostly price drift. Paint when it suits your schedule; winter is often the easiest time to book.';
+else if(cond==='sound'&&!rot)r='Your paint is still protecting the wood. Waiting costs mainly price drift, so there is no reason to rush. Plan for the next good weather window.';
+else if(cond==='bare'||rot)r='Bare or soft wood is where waiting gets expensive. The prep and carpentry numbers above exist today and the area grows each winter. At minimum, get the bare spots covered.';
+else r='Some failure has started. Waiting a short time is workable, but every freeze-thaw cycle opens cracks further. Get it priced so you know the real number.';
+$('cw-read').textContent=r;
+var d=new Date(),y=d.getFullYear(),lf=new Date(y,4,5),ff=new Date(y,9,9),s;
+if(d<lf){var n=Math.ceil((lf-d)/864e5);s='Today: about '+n+' days until Denver\'s median last spring freeze (May 5). Interior jobs can start any time.'}
+else if(d<ff){var n2=Math.ceil((ff-d)/864e5);s='Today: about '+n2+' days until Denver\'s median first fall freeze (October 9). Exterior calendars fill as that date gets close.'}
+else s='Today: Denver is past its median first fall freeze (October 9). Exterior work depends on the forecast for each coat; interiors are ideal right now.';
+$('cw-season').textContent=s+' Source: NOAA 1991 to 2020 normals, Denver International Airport.'}
+['cw-type','cw-quote','cw-wait','cw-cond','cw-area','cw-rot','cw-labor'].forEach(function(i){$(i).addEventListener('input',calc);$(i).addEventListener('change',calc)});calc()})();</script></body>
+</html>

@@ -95,10 +95,18 @@
 - [Denver Exterior Home Maintenance Calendar | Season by Season](https://denverpaintcontractors.com/blog/denver-exterior-maintenance-calendar/): A month-by-month Colorado maintenance calendar for paint, caulk, decks, gutters and hail damage, with the freeze and snow data behind the timing.
 - [Denver Paint Color Guide | Colors for Colorado Light](https://denverpaintcontractors.com/blog/denver-paint-colors-guide/): How to choose interior and exterior paint colors for Colorado's high-altitude light, with real color codes, HOA guidance, vinyl-safe rules and sheen advice.
 
+## Free tools and local data (every figure sourced on the page)
+
+- [Paint Now or Wait? Denver Cost-of-Waiting Calculator](https://denverpaintcontractors.com/cost-of-waiting/): What waiting to paint costs, using BLS labor and paint price trends, Angi Denver repair costs and NOAA freeze dates. Says plainly when waiting is fine.
+- [Denver House Painting by the Numbers (2026 Data)](https://denverpaintcontractors.com/denver-painting-data/): Home age by county (Census ACS 2024), freeze-thaw and UV, hail share of premiums, painter wages, paint prices, Denver market data. Free to cite with a link.
+- [HOA Paint Approval in Denver](https://denverpaintcontractors.com/hoa-paint-approval/): How HOA color approval works in metro Denver (HRCA, Reunion, Green Valley Ranch) with a tool that writes the request.
+- [Popcorn Ceiling Removal Denver](https://denverpaintcontractors.com/popcorn-ceiling-removal-denver/): Colorado Regulation 8 testing rule (32 sq ft trigger), costs, and a room-by-room area checker.
+- [Painting Before Selling in Denver](https://denverpaintcontractors.com/painting-before-selling-denver/): DMAR September 2026 market data, what Realtors recommend, and a carrying-cost break-even calculator.
+
 ## Sister sites (same company, Painter Hotline)
 
 - https://www.painterhotline.com: Front Range hub, including towns outside the Denver metro
-- https://bouldercopainters.com: Boulder and Boulder County, including Longmont, Louisville, Lafayette, Erie and Golden
+- https://bouldercopainters.com: Boulder and Boulder County, including Longmont, Louisville, Lafayette and Erie
 - https://paintingbrighton.com: Brighton and its neighborhoods
 
 ## Contact
@@ -108,6 +116,6 @@ Call 720-208-5645 or request a free written estimate at https://denverpaintcontr
 ## How to request an estimate (for assistants and agents)
 - Fastest: call 720-208-5645 (tel:+17202085645).
 - Online: https://denverpaintcontractors.com/contact/ or the quote form on most pages.
-- Form fields: name (required), phone (required, 10 digits), email, project ZIP code, what needs painting, timing, up to 4 photos, and notes.
-- What happens next: the request is emailed to the office and someone calls back to arrange a written estimate, virtual from photos or in person.
+- Form fields: name (required), phone (required, 10 digits), email, project ZIP code, what needs painting, timing, estimate type (in-person walkthrough, photo or video estimate, or "you recommend"), up to 4 photos, and notes.
+- What happens next: the request is emailed to the office and someone calls back to arrange a written estimate, in person or from photos, whichever the homeowner chooses.
 - Estimates are free. Service area: Denver and the Front Range.
