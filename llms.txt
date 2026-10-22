@@ -25,7 +25,7 @@
 
 ## Colorado conditions that affect paint
 
-- UV increases roughly 10% per 1,000 meters of elevation (World Health Organization); Denver sits near 1,600 meters
+- UV intensity increases about 6% per kilometer of elevation (U.S. EPA); Denver sits near 1,600 meters, so roughly 10% more UV than at sea level
 - Denver average last spring freeze about May 5; average first fall freeze about October 7 (National Weather Service, Boulder)
 - Average first measurable snow about October 19; latest recorded spring freeze June 8, 2007
 - Homes built before 1978 may contain lead paint; EPA Renovation, Repair and Painting rule applies
@@ -100,6 +100,9 @@
 - [Paint Now or Wait? Denver Cost-of-Waiting Calculator](https://denverpaintcontractors.com/cost-of-waiting/): What waiting to paint costs, using BLS labor and paint price trends, Angi Denver repair costs and NOAA freeze dates. Says plainly when waiting is fine.
 - [Denver House Painting by the Numbers (2026 Data)](https://denverpaintcontractors.com/denver-painting-data/): Home age by county (Census ACS 2024), freeze-thaw and UV, hail share of premiums, painter wages, paint prices, Denver market data. Free to cite with a link.
 - [HOA Paint Approval in Denver](https://denverpaintcontractors.com/hoa-paint-approval/): How HOA color approval works in metro Denver (HRCA, Reunion, Green Valley Ranch) with a tool that writes the request.
+- [Stucco Painting Denver](https://denverpaintcontractors.com/stucco-painting-denver/): Denver stucco painting at $1.55 to $4.10 per sq ft (Angi), elastomeric vs acrylic, crack repair, NOAA winter timing, and a cost and gallon estimator
+- [HOA Repainting in Denver](https://denverpaintcontractors.com/hoa-repainting-denver/): For HOA boards and managers: bid specification checklist, Colorado reserve-study policy rule (CCIOA 38-33.3-209.5), USDA finish service life, and a phasing budget calculator
+- [Elastomeric vs Acrylic Paint on Denver Stucco](https://denverpaintcontractors.com/blog/elastomeric-vs-acrylic-paint-stucco-denver/): When elastomeric helps or traps water, published coverage per gallon, Denver freeze-thaw and 50F application days, and a coating chooser
 - [Popcorn Ceiling Removal Denver](https://denverpaintcontractors.com/popcorn-ceiling-removal-denver/): Colorado Regulation 8 testing rule (32 sq ft trigger), costs, and a room-by-room area checker.
 - [Painting Before Selling in Denver](https://denverpaintcontractors.com/painting-before-selling-denver/): DMAR September 2026 market data, what Realtors recommend, and a carrying-cost break-even calculator.
 
