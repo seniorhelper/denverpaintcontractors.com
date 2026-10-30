@@ -168,10 +168,13 @@
 
   /* ---------- knowledge base ---------- */
   var KB = [
+    [/\b(drywall|nail pop|crack|hole|patch|texture|plaster|water stain)/i, 'Drywall and plaster repair, texture matching and the repaint happen in one visit with one crew. In older Denver homes we check the Colorado asbestos rule before cutting into texture. See <a href="/drywall-repair-denver/">drywall repair in Denver</a>.'],
+    [/\b(victorian|denver square|foursquare|bungalow|old house|older home|historic district)/i, 'Older Denver houses need different prep: wood trim and porches, many paint layers, lead-safe rules on anything built before 1978. Denver landmark review does not cover paint color. Our <a href="/blog/painting-older-denver-homes/">older-homes guide</a> goes house type by house type.'],
+    [/\b(neighborhood|wash park|capitol hill|park hill|highlands|stapleton|central park|condo)/i, 'Interiors vary a lot by Denver neighborhood: plaster in the older ones, condo building rules downtown, builder drywall in the newer ones. See <a href="/blog/denver-interior-painting-by-neighborhood/">interior painting by neighborhood</a>.'],
     [/\b(cost|price|pricing|how much|expensive|charge)\b/i, 'Published 2026 Denver data puts exterior painting around <strong>$1.55 to $4.10 per square foot</strong> and interior around <strong>$2 to $6</strong>. Cabinets usually run <strong>$2,000 to $8,000</strong>. Want me to walk you through a virtual estimate for your project?'],
     [/\b(warranty|guarantee)\b/i, 'Every project carries a <strong>5-year workmanship warranty</strong> in writing, plus the manufacturer warranty on the Sherwin-Williams, PPG or Behr coating we use. Details are on our <a href="/warranty/">warranty page</a>.'],
     [/\b(insur|licen|bonded)\b/i, 'We are <strong>fully insured</strong> and bring proof of coverage to every estimate. Colorado does not issue a statewide painting license, so insurance and a written scope are what you should ask any painter to show.'],
-    [/\b(discount|deal|offer|coupon|sale|special|25)\b/i, 'Right now it is <strong>25% off painting projects booked by November 15, 2026</strong>. The discount applies to labor; paint and materials are not included. See <a href="/discounts/">the offer</a>.'],
+    [/\b(discount|deal|offer|coupon|sale|special|25)\b/i, 'Right now it is <strong>25% off painting projects booked by December 31, 2026</strong>. The discount applies to labor; paint and materials are not included. See <a href="/discounts/">the offer</a>.'],
     [/\b(peel|flak|bubbl|chalk|fail|crack)\b/i, 'Peeling and chalking usually trace back to moisture, contamination or skipped prep. Our <a href="/blog/why-is-my-paint-peeling/">peeling diagnosis guide</a> walks through it, and we fix other companies\' failed work regularly. Send photos and I will get you a real answer.'],
     [/\b(cabinet|kitchen)\b/i, 'Cabinets get degreased, scuff sanded, bonding primed and sprayed with a cabinet-grade finish. At about $100 to $250 per door (Angi, 2026), a typical kitchen lands around <strong>$2,000 to $8,000</strong>. See <a href="/cabinet-painting/">cabinet painting</a>.'],
     [/\b(deck|fence|stain)\b/i, 'Decks and fences are cleaned, brightened, sanded where needed and sealed with products chosen for Colorado sun. More on <a href="/deck-staining/">deck and fence staining</a>.'],
@@ -186,7 +189,7 @@
     [/\b(lead|1978|old house)\b/i, 'Homes built before 1978 may contain lead-based paint, and federal EPA rules require certified firms and lead-safe work practices when those surfaces are disturbed. Tell us the year built and we will plan for it.'],
     [/\b(voc|smell|odor|pet|kid|safe)\b/i, 'Most interior paints today are water-based and low in VOC, and Colorado tightened VOC limits for architectural coatings in 2020. Zero-VOC options are available if anyone in the home is sensitive.'],
     [/\b(hoa|approval|covenant)\b/i, 'Many Front Range communities require color approval before an exterior repaint. We match approved palettes, prepare samples and handle the submission.'],
-    [/(cheaper|do better on price|better price|lower (the )?price|beat .*(price|quote|bid)|more of a discount|negotiat|price match)/i, 'Straight answer: the October discount is already built into the number you get, so there is no second price hiding behind it. What can move is scope or schedule. If budget is the constraint we can phase the work and start with the sun-facing elevations that are actually failing.'],
+    [/(cheaper|do better on price|better price|lower (the )?price|beat .*(price|quote|bid)|more of a discount|negotiat|price match)/i, 'Straight answer: the winter discount is already built into the number you get, so there is no second price hiding behind it. What can move is scope or schedule. If budget is the constraint we can phase the work and start with the sun-facing elevations that are actually failing.'],
     [/\b(why (you|should)|what makes|different|better than|choose you)\b/i, 'Four things. Crews that specialize by type of work instead of doing a bit of everything. Over 20 years of Colorado experience, which mostly means knowing what fails here and why. A dedicated project manager so one person owns your project. And a 5-year workmanship warranty in writing, which only works because the preparation is real.'],
     [/\b(twice|again|redo|do it over|shortcut|short cut|cheap (job|bid|quote))\b/i, 'The expensive version is doing it twice. A cheap job skips washing, scraping and priming, looks fine for a season, then fails. The next painter has to remove the failed coating before starting, so you pay for the cheap job, the removal, and the correct job. That is exactly why our prep is itemized in writing.'],
     [/\b(prep|preparation|what.*included|scope|process|steps)\b/i, 'Exterior: protect the property, power wash, scrape and sand back to a sound edge, fill and caulk, prime what needs it, then the agreed coats on siding, trim, window and door casings, soffit and fascia. Then full cleanup and a walkthrough with you. Interiors follow the same logic indoors. All itemized on your estimate.'],
@@ -196,6 +199,21 @@
     [/\b(think about it|not ready|hold off|get back to you)\b/i, 'Completely fair. Usually one specific thing is unresolved: price, timing, the crew, or whether the scope is right. Which one is it? I would rather answer it now than leave you guessing.'],
     [/\b(phone|call|contact|talk|human)\b/i, 'Call us any day at <a href="tel:' + TEL + '">' + DISP + '</a>, or I can take your details right here and have someone call you.']
   ];
+
+
+  /* ---------- single answer adapter ----------
+     All typed questions go through window.PH_BOT.ask(text, ctx) -> Promise<html|null>.
+     To wire an AI API later, set window.PH_BOT.backend = function (text, ctx) { return fetch(...).then(...) }.
+     If the backend is missing, fails or returns nothing, the local knowledge base answers. */
+  var PH_BOT = window.PH_BOT = window.PH_BOT || {};
+  PH_BOT.character = 'Fred'; PH_BOT.site = 'denverpaintcontractors.com'; PH_BOT.phone = DISP;
+  PH_BOT.local = function (t) { return answerText(t); };
+  PH_BOT.ask = function (text, ctx) {
+    var kb = function () { return answerText(text); };
+    if (typeof PH_BOT.backend !== 'function') return Promise.resolve(kb());
+    return Promise.resolve().then(function () { return PH_BOT.backend(text, ctx || {}); })
+      .then(function (r) { return r || kb(); }, function () { return kb(); });
+  };
 
   function answerText(t) {
     for (var i = 0; i < KB.length; i++) if (KB[i][0].test(t)) return KB[i][1];
@@ -208,12 +226,13 @@
     say(t, 'me');
     log('Visitor: ' + t);
     if (state.capture) { state.capture(t); return; }
-    var a = answerText(t);
-    if (a) { say(a); log('Fred: answered'); afterAnswer(); }
-    else {
-      say('Good question, and I would rather give you a real answer than a guess. The fastest route is a free estimate, or call <a href="tel:' + TEL + '">' + DISP + '</a>.');
-      afterAnswer();
-    }
+    PH_BOT.ask(t, { page: location.pathname, transcript: transcript.slice(-12) }).then(function (a) {
+      if (a) { say(a); log('Fred: answered'); afterAnswer(); }
+      else {
+        say('Good question, and I would rather give you a real answer than a guess. The fastest route is a free estimate, or call <a href="tel:' + TEL + '">' + DISP + '</a>.');
+        afterAnswer();
+      }
+    });
   }
   function afterAnswer() {
     opts([
@@ -481,7 +500,7 @@
     answers.ballpark_after_discount = '$' + loD.toLocaleString() + ' - $' + hiD.toLocaleString() + ' with 25% off labor';
     var rows = lines.map(function (r) { return '<span class="fd-line"><span>' + r[0] + '</span><span>' + r[1] + '</span></span>'; }).join('');
     say('<div class="fd-quote"><b>$' + lo.toLocaleString() + ' - $' + hi.toLocaleString() + '</b>' + rows +
-      '<span>Published 2026 Denver market range for this scope. With <strong>25% off labor</strong> on projects booked by November 15, 2026, most of this scope lands around <strong>$' + loD.toLocaleString() + ' - $' + hiD.toLocaleString() + '</strong>. Paint and materials are not included in the discount.</span></div>');
+      '<span>Published 2026 Denver market range for this scope. With <strong>25% off labor</strong> on projects booked by December 31, 2026, most of this scope lands around <strong>$' + loD.toLocaleString() + ' - $' + hiD.toLocaleString() + '</strong>. Paint and materials are not included in the discount.</span></div>');
     if (V.notes.length) say('Worth noting: ' + V.notes.join('. ') + '.');
     if (V.inperson) {
       say('Based on what you described, <strong>this one is worth seeing in person</strong>. Peeling, water damage, failing finishes and questionable boards all change the prep plan, and I would rather be accurate than optimistic. The visit is free either way.');
