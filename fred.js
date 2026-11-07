@@ -94,8 +94,8 @@
     '.fd-bar{height:7px;background:#dde3ec;border-radius:4px;overflow:hidden;margin:10px 14px 0}',
     '.fd-bar i{display:block;height:100%;background:#d9a441;width:0;transition:width .3s}',
     '@media (max-width:640px){.fd-panel{right:6px;left:6px;width:auto;bottom:74px;top:62px;height:auto;max-height:none}',
-    '.fd-launch{right:4px;bottom:72px}.fd-btn{width:104px;height:132px}.fd-tip{font-size:.84rem;max-width:180px;right:16px}',
-    '.fd-tabs{top:170px;bottom:auto;transform:none}.fd-tab{padding:11px 7px;font-size:.72rem;letter-spacing:.03em}}',
+    '.fd-launch{right:4px;bottom:76px}.fd-btn{width:72px;height:92px}.fd-tip{font-size:.84rem;max-width:180px;right:16px}',
+    '.fd-tabs{display:none}}',
     '@media (prefers-reduced-motion:reduce){.fd-wave{animation:none}}'
   ].join('');
   document.head.appendChild(css);
@@ -622,6 +622,6 @@
 
   /* header phone wrap guard */
   var s2 = document.createElement('style');
-  s2.textContent = '.head-call b{white-space:nowrap}@media (max-width:760px){.head-call b{font-size:1.08rem!important;letter-spacing:-.02em}}@media (max-width:400px){.head-call b{font-size:1rem!important}.brand img{height:58px!important}}';
+  s2.textContent = '.head-call b{white-space:nowrap}@media (max-width:760px){.head-call b{font-size:1.08rem!important;letter-spacing:-.02em}}@media (max-width:400px){.head-call b{font-size:1rem!important}}';
   document.head.appendChild(s2);
 })();
