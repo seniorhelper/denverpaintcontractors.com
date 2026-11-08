@@ -9,6 +9,9 @@ Brand: Denver Paint Contractors, 720-208-5645 (same company as Painter Hotline; 
 - Lighthouse mobile home (before push): Performance 98, Accessibility 97 (icon-only phone link had no accessible name: fixed), Best Practices 100, SEO 100.
 - Strongest content on the four painting sites: /painting-cost-denver/ (2,800 words, dated sources), /stucco-painting-denver/, /how-to-hire-a-painter-denver/, /hoa-repainting-denver/.
 
+## Real search data
+Search Console, last 28 days to Nov 6 (read 2026-11-08): 2 clicks, 7,910 impressions, average position 50.7. Top impression queries: exterior painting (1,834), exterior house painting (1,037), interior painting (1,021), interior house painting (266), painting contractors denver (52), house painting near aurora co (39). GA4 same window: 31 sessions (25 direct, 3 organic, 2 referral), 0 key events. Read: the site is seen but not trusted; trust signals (GBP, reviews, local links) come before more pages.
+
 ## Keyword targets
 | Term | Owner page | Real SERP 2026-11-08 |
 |---|---|---|
