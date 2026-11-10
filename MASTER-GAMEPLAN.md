@@ -37,3 +37,8 @@ Kind Home Painting (reviews + warranty), CertaPro Denver (no prices, template le
 3. GBP (none). Same as painterhotline: the head terms are won by reviews and the map pack.
 4. Pull GSC positions; then decide whether a winter-interior section on /interior-painting/ is worth writing (sister site owns the winter page; do not clone).
 5. Stucco page: add a hail section with a real source (NOAA/NSSL hail frequency is already cited on the Brighton site; find Denver-specific data before writing).
+
+## 2026-11-10 (overnight, branch seo-leads-2026-11-10, not pushed)
+- NEW /blog/how-long-does-exterior-paint-last-colorado/ (about 1,550 words). Why: GSC query "how long does exterior paint last in colorado" 27 impressions at position 14.8; the maintenance calendar had only a short no-numbers section. Honest framing: no Colorado-specific lifespan study found.
+- Sources opened live 2026-11-10: InterNACHI life expectancy chart (exterior paint 7-10 yrs, stain 3-8, caulk 5-10, interior paint 10-15); NAHB/Bank of America 2007 study PDF (exterior and interior paint 15+, "home owners often paint more frequently", caulking as sealer 2-20); EPA UV Index page (UV +6% per km); WHO UV FAQ (+~10% per 1,000 m); Sherwin-Williams 15 Year Limited Warranty PDF (peel/blister only, excludes labor); NWS Boulder Denver stats (avg last freeze May 5, first freeze Oct 7).
+- Contextual links into the post from /blog/denver-exterior-maintenance-calendar/ (paint-life section) and /blog/why-exterior-paint-fails-colorado/ (bottom line). Added to /blog/ (card, question table, Blog JSON-LD), sitemap, llms.txt.
