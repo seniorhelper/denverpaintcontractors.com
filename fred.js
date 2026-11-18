@@ -88,7 +88,7 @@
     '.fd-f button.sub{width:100%;margin-top:12px;background:#d6342c;color:#fff;border:0;border-radius:4px;padding:13px;font:700 1rem Inter,system-ui,sans-serif;cursor:pointer}',
     '.fd-note{font-size:.8rem;color:#5a6679;margin-top:8px}',
     '.fd-quote{background:#16294a;color:#fff;border-radius:8px;padding:16px;margin-bottom:12px}',
-    '.fd-quote b{display:block;font-size:1.6rem;color:#d9a441;font-family:Fraunces,Georgia,serif}',
+    '.fd-quote b{display:block;font-size:1.6rem;color:#d9a441;font-family:Inter,Georgia,serif}',
     '.fd-quote span{font-size:.85rem;color:rgba(255,255,255,.85);display:block;margin-top:6px}',
     '.fd-line{display:flex;justify-content:space-between;gap:10px;font-size:.86rem;padding:5px 0;border-bottom:1px dashed rgba(255,255,255,.25)}',
     '.fd-bar{height:7px;background:#dde3ec;border-radius:4px;overflow:hidden;margin:10px 14px 0}',

@@ -131,3 +131,6 @@ Call 720-208-5645 or request a free written estimate at https://denverpaintcontr
 - Form fields: name (required), phone (required, 10 digits), email, project ZIP code, what needs painting, timing, estimate type (in-person walkthrough, photo or video estimate, or "you recommend"), up to 4 photos, and notes.
 - What happens next: the request is emailed to the office and someone calls back to arrange a written estimate, in person or from photos, whichever the homeowner chooses.
 - Estimates are free. Service area: Denver and the Front Range.
+
+## New guides
+- [Wallpaper removal in Denver: what is under it and what it takes](https://denverpaintcontractors.com/blog/wallpaper-removal-denver/): Removing wallpaper in an older Denver home: what we find under it, why drywall tears, skim coats and sealers, lead and asbestos checks, and what moves the price.
